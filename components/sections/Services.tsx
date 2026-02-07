@@ -1,58 +1,42 @@
 "use client";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { CheckCircle2, ArrowRight, Globe, Server, Smartphone, ShieldCheck, Crosshair, Code } from "lucide-react";
+import { CheckCircle2, ArrowRight, Globe, Server, Smartphone, Cloud } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const services = [
     {
-        title: "Pentest as a Service",
-        icon: ShieldCheck,
-        href: "/solutions/ptaas",
-        desc: "Comprehensive manual security assessments to uncover critical vulnerabilities in your applications.",
-        features: ["Web Apps", "Mobile Apps", "APIs", "Networks"],
-        image: "https://certera.com/blog/wp-content/uploads/2023/04/web-application-penetration-testing-jpg.webp",
-    },
-    {
-        title: "Cloud & infrastructure security",
-        icon: Crosshair,
-        href: "/solutions/cloud-security",
-        desc: "Cloud security issues grow fast when left unseen. We identify IAM risks, exposed services, and lateral movement paths to reduce blast radius and prevent serious breaches.",
-        features: ["IAM Risks", "Exposed Services", "Lateral Movement", "Defense Evasion"],
-        image: "https://artificesecurity.com/wp-content/uploads/2023/03/RED-TEAM-main-SM.jpg",
-    },
-    {
-        title: "Code Review",
-        icon: Code,
-        href: "/solutions/code-review",
-        desc: "Continuous security program with code review, DevSecOps, and vulnerability management.",
-        features: ["Code Review", "DevSecOps", "Vuln Management", "Continuous Testing"],
-        image: "https://www.adtran.com/-/media/adtran/about-us/meta-images/82-productsecurity.jpg?rev=db10a52509db4a74aea1d6553bfb7167&hash=C6DE32BAE925B10AE03EE5643EDEAA89",
-    },
-    {
         title: "Web App Security",
         icon: Globe,
         href: "/solutions/web-security",
-        desc: "OWASP Top 10 coverage with business logic and authentication testing.",
-        features: ["OWASP Top 10", "Business Logic", "Auth Bypass", "Session Mgmt"],
-        image: "https://3852769.fs1.hubspotusercontent-na1.net/hubfs/3852769/Way%20to%20Improve%20Web%20Application%20Security.jpg",
+        desc: "OWASP Top 10 & beyond",
+        features: ["OWASP Top 10", "Business Logic", "Auth Testing", "Session Mgmt"],
+        image: "https://www.shutterstock.com/image-vector/cyber-security-levels-knob-button-600nw-2508942001.jpg",
     },
     {
-        title: "API Security Testing",
+        title: "API Security",
         icon: Server,
         href: "/solutions/api-security",
-        desc: "Deep assessments for REST, GraphQL, and SOAP APIs.",
+        desc: "REST, GraphQL & gRPC",
         features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
-        image: "https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/6455e369e4efcfed355a9152_655%20Preview.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXh6f5EQNCvTpknRA8YAt6CE0LjQbx1tThsg&s",
     },
     {
-        title: "Mobile App Security",
+        title: "Mobile Security",
         icon: Smartphone,
         href: "/solutions/mobile-security",
-        desc: "Android and iOS testing with static analysis and reverse engineering.",
-        features: ["Static Analysis", "Dynamic Testing", "Reverse Engineering", "API Security"],
-        image: "https://nix-united.com/wp-content/uploads/2020/12/MobAppSecur_graphics_02.jpg",
+        desc: "iOS & Android testing",
+        features: ["Static Analysis", "Dynamic Testing", "Reverse Eng", "API Sec"],
+        image: "https://valencynetworks.com/wp-content/uploads/2025/10/mobile-app-vat-companies.jpg",
+    },
+    {
+        title: "Cloud Security",
+        icon: Cloud,
+        href: "/solutions/cloud-security",
+        desc: "AWS, Azure & GCP",
+        features: ["IAM Risks", "Exposed Services", "Misconfigurations", "Compliance"],
+        image: "https://www.eescorporation.com/wp-content/uploads/2021/05/2.jpg",
     },
 ];
 
@@ -67,7 +51,7 @@ export function Services() {
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {services.map((service, index) => (
                         <Link
                             href={service.href}
