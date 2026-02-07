@@ -49,7 +49,7 @@ const footerLinks = {
 
 export function Contact() {
     return (
-        <footer className="bg-slate-900 text-slate-300 pt-20 pb-10">
+        <footer className="bg-black text-slate-300 pt-20 pb-10">
             <div className="container px-4 mx-auto">
                 {/* Main Footer */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">

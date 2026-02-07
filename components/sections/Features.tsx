@@ -51,7 +51,7 @@ export function Features() {
     <section className="py-24 bg-slate-50 border-y border-slate-100">
       <div className="container px-4 mx-auto">
         <div className="text-center mb-16 max-w-3xl mx-auto">
-          <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+          <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
             Why Choose Us
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">

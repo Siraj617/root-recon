@@ -8,12 +8,11 @@ import Link from "next/link";
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 bg-black">
             {/* Premium Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-red rounded-full blur-[120px] mix-blend-multiply" />
-                <div className="absolute bottom-[-20%] left-[-10%] w-[800px] h-[800px] bg-indigo-100/40 rounded-full blur-[100px] mix-blend-multiply" />
-                <div className="absolute top-[20%] left-[20%] w-[400px] h-[400px] bg-white rounded-full blur-[80px] opacity-80" />
+                <div className="absolute top-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-red-900/20 rounded-full blur-[120px] mix-blend-screen" />
+                <div className="absolute top-[20%] left-[20%] w-[400px] h-[400px] bg-white/5 rounded-full blur-[80px]" />
             </div>
 
             <div className="container px-4 mx-auto relative z-10">
@@ -24,9 +23,9 @@ export function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 backdrop-blur-sm border border-blue-100 text-primary text-sm font-bold shadow-sm"
+                            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white text-sm font-bold shadow-sm"
                         >
-                            <ShieldCheck size={16} className="text-primary-600" />
+                            <ShieldCheck size={16} className="text-primary-400" />
                             <span className="tracking-wide uppercase text-xs">Trusted by Fortune 500 Companies</span>
                         </motion.div>
 
@@ -34,10 +33,10 @@ export function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.1 }}
-                            className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-rootrec leading-[1.1]"
+                            className="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1]"
                         >
                             Deep Insights <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary">
+                            <span className="text-red-600">
                                 Zero Blind Spots
                             </span>
                         </motion.h1>
@@ -46,10 +45,9 @@ export function Hero() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: 0.2 }}
-                            className="text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed font-medium"
+                            className="text-lg md:text-xl text-slate-400 max-w-xl leading-relaxed font-medium"
                         >
                             Root Recon is an offensive security company that helps organizations find and fix real-world security risks before attackers do. We uncover hidden gaps in modern, fast-moving applications built on APIs, cloud, and third-party systems. Using an attacker mindset, not just automated tools, we identify how vulnerabilities can be chained to cause real business damage.
-
                         </motion.p>
 
                         <motion.div
@@ -59,13 +57,13 @@ export function Hero() {
                             className="flex flex-col sm:flex-row gap-5 pt-4 w-full sm:w-auto"
                         >
                             <Link href="/contact">
-                                <Button size="lg" className="w-full sm:w-auto text-lg h-14 bg-primary hover:bg-red-700 text-white shadow-lg shadow-blue-600/25 transition-all hover:scale-105">
+                                <Button size="lg" className="w-full sm:w-auto text-lg h-14 bg-white hover:bg-slate-100 text-black shadow-lg shadow-white/10 transition-all border-none">
                                     Get a Free Consultation
                                 </Button>
                             </Link>
                             <Link href="/contact">
-                                <Button variant="outline" size="lg" className="w-full sm:w-auto text-lg h-14 bg-white/80 backdrop-blur-sm text-slate-900 hover:bg-white border-slate-200 hover:border-blue-200 group shadow-sm transition-all">
-                                    Request a Quote <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform text-primary" />
+                                <Button size="lg" className="w-full sm:w-auto text-lg h-14 bg-red-600 text-white hover:bg-red-700 border-none shadow-sm transition-all">
+                                    Request a Quote <ArrowRight className="ml-2 w-4 h-4 text-white" />
                                 </Button>
                             </Link>
                         </motion.div>

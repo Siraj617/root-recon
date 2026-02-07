@@ -46,7 +46,7 @@ const compliance = [
 
 export function Methodology() {
     return (
-        <section id="methodology" className="py-24 bg-slate-50 overflow-hidden">
+        <section id="methodology" className="py-24 bg-white overflow-hidden">
             <div className="container px-4 mx-auto">
                 <SectionHeading
                     title="Our Methodology"
@@ -59,7 +59,7 @@ export function Methodology() {
                     <div className="absolute top-16 left-[8%] right-[8%] h-1 z-0">
                         <div className="absolute inset-0 bg-slate-200 rounded-full" />
                         <motion.div
-                            className="absolute inset-y-0 left-0 bg-gradient-to-r from-black to-black rounded-full"
+                            className="absolute inset-y-0 left-0 bg-black rounded-full"
                             initial={{ width: "0%" }}
                             whileInView={{ width: "100%" }}
                             viewport={{ once: true }}
@@ -83,9 +83,9 @@ export function Methodology() {
                                     }}
                                 >
                                     <div className="w-14 h-14 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-lg">
-                                        <step.icon className="w-6 h-6 text-primary" />
+                                        <step.icon className="w-6 h-6 text-red-600" />
                                     </div>
-                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-primary text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center shadow-md">
                                         {index + 1}
                                     </div>
                                 </motion.div>
@@ -98,7 +98,7 @@ export function Methodology() {
                                     transition={{ duration: 0.4, delay: index * 0.2 + 0.2 }}
                                 >
                                     <h3 className="text-xs font-bold text-slate-900">{step.title}</h3>
-                                    <p className="text-slate-500 text-[10px] mt-0.5">{step.desc}</p>
+                                    <p className="text-slate-600 text-[10px] mt-0.5">{step.desc}</p>
                                 </motion.div>
                             </div>
                         ))}
@@ -110,7 +110,7 @@ export function Methodology() {
                     {/* Vertical Line */}
                     <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
                         <motion.div
-                            className="absolute top-0 left-0 right-0 bg-gradient-to-b from-blue-500 to-blue-600"
+                            className="absolute top-0 left-0 right-0 bg-black"
                             initial={{ height: "0%" }}
                             whileInView={{ height: "100%" }}
                             viewport={{ once: true }}
@@ -129,8 +129,8 @@ export function Methodology() {
                                 transition={{ duration: 0.4, delay: index * 0.1 }}
                             >
                                 {/* Circle with Icon */}
-                                <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
-                                    <step.icon className="w-5 h-5 text-blue-600" />
+                                <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-lg">
+                                    <step.icon className="w-5 h-5 text-red-600" />
                                     <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center shadow-md">
                                         {index + 1}
                                     </div>
@@ -139,7 +139,7 @@ export function Methodology() {
                                 {/* Content Card */}
                                 <div className="flex-1 bg-white rounded-xl p-4 shadow-md border border-slate-100">
                                     <h3 className="font-bold text-slate-900">{step.title}</h3>
-                                    <p className="text-sm text-slate-500 mt-1">{step.desc}</p>
+                                    <p className="text-sm text-slate-600 mt-1">{step.desc}</p>
                                 </div>
                             </motion.div>
                         ))}
@@ -156,8 +156,8 @@ export function Methodology() {
                 >
                     <div className="overflow-hidden relative">
                         {/* Background Decorations */}
-                        <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
-                        <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full blur-3xl" />
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-red-500/5 rounded-full blur-3xl" />
+                        <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl" />
 
                         <div className="relative z-10">
                             <motion.div
@@ -177,7 +177,7 @@ export function Methodology() {
                                 {compliance.map((item, index) => (
                                     <motion.div
                                         key={index}
-                                        className="group relative bg-white rounded-2xl p-6 shadow-lg border border-slate-100 overflow-hidden cursor-pointer"
+                                        className="group relative bg-black rounded-2xl p-6 shadow-lg border border-zinc-800 overflow-hidden cursor-pointer"
                                         initial={{ opacity: 0, y: 30 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
@@ -191,29 +191,23 @@ export function Methodology() {
                                     >
                                         {/* Gradient accent bar */}
                                         <div
-                                            className="absolute top-0 left-0 right-0 h-1"
-                                            style={{
-                                                background: `linear-gradient(90deg, ${item.color}, ${item.colorEnd || item.color})`
-                                            }}
+                                            className="absolute top-0 left-0 right-0 h-1 bg-red-600"
                                         />
 
                                         {/* Icon container */}
                                         <div
-                                            className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110"
-                                            style={{
-                                                background: `linear-gradient(135deg, ${item.color}15, ${item.color}25)`
-                                            }}
+                                            className="w-14 h-14 rounded-xl flex items-center justify-center mb-4 transition-transform duration-300 group-hover:scale-110 bg-red-50"
                                         >
-                                            <item.icon className="w-7 h-7" style={{ color: item.color }} />
+                                            <item.icon className="w-7 h-7 text-red-600" />
                                         </div>
 
                                         {/* Content */}
-                                        <h4 className="font-bold text-lg text-slate-900 mb-2">{item.name}</h4>
-                                        <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                                        <h4 className="font-bold text-lg text-white mb-2">{item.name}</h4>
+                                        <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
 
                                         {/* Checkmark badge */}
                                         <div className="absolute top-4 right-4">
-                                            <CheckCircle2 size={20} className="text-green-500" />
+                                            <CheckCircle2 size={20} className="text-red-600" />
                                         </div>
 
                                         {/* Hover glow effect */}

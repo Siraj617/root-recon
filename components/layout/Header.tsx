@@ -262,7 +262,7 @@ export function Header() {
         {/* CTAs */}
         <div className="hidden lg:flex items-center gap-3">
           <Link href="/get-started">
-            <Button className="bg-primary hover:bg-red-700 text-white shadow-lg shadow-blue-600/20 px-6">
+            <Button className="bg-black hover:bg-zinc-800 text-white shadow-lg shadow-zinc-900/20 px-6">
               Get Quote
             </Button>
           </Link>

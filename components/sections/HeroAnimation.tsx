@@ -42,7 +42,7 @@ export function HeroAnimation({ items = services }: HeroAnimationProps) {
         <div className="relative">
           {/* Shield - No background */}
           <div className="relative w-40 h-48 flex items-center justify-center">
-            <Shield className="text-primary w-24 h-24" strokeWidth={1.5} />
+            <Shield className="text-red-600 w-24 h-24" strokeWidth={1.5} />
           </div>
         </div>
       </motion.div>
@@ -55,7 +55,7 @@ export function HeroAnimation({ items = services }: HeroAnimationProps) {
           style={{
             width: 280 + i * 100,
             height: 280 + i * 100,
-            borderColor: `rgba(59, 130, 246, ${0.3 - i * 0.08})`,
+            borderColor: `rgba(220, 38, 38, ${0.3 - i * 0.08})`,
           }}
           animate={{ rotate: i % 2 === 0 ? 360 : -360 }}
           transition={{
@@ -66,12 +66,12 @@ export function HeroAnimation({ items = services }: HeroAnimationProps) {
         >
           {/* Orbiting Dot 1 */}
           <div
-            className="absolute w-3 h-3 bg-primary rounded-full shadow-lg shadow-blue-500/50"
+            className="absolute w-3 h-3 bg-red-600 rounded-full shadow-lg shadow-red-600/50"
             style={{ top: "50%", left: 0, transform: "translate(-50%, -50%)" }}
           />
           {/* Orbiting Dot 2 - Opposite side */}
           <div
-            className="absolute w-3 h-3 bg-primary rounded-full shadow-lg shadow-blue-500/50"
+            className="absolute w-3 h-3 bg-red-600 rounded-full shadow-lg shadow-red-600/50"
             style={{ top: "50%", right: 0, transform: "translate(50%, -50%)" }}
           />
         </motion.div>
@@ -96,10 +96,10 @@ export function HeroAnimation({ items = services }: HeroAnimationProps) {
             }}
             className="flex items-center gap-3 px-4 py-3"
           >
-            <div className="w-10 h-10 rounded-xl flex items-center justify-center text-primary">
+            <div className="w-10 h-10 rounded-xl flex items-center justify-center text-red-600">
               <item.icon size={24} />
             </div>
-            <span className="font-bold text-primary text-sm">
+            <span className="font-bold text-red-600 text-sm">
               {item.label}
             </span>
           </motion.div>
@@ -108,7 +108,7 @@ export function HeroAnimation({ items = services }: HeroAnimationProps) {
 
       {/* Scanning Line */}
       <motion.div
-        className="absolute w-[500px] h-1 bg-gradient-to-r from-transparent via-blue-400/50 to-transparent rounded-full"
+        className="absolute w-[500px] h-1 bg-gradient-to-r from-transparent via-red-600/50 to-transparent rounded-full"
         animate={{ top: ["15%", "85%", "15%"] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
       />

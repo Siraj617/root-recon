@@ -8,37 +8,37 @@ const capabilities = [
         name: "Web Apps",
         desc: "Full-stack security testing for modern web applications",
         icon: Network,
-        color: "#8b5cf6",
+        color: "#dc2626",
     },
     {
         name: "API Security",
         desc: "REST, GraphQL and microservices vulnerability assessment",
         icon: Lock,
-        color: "#3b82f6",
+        color: "#dc2626",
     },
     {
         name: "Mobile Apps",
         desc: "iOS and Android application penetration testing",
         icon: Target,
-        color: "#06b6d4",
+        color: "#dc2626",
     },
     {
         name: "Cloud Security",
         desc: "AWS, Azure, GCP infrastructure security review",
         icon: Shield,
-        color: "#10b981",
+        color: "#dc2626",
     },
     {
         name: "Red Team",
         desc: "Adversary simulation and attack path validation",
         icon: Eye,
-        color: "#ef4444",
+        color: "#dc2626",
     },
     {
         name: "Code Review",
         desc: "Secure code analysis and vulnerability detection",
         icon: FileSearch,
-        color: "#ec4899",
+        color: "#dc2626",
     },
 ];
 
@@ -65,7 +65,7 @@ export function About() {
             <div className="container mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
-                    <span className="inline-block mb-4 px-4 py-1.5 bg-blue-100 text-blue-700 border border-blue-200 rounded-full text-sm font-medium">
+                    <span className="inline-block mb-4 px-4 py-1.5 bg-red-600 text-white border border-red-500 rounded-full text-sm font-medium">
                         Who We Are
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
@@ -75,7 +75,7 @@ export function About() {
                         RootRecon is an offensive security company delivering advanced penetration testing
                         and vulnerability assessment services. We simulate real-world attacks to protect your business.
                     </p>
-                    <button className="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-full shadow-lg group transition-all duration-300">
+                    <button className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow-lg group transition-all duration-300">
                         Explore Our Services
                         <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                     </button>
@@ -87,17 +87,7 @@ export function About() {
 
                         {/* Left Side - Circular Hub */}
                         <div className="relative flex-shrink-0">
-                            {/* Background Circle */}
-                            <div
-                                className="absolute rounded-full bg-gradient-to-br from-blue-50 via-violet-50 to-blue-50 opacity-50"
-                                style={{
-                                    width: `${radius * 1.6}px`,
-                                    height: `${radius * 1.6}px`,
-                                    top: '50%',
-                                    left: '50%',
-                                    transform: 'translate(-50%, -50%)',
-                                }}
-                            />
+                            {/* Background Circle Removed */}
 
                             {/* Container for circles and arrows */}
                             <div
@@ -126,7 +116,7 @@ export function About() {
                                                 orient="auto"
                                                 markerUnits="strokeWidth"
                                             >
-                                                <path d="M0,0 L0,8 L8,4 z" fill={capability.color} />
+                                                <path d="M0,0 L0,8 L8,4 z" fill="black" />
                                             </marker>
                                         ))}
                                     </defs>
@@ -145,7 +135,7 @@ export function About() {
                                                 y1={centerY + Math.sin(angleRad) * innerRadius}
                                                 x2={centerX + Math.cos(angleRad) * outerRadius}
                                                 y2={centerY + Math.sin(angleRad) * outerRadius}
-                                                stroke={capability.color}
+                                                stroke="black"
                                                 strokeWidth="2.5"
                                                 opacity="0.6"
                                                 markerEnd={`url(#arrow-hub-${index})`}
@@ -156,17 +146,17 @@ export function About() {
 
                                 {/* Center Hub */}
                                 <div
-                                    className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-blue-100"
+                                    className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-white"
                                     style={{
                                         top: '50%',
                                         left: '50%',
                                         transform: 'translate(-50%, -50%)',
                                     }}
                                 >
-                                    <h3 className="text-lg md:text-xl font-bold text-blue-600 tracking-tight text-center">
+                                    <h3 className="text-lg md:text-xl font-bold text-black tracking-tight text-center">
                                         RootRecon
                                     </h3>
-                                    <p className="text-[9px] md:text-[10px] text-slate-600 text-center mt-0.5">
+                                    <p className="text-[9px] md:text-[10px] text-black text-center mt-0.5">
                                         Offensive Security
                                     </p>
                                 </div>
@@ -229,7 +219,7 @@ export function About() {
                                                         refY="4"
                                                         orient="auto"
                                                     >
-                                                        <path d="M0,0 L0,8 L8,4 z" fill={capability.color} />
+                                                        <path d="M0,0 L0,8 L8,4 z" fill="black" />
                                                     </marker>
                                                 </defs>
                                                 <line
@@ -237,7 +227,7 @@ export function About() {
                                                     y1="10"
                                                     x2="30"
                                                     y2="10"
-                                                    stroke={capability.color}
+                                                    stroke="black"
                                                     strokeWidth="2"
                                                     markerEnd={`url(#card-arrow-${index})`}
                                                 />
@@ -270,17 +260,17 @@ export function About() {
                 </div>
 
                 {/* Features Section */}
-                <div className="bg-white border border-slate-200 rounded-2xl shadow-lg p-8 md:p-10">
+                <div className="bg-black border border-zinc-800 rounded-2xl shadow-lg p-8 md:p-10">
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-violet-100 flex items-center justify-center">
-                                    <Target className="w-6 h-6 text-violet-600" />
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
+                                    <Target className="w-6 h-6 text-red-600" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">Deep Insight</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">
+                                <h3 className="font-bold text-lg text-white mb-2">Deep Insight</h3>
+                                <p className="text-sm text-slate-400 leading-relaxed">
                                     Modern attackers do not follow checklists. They exploit logic gaps and chain vulnerabilities.
                                 </p>
                             </div>
@@ -288,13 +278,13 @@ export function About() {
 
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center">
-                                    <Eye className="w-6 h-6 text-blue-600" />
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
+                                    <Eye className="w-6 h-6 text-red-600" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">Zero Blind Spots</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">
+                                <h3 className="font-bold text-lg text-white mb-2">Zero Blind Spots</h3>
+                                <p className="text-sm text-slate-400 leading-relaxed">
                                     We focus on uncovering hidden attack paths missed by automated scanners.
                                 </p>
                             </div>
@@ -302,13 +292,13 @@ export function About() {
 
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center">
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
                                     <Zap className="w-6 h-6 text-red-600" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">Real Impact</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">
+                                <h3 className="font-bold text-lg text-white mb-2">Real Impact</h3>
+                                <p className="text-sm text-slate-400 leading-relaxed">
                                     Our assessments focus on exploitation and business impact, not just theoretical risks.
                                 </p>
                             </div>
@@ -316,13 +306,13 @@ export function About() {
 
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-green-100 flex items-center justify-center">
-                                    <Shield className="w-6 h-6 text-green-600" />
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
+                                    <Shield className="w-6 h-6 text-red-600" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">Proactive Defense</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">
+                                <h3 className="font-bold text-lg text-white mb-2">Proactive Defense</h3>
+                                <p className="text-sm text-slate-400 leading-relaxed">
                                     Identify and fix vulnerabilities before attackers can exploit them in production.
                                 </p>
                             </div>
@@ -330,13 +320,13 @@ export function About() {
 
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-amber-100 flex items-center justify-center">
-                                    <FileSearch className="w-6 h-6 text-amber-600" />
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
+                                    <FileSearch className="w-6 h-6 text-red-600" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">Actionable Reports</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">
+                                <h3 className="font-bold text-lg text-white mb-2">Actionable Reports</h3>
+                                <p className="text-sm text-slate-400 leading-relaxed">
                                     Clear remediation guidance with prioritized findings based on actual risk levels.
                                 </p>
                             </div>
@@ -344,20 +334,20 @@ export function About() {
 
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-cyan-100 flex items-center justify-center">
-                                    <Lock className="w-6 h-6 text-cyan-600" />
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
+                                    <Lock className="w-6 h-6 text-red-600" />
                                 </div>
                             </div>
                             <div>
-                                <h3 className="font-bold text-lg text-slate-900 mb-2">Continuous Security</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">
+                                <h3 className="font-bold text-lg text-white mb-2">Continuous Security</h3>
+                                <p className="text-sm text-slate-400 leading-relaxed">
                                     Ongoing testing and monitoring to maintain security as your application evolves.
                                 </p>
                             </div>
                         </div>
                     </div>
 
-                    <div className="mt-10 pt-8 border-t border-slate-200 text-center">
+                    <div className="mt-10 pt-8 border-t border-zinc-800 text-center">
                         <p className="text-slate-600 text-base">
                             Need a custom security assessment?{" "}
                             <a href="#contact" className="text-blue-600 hover:text-blue-700 font-semibold underline decoration-2 underline-offset-4 hover:underline-offset-2 transition-all">

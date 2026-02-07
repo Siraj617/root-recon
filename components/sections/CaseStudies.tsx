@@ -33,20 +33,20 @@ export function CaseStudies() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {cases.map((item, index) => (
-                        <Card key={index} className="group hover:shadow-md transition-all border-slate-200">
+                        <Card key={index} className="group hover:shadow-md transition-all bg-black border-zinc-800">
                             <CardContent className="p-8 flex flex-col h-full">
                                 <div className="mb-4">
-                                    <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-wide">
+                                    <span className="px-3 py-1 rounded-full bg-zinc-800 text-white text-xs font-bold uppercase tracking-wide">
                                         {item.tag}
                                     </span>
                                 </div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-4 group-hover:text-primary transition-colors">
+                                <h3 className="text-xl font-bold text-white mb-4 group-hover:text-red-600 transition-colors">
                                     {item.title}
                                 </h3>
-                                <p className="text-slate-600 mb-6 flex-1">
+                                <p className="text-slate-400 mb-6 flex-1">
                                     {item.summary}
                                 </p>
-                                <div className="flex items-center text-primary font-medium text-sm group-hover:translate-x-1 transition-transform cursor-pointer mt-auto">
+                                <div className="flex items-center text-red-600 font-medium text-sm group-hover:translate-x-1 transition-transform cursor-pointer mt-auto">
                                     Read Case Study <ArrowRight size={16} className="ml-1" />
                                 </div>
                             </CardContent>
