@@ -54,13 +54,13 @@ const menuData = {
         icon: Smartphone,
         desc: "iOS & Android testing",
       },
-      // {
-      //   name: "Cloud Security",
-      //   href: "/solutions/cloud-security",
-      //   icon: Cloud,
-      //   desc: "AWS, Azure & GCP",
-      // },
-      // { name: "Code Review", href: "/solutions/code-review", icon: Code, desc: "Secure code analysis" },
+      {
+        name: "Network Security",
+        href: "/solutions/cloud-security",
+        icon: Cloud,
+        desc: "AWS, Azure & GCP",
+      },
+      { name: "Code Review", href: "/solutions/code-review", icon: Code, desc: "Secure code analysis" },
     ],
   },
   //   solutions: {
