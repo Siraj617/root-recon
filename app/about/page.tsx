@@ -50,14 +50,14 @@ export default function AboutPage() {
             <Header />
 
             {/* Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+            <section className="pt-32 pb-20 bg-gradient-to-b from-red-50 to-white">
                 <div className="container px-4 mx-auto text-center">
-                    <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                    <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         About RootRecon
                     </span>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
                         Securing the Digital World <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-600">
                             One Vulnerability at a Time
                         </span>
                     </h1>
@@ -65,10 +65,10 @@ export default function AboutPage() {
                         We are a team of elite ethical hackers and security researchers dedicated to making the internet safer for everyone. With over 10,000 vulnerabilities discovered, we bring real-world offensive expertise to protect your digital assets.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="/get-started" className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-colors inline-flex items-center gap-2">
+                        <Link href="/get-started" className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors inline-flex items-center gap-2">
                             Get Started <ArrowRight size={18} />
                         </Link>
-                        <Link href="/solutions" className="px-8 py-4 bg-white border-2 border-slate-200 hover:border-blue-300 text-slate-800 font-bold rounded-xl transition-colors">
+                        <Link href="/solutions" className="px-8 py-4 bg-white border-2 border-slate-200 hover:border-red-300 text-slate-800 font-bold rounded-xl transition-colors">
                             Our Services
                         </Link>
                     </div>
@@ -80,11 +80,11 @@ export default function AboutPage() {
                 <div className="container px-4 mx-auto">
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                         {stats.map((stat, index) => (
-                            <div key={index} className="text-center p-6 rounded-2xl bg-slate-50 hover:bg-blue-50 transition-colors">
-                                <div className="w-12 h-12 mx-auto rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 mb-4">
+                            <div key={index} className="text-center p-6 rounded-2xl bg-slate-50 hover:bg-red-50 transition-colors">
+                                <div className="w-12 h-12 mx-auto rounded-xl bg-red-100 flex items-center justify-center text-red-600 mb-4">
                                     <stat.icon size={24} />
                                 </div>
-                                <div className="text-4xl md:text-5xl font-extrabold text-blue-600 mb-2">{stat.value}</div>
+                                <div className="text-4xl md:text-5xl font-extrabold text-red-600 mb-2">{stat.value}</div>
                                 <div className="text-slate-600 font-medium">{stat.label}</div>
                             </div>
                         ))}
@@ -102,7 +102,7 @@ export default function AboutPage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {whyChooseUs.map((item, index) => (
                             <div key={index} className="bg-white rounded-2xl p-8 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white mb-5">
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white mb-5">
                                     <item.icon size={28} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
@@ -114,10 +114,10 @@ export default function AboutPage() {
             </section>
 
             {/* Our Approach */}
-            <section className="py-24 bg-slate-900 text-white">
+            <section className="py-24 bg-black text-white">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-300 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-500/20 text-red-300 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Our Methodology
                         </span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">
@@ -129,9 +129,9 @@ export default function AboutPage() {
                     </div>
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {approach.map((item, index) => (
-                            <div key={index} className="bg-slate-800 rounded-2xl p-8 border border-slate-700 hover:border-blue-500 transition-colors">
-                                <div className="text-5xl font-extrabold text-blue-500/30 mb-4">{item.step}</div>
-                                <h3 className="text-xl font-bold mb-3">{item.title}</h3>
+                            <div key={index} className="bg-slate-800 rounded-2xl p-8 border border-red-700 hover:border-red-500 transition-colors">
+                                <div className="text-5xl font-extrabold text-red-500 mb-4">{item.step}</div>
+                                <h3 className="text-xl font-bold mb-3 text-white">{item.title}</h3>
                                 <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
@@ -140,11 +140,11 @@ export default function AboutPage() {
             </section>
 
             {/* Our Story */}
-            <section className="py-24 bg-slate-50">
+            <section className="py-24 bg-slate-50" data-theme="light">
                 <div className="container px-4 mx-auto">
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                                 Our Story
                             </span>
                             <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
@@ -162,13 +162,13 @@ export default function AboutPage() {
                             <div className="grid grid-cols-2 gap-4 mt-8">
                                 {achievements.map((item, index) => (
                                     <div key={index} className="bg-white rounded-xl p-4 border border-slate-200">
-                                        <div className="text-2xl font-extrabold text-blue-600">{item.number}</div>
+                                        <div className="text-2xl font-extrabold text-red-600">{item.number}</div>
                                         <div className="text-sm text-slate-600">{item.label}</div>
                                     </div>
                                 ))}
                             </div>
                         </div>
-                        <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-12 text-white">
+                        <div className="bg-gradient-to-br from-red-600 to-red-700 rounded-3xl p-12 text-white">
                             <h3 className="text-2xl font-bold mb-6">Our Mission</h3>
                             <p className="text-xl text-white/90 leading-relaxed mb-8">
                                 "To make the internet safer by helping organizations identify and fix security vulnerabilities before malicious actors can exploit them. We believe security should be accessible to all businesses, not just enterprises."
@@ -177,7 +177,7 @@ export default function AboutPage() {
                             <div className="grid grid-cols-2 gap-3">
                                 {certifications.map((cert, i) => (
                                     <div key={i} className="flex items-center gap-2">
-                                        <CheckCircle2 size={18} className="text-blue-200" />
+                                        <CheckCircle2 size={18} className="text-red-200" />
                                         <span className="text-sm font-medium">{cert}</span>
                                     </div>
                                 ))}
@@ -193,8 +193,8 @@ export default function AboutPage() {
                     <SectionHeading title="Our Core Values" subtitle="The principles that guide everything we do and how we serve our clients." />
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {values.map((item, index) => (
-                            <div key={index} className="text-center p-8 rounded-2xl bg-slate-50 hover:bg-blue-50 transition-colors">
-                                <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white mb-6">
+                            <div key={index} className="text-center p-8 rounded-2xl bg-slate-50 hover:bg-red-50 transition-colors">
+                                <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white mb-6">
                                     <item.icon size={32} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
@@ -209,14 +209,14 @@ export default function AboutPage() {
 
 
             {/* CTA */}
-            <section className="py-24 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+            <section className="py-24 bg-gradient-to-r from-red-600 to-red-700 text-white">
                 <div className="container px-4 mx-auto text-center">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">Ready to Secure Your Business?</h2>
                     <p className="text-xl text-white/80 mb-8 max-w-2xl mx-auto">
                         Join hundreds of companies that trust RootRecon to protect their digital assets. Get a free consultation today.
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <Link href="/get-started" className="inline-flex items-center px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 font-bold rounded-xl transition-colors gap-2">
+                        <Link href="/get-started" className="inline-flex items-center px-8 py-4 bg-white text-red-600 hover:bg-red-50 font-bold rounded-xl transition-colors gap-2">
                             Get Started Today <ArrowRight size={18} />
                         </Link>
                         <Link href="/solutions" className="inline-flex items-center px-8 py-4 border-2 border-white/30 hover:border-white text-white font-bold rounded-xl transition-colors">

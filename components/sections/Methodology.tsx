@@ -46,7 +46,7 @@ const compliance = [
 
 export function Methodology() {
     return (
-        <section id="methodology" className="py-24 bg-white overflow-hidden">
+        <section data-theme="light" id="methodology" className="py-24 bg-white overflow-hidden">
             <div className="container px-4 mx-auto">
                 <SectionHeading
                     title="Our Methodology"

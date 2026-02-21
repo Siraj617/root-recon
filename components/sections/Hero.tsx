@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 bg-black">
+        <section data-theme="dark" className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 bg-black">
             {/* Premium Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-red-900/20 rounded-full blur-[120px] mix-blend-screen" />

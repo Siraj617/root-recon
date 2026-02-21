@@ -171,16 +171,16 @@ export default function WebSecurityPage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white">
+            <section className="pt-32 pb-20 bg-black" data-theme="dark">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white border border-red-500 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Web Application Security
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
                             Secure Your Web Apps <span className="text-red-600">Before Deployment</span>
                         </h1>
-                        <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
+                        <p className="text-xl text-white mb-10 leading-relaxed max-w-3xl mx-auto">
                             Go beyond automated scanning with deep-dive manual penetration testing. We uncover complex logic flaws, chain critical vulnerabilities, and provide actionable remediation to secure your application against sophisticated real-world attacks.
                             Our certified experts simulate advanced cyber threats to identify weak points in your defense, ensuring robust protection for customer data and compliance with global security standards.
                         </p>
@@ -203,7 +203,7 @@ export default function WebSecurityPage() {
 
 
             {/* Security Research - Stats Cards */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-white" data-theme="light">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
@@ -580,37 +580,37 @@ export default function WebSecurityPage() {
             </section>
 
             {/* Testimonials */}
-            <section className="py-24 bg-slate-50">
+            <section className="py-24 bg-black" data-theme="dark">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Testimonials
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white">
                             What Our Clients Say
                         </h2>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} className="bg-black rounded-2xl p-8 border border-zinc-800">
+                            <div key={index} className="bg-white rounded-2xl p-8 border border-zinc-800">
                                 <div className="flex items-center gap-1 mb-4">
                                     {[...Array(5)].map((_, i) => (
                                         <Star key={i} size={16} className="text-red-600 fill-red-600" />
                                     ))}
                                 </div>
                                 <div className="mb-4">
-                                    <span className="text-xs font-bold text-red-400 border border-red-900/30 bg-red-900/10 px-2 py-1 rounded">
+                                    <span className="text-xs font-bold text-red-400 border border-red-900/30 bg-red-100 px-2 py-1 rounded">
                                         Service: {testimonial.service}
                                     </span>
                                 </div>
-                                <p className="text-stone-300 mb-6 leading-relaxed">"{testimonial.quote}"</p>
+                                <p className="text-black mb-6 leading-relaxed">"{testimonial.quote}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center text-red-600 font-bold border border-red-900/30">
+                                    <div className="w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-red-600 font-bold border border-red-900/30">
                                         {testimonial.name.charAt(0)}
                                     </div>
                                     <div>
-                                        <div className="font-bold text-white">{testimonial.name}</div>
+                                        <div className="font-bold text-black">{testimonial.name}</div>
                                         <div className="text-sm text-stone-400">{testimonial.role} @{testimonial.company}</div>
                                     </div>
                                 </div>
@@ -621,7 +621,7 @@ export default function WebSecurityPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-white" data-theme="light">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
