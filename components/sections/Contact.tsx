@@ -14,7 +14,7 @@ const footerLinks = {
             // { name: "Red Teaming", href: "/solutions" },
             { name: "IOS & Android Security", href: "/solutions" },
             { name: "API Security", href: "/solutions" },
-            // { name: "Cloud Security", href: "/solutions" },
+            { name: "Network Security", href: "/solutions" },
             // { name: "Secure Code Review", href: "/solutions" },
         ],
     },
