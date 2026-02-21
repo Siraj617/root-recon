@@ -20,7 +20,7 @@ const companies = [
 
 export function Research() {
     return (
-        <section className="py-16 bg-white border-y border-slate-200 overflow-hidden">
+        <section  data-theme= "light" className="py-16 bg-white border-y border-slate-200 overflow-hidden">
             <div className="w-full mx-auto">
                 <p className="text-center text-slate-500 mb-12 text-sm font-semibold uppercase tracking-widest">
                     Trusted by Security Teams at

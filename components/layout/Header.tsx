@@ -49,17 +49,17 @@ const menuData = {
         desc: "REST, GraphQL & gRPC",
       },
       {
-        name: "Mobile Security",
+        name: "IOS & Android security",
         href: "/solutions/mobile-security",
         icon: Smartphone,
         desc: "iOS & Android testing",
       },
-      {
-        name: "Cloud Security",
-        href: "/solutions/cloud-security",
-        icon: Cloud,
-        desc: "AWS, Azure & GCP",
-      },
+      // {
+      //   name: "Cloud Security",
+      //   href: "/solutions/cloud-security",
+      //   icon: Cloud,
+      //   desc: "AWS, Azure & GCP",
+      // },
       // { name: "Code Review", href: "/solutions/code-review", icon: Code, desc: "Secure code analysis" },
     ],
   },
@@ -130,12 +130,12 @@ const menuData = {
         icon: Info,
         desc: "Our story & mission",
       },
-      {
-        name: "Customers",
-        href: "/customers",
-        icon: Users,
-        desc: "Who trusts us",
-      },
+      // {
+      //   name: "Customers",
+      //   href: "/customers",
+      //   icon: Users,
+      //   desc: "Who trusts us",
+      // },
 
       {
         name: "Contact",
@@ -162,7 +162,7 @@ function MegaMenuDropdown({
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 10 }}
           transition={{ duration: 0.2 }}
-          className="absolute top-full left-0 mt-2 w-80 bg-white border border-slate-200 shadow-2xl rounded-2xl overflow-hidden"
+          className="absolute top-full left-0 mt-2 w-80 bg-white border  shadow-2xl rounded-2xl overflow-hidden"
         >
           <div className="p-4">
             {data.items.map((item, index) => (
@@ -194,6 +194,35 @@ export function Header() {
   const [scrolled, setScrolled] = React.useState(false);
   const [activeMenu, setActiveMenu] = React.useState<string | null>(null);
 
+  const [theme, setTheme] = React.useState<"dark" | "light">("dark");
+
+  React.useEffect(() => {
+    const sections = document.querySelectorAll("section[data-theme]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const newTheme = entry.target.getAttribute("data-theme");
+            if (newTheme === "dark" || newTheme === "light") {
+              setTheme(newTheme);
+            }
+          }
+        });
+      },
+      {
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => observer.disconnect();
+  }, []);
+
+  const isDark = theme === "dark";
+
   React.useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -205,22 +234,25 @@ export function Header() {
   const menuKeys = Object.keys(menuData) as (keyof typeof menuData)[];
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/95 backdrop-blur-md border-b border-slate-100",
-        scrolled ? "py-2 shadow-sm" : "py-4",
-      )}
-    >
+  <header
+  className={cn(
+    "fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md",
+    scrolled ? "py-2 shadow-sm" : "py-4",
+    isDark
+      ? "bg-[#0b0b0b] text-white"
+      : "bg-white text-black"
+  )}
+>
       <div className="container mx-auto px-4 flex items-center justify-between">
         {/* Larger Logo */}
         <Link href="/" className="flex items-center gap-2">
           <div className="relative w-56 h-14">
             <Image
-              src="/logo.png"
-              alt="RootRecon Logo"
-              width={170}
-              height={100}
-              className="object-contain object-left"
+              src={isDark ? "/logo-white.png" : "/logo-black.png"}
+              alt="Logo"
+              width={160}
+              height={50}
+              className="object-contain transition-all duration-300"
               priority
             />
           </div>
@@ -235,7 +267,15 @@ export function Header() {
               onMouseEnter={() => setActiveMenu(key)}
               onMouseLeave={() => setActiveMenu(null)}
             >
-              <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-700 hover:text-red-600 transition-colors rounded-lg hover:bg-slate-50">
+              <button
+                className={cn(
+                  "flex items-center gap-1 px-4 py-2 text-sm font-medium rounded-lg transition-all",
+                  isDark
+                    ? "text-white hover:text-[#FF5C5C]"
+                    : "text-black hover:text-[#FF5C5C]",
+                )}
+              >
+                {" "}
                 {menuData[key].title}
                 <ChevronDown
                   size={14}
@@ -262,7 +302,7 @@ export function Header() {
         {/* CTAs */}
         <div className="hidden lg:flex items-center gap-3">
           <Link href="/get-started">
-            <Button className="bg-black hover:bg-zinc-800 text-white shadow-lg shadow-zinc-900/20 px-6">
+            <Button className="bg-red-600 hover:bg-red-700 text-white shadow-lg shadow-zinc-900/20 px-6">
               Get Quote
             </Button>
           </Link>

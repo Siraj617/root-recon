@@ -37,7 +37,7 @@ const services = [
         features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
     },
     {
-        title: "Mobile Security",
+        title: "IOS & Android security",
         slug: "mobile-security",
         icon: Smartphone,
         desc: "Android and iOS application testing including reverse engineering, runtime analysis, and backend API security.",

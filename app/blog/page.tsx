@@ -57,14 +57,14 @@ export default function BlogPage() {
             <Header />
 
             {/* Hero */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white">
+            <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white" data-theme="light">
                 <div className="container px-4 mx-auto text-center">
-                    <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                    <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         Security Research
                     </span>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
                         Insights from the <br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-600">
                             Security Frontlines
                         </span>
                     </h1>
@@ -86,15 +86,15 @@ export default function BlogPage() {
                                 </div>
                                 <div className="p-6">
                                     <div className="flex items-center gap-4 text-xs text-slate-500 mb-3">
-                                        <span className="px-2 py-1 bg-blue-50 text-blue-700 rounded-md font-medium">{post.category}</span>
+                                        <span className="px-2 py-1 bg-red-50 text-red-700 rounded-md font-medium">{post.category}</span>
                                         <span className="flex items-center gap-1"><Calendar size={12} /> {post.date}</span>
                                         <span className="flex items-center gap-1"><Clock size={12} /> {post.readTime}</span>
                                     </div>
-                                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-red-600 transition-colors">
                                         {post.title}
                                     </h2>
                                     <p className="text-slate-600 mb-4 line-clamp-2">{post.excerpt}</p>
-                                    <Link href="#" className="inline-flex items-center text-blue-600 font-semibold text-sm hover:gap-2 transition-all">
+                                    <Link href="#" className="inline-flex items-center text-red-600 font-semibold text-sm hover:gap-2 transition-all">
                                         Read More <ArrowRight size={14} className="ml-1" />
                                     </Link>
                                 </div>

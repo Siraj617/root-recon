@@ -64,11 +64,11 @@ const whyChooseFeatures = [
 ];
 
 const processSteps = [
-    { icon: Search, title: "Static Analysis", desc: "Decompile & review code", color: "#8b5cf6" },
-    { icon: Smartphone, title: "Dynamic Analysis", desc: "Runtime manipulation", color: "#a855f7" },
-    { icon: Network, title: "Network Traffic", desc: "Intercept API calls", color: "#d946ef" },
-    { icon: Database, title: "Storage Review", desc: "Check local data", color: "#ec4899" },
-    { icon: FileText, title: "Reporting", desc: "Fix recommendations", color: "#f43f5e" },
+    { icon: Search, title: "Static Analysis", desc: "Decompile & review code", color: "#dc2626" },
+    { icon: Smartphone, title: "Dynamic Analysis", desc: "Runtime manipulation", color: "#dc2626" },
+    { icon: Network, title: "Network Traffic", desc: "Intercept API calls", color: "#dc2626" },
+    { icon: Database, title: "Storage Review", desc: "Check local data", color: "#dc2626" },
+    { icon: FileText, title: "Reporting", desc: "Fix recommendations", color: "#dc2626" },
 ];
 
 import { Network } from "lucide-react";
@@ -102,7 +102,7 @@ const testimonials = [
         name: "Michael Ross",
         role: "Product Manager",
         company: "E-Com Startup",
-        service: "Mobile Security",
+        service: "IOS & Android security",
     },
 ];
 
@@ -157,21 +157,21 @@ export default function MobileSecurityPage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-purple-50 to-white">
+            <section className="pt-32 pb-20 bg-gradient-to-b from-red-50 to-white">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Mobile Application Security
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                            Secure Your Mobile Apps <span className="text-purple-600">Inside & Out</span>
+                            Secure Your Mobile Apps <span className="text-red-600">Inside & Out</span>
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
                             We reverse engineer your iOS and Android apps to find vulnerabilities in storage, communication, and logic that scanners miss.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link href="/get-started">
-                                <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg shadow-purple-600/20">
+                                <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg shadow-red-600/20">
                                     Secure Your App <ArrowRight size={18} className="ml-2" />
                                 </Button>
                             </Link>
@@ -202,13 +202,13 @@ export default function MobileSecurityPage() {
             </section>
 
             {/* Security Research - Stats Cards */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-black" data-theme="dark">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Proven Expertise
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
                             We Know Mobile Security
                         </h2>
                     </div>
@@ -216,10 +216,10 @@ export default function MobileSecurityPage() {
                     <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                         {caseStudies.map((study, index) => (
                             <div key={index} className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition-all">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center text-white mb-6">
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white mb-6">
                                     <study.icon size={28} />
                                 </div>
-                                <div className="text-4xl font-extrabold text-purple-600 mb-2">{study.stat}</div>
+                                <div className="text-4xl font-extrabold text-red-600 mb-2">{study.stat}</div>
                                 <div className="text-lg font-bold text-slate-900 mb-3">{study.label}</div>
                                 <p className="text-slate-600 text-sm leading-relaxed">{study.desc}</p>
                             </div>
@@ -232,11 +232,11 @@ export default function MobileSecurityPage() {
             <section className="py-24 bg-slate-50 overflow-hidden">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Why RootRecon
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Choose Us for <span className="text-purple-600">Mobile Security</span>?
+                            Why Choose Us for <span className="text-red-600">Mobile Security</span>?
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                             We use advanced techniques like runtime hooking and binary analysis to find deep flaws.
@@ -249,7 +249,7 @@ export default function MobileSecurityPage() {
                         <div className="absolute top-16 left-[10%] right-[10%] h-1 z-0">
                             <div className="absolute inset-0 bg-slate-200 rounded-full" />
                             <motion.div
-                                className="absolute inset-y-0 left-0 bg-gradient-to-r from-purple-500 to-violet-600 rounded-full"
+                                className="absolute inset-y-0 left-0 bg-gradient-to-r from-red-500 to-red-600 rounded-full"
                                 initial={{ width: "0%" }}
                                 whileInView={{ width: "100%" }}
                                 viewport={{ once: true }}
@@ -272,10 +272,10 @@ export default function MobileSecurityPage() {
                                             delay: index * 0.2
                                         }}
                                     >
-                                        <div className="w-16 h-16 rounded-full bg-white border-4 border-purple-500 flex items-center justify-center shadow-lg">
-                                            <feature.icon className="w-7 h-7 text-purple-600" />
+                                        <div className="w-16 h-16 rounded-full bg-white border-4 border-red-500 flex items-center justify-center shadow-lg">
+                                            <feature.icon className="w-7 h-7 text-red-600" />
                                         </div>
-                                        <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-purple-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
+                                        <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
                                             {index + 1}
                                         </div>
                                     </motion.div>
@@ -299,7 +299,7 @@ export default function MobileSecurityPage() {
                     <div className="lg:hidden relative max-w-md mx-auto">
                         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
                             <motion.div
-                                className="absolute top-0 left-0 right-0 bg-gradient-to-b from-purple-500 to-violet-600"
+                                className="absolute top-0 left-0 right-0 bg-gradient-to-b from-red-500 to-violet-600"
                                 initial={{ height: "0%" }}
                                 whileInView={{ height: "100%" }}
                                 viewport={{ once: true }}
@@ -317,8 +317,8 @@ export default function MobileSecurityPage() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.15 }}
                                 >
-                                    <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-purple-500 flex items-center justify-center shadow-lg">
-                                        <feature.icon className="w-5 h-5 text-purple-600" />
+                                    <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center shadow-lg">
+                                        <feature.icon className="w-5 h-5 text-red-600" />
                                     </div>
                                     <div className="bg-white rounded-xl p-4 flex-1 shadow-sm border border-slate-100">
                                         <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
@@ -335,11 +335,11 @@ export default function MobileSecurityPage() {
             <section className="py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Our Methodology
                         </span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">
-                            How We <span className="text-purple-600">Test</span> Your App
+                            How We <span className="text-red-600">Test</span> Your App
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                             A comprehensive approach covering static, dynamic, and network analysis.
@@ -354,7 +354,7 @@ export default function MobileSecurityPage() {
                             <div className="relative flex-shrink-0">
                                 {/* Background Circle */}
                                 <div
-                                    className="absolute rounded-full bg-gradient-to-br from-purple-50 via-violet-50 to-purple-50 opacity-50"
+                                    className="absolute rounded-full bg-gradient-to-br from-red-50 via-violet-50 to-red-50 opacity-50"
                                     style={{
                                         width: `${radius * 1.6}px`,
                                         height: `${radius * 1.6}px`,
@@ -416,14 +416,14 @@ export default function MobileSecurityPage() {
 
                                     {/* Center Hub */}
                                     <div
-                                        className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-purple-100"
+                                        className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-red-100"
                                         style={{
                                             top: '50%',
                                             left: '50%',
                                             transform: 'translate(-50%, -50%)',
                                         }}
                                     >
-                                        <h3 className="text-lg md:text-xl font-bold text-purple-600 tracking-tight text-center">
+                                        <h3 className="text-lg md:text-xl font-bold text-red-600 tracking-tight text-center">
                                             RootRecon
                                         </h3>
                                         <p className="text-[9px] md:text-[10px] text-slate-600 text-center mt-0.5">
@@ -565,20 +565,20 @@ export default function MobileSecurityPage() {
                 <div className="container px-4 mx-auto">
                     <div className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 rounded-3xl p-12 relative overflow-hidden">
                         <div className="absolute inset-0 opacity-20">
-                            <div className="absolute top-0 right-0 w-80 h-80 bg-purple-500 rounded-full blur-3xl" />
+                            <div className="absolute top-0 right-0 w-80 h-80 bg-red-500 rounded-full blur-3xl" />
                             <div className="absolute bottom-0 left-0 w-60 h-60 bg-violet-500 rounded-full blur-3xl" />
                         </div>
 
                         <div className="relative z-10 text-center max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-                                Ready to Secure Your <span className="text-purple-400">Mobile App</span>?
+                                Ready to Secure Your <span className="text-red-400">Mobile App</span>?
                             </h2>
                             <p className="text-slate-300 text-lg mb-8">
                                 Don't launch with vulnerabilities. Get a comprehensive mobile security assessment.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/get-started">
-                                    <Button className="bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 font-bold rounded-xl">
+                                    <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 font-bold rounded-xl">
                                         Get Mobile Quote <ArrowRight size={16} className="ml-2" />
                                     </Button>
                                 </Link>
@@ -600,7 +600,7 @@ export default function MobileSecurityPage() {
                         Coverage
                     </span>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                        We Secure All <span className="text-purple-600">Mobile Platforms</span>
+                        We Secure All <span className="text-red-600">Mobile Platforms</span>
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
                         Native iOS/Android or Hybrid frameworks - we test them all.
@@ -608,8 +608,8 @@ export default function MobileSecurityPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {servicesOffered.map((service, index) => (
-                            <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:bg-purple-50 hover:shadow-lg transition-all text-left group cursor-pointer">
-                                <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 mb-5 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                            <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:bg-red-50 hover:shadow-lg transition-all text-left group cursor-pointer">
+                                <div className="w-14 h-14 rounded-xl bg-red-100 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-colors">
                                     <service.icon size={28} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
@@ -621,13 +621,13 @@ export default function MobileSecurityPage() {
             </section>
 
             {/* Testimonials */}
-            <section className="py-24 bg-slate-50">
+            <section className="py-24 bg-black">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Testimonials
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-white">
                             What Our Clients Say
                         </h2>
                     </div>
@@ -641,13 +641,13 @@ export default function MobileSecurityPage() {
                                     ))}
                                 </div>
                                 <div className="mb-4">
-                                    <span className="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-1 rounded">
+                                    <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-1 rounded">
                                         Service: {testimonial.service}
                                     </span>
                                 </div>
                                 <p className="text-slate-700 mb-6 leading-relaxed">"{testimonial.quote}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-violet-600 flex items-center justify-center text-white font-bold">
+                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center text-white font-bold">
                                         {testimonial.name.charAt(0)}
                                     </div>
                                     <div>
@@ -662,10 +662,10 @@ export default function MobileSecurityPage() {
             </section>
 
             {/* FAQs */}
-            <section className="py-24 bg-white">
+            <section className="py-24 bg-white" data-theme="light">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-purple-100 text-purple-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             FAQs
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">

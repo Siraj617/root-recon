@@ -10,38 +10,38 @@ const footerLinks = {
     services: {
         title: "Services",
         links: [
-            { name: "Penetration Testing", href: "/solutions" },
-            { name: "Red Teaming", href: "/solutions" },
-            { name: "Mobile App Security", href: "/solutions" },
+            { name: "Web App Testing", href: "/solutions" },
+            // { name: "Red Teaming", href: "/solutions" },
+            { name: "IOS & Android Security", href: "/solutions" },
             { name: "API Security", href: "/solutions" },
-            { name: "Cloud Security", href: "/solutions" },
-            { name: "Secure Code Review", href: "/solutions" },
+            // { name: "Cloud Security", href: "/solutions" },
+            // { name: "Secure Code Review", href: "/solutions" },
         ],
     },
-    solutions: {
-        title: "Solutions",
-        links: [
-            { name: "Fintech Security", href: "/solutions" },
-            { name: "AI/ML Security", href: "/solutions" },
-            { name: "SaaS Security", href: "/solutions" },
-            { name: "Healthcare Security", href: "/solutions" },
-        ],
-    },
+    // solutions: {
+    //     title: "Solutions",
+    //     links: [
+    //         { name: "Fintech Security", href: "/solutions" },
+    //         { name: "AI/ML Security", href: "/solutions" },
+    //         { name: "SaaS Security", href: "/solutions" },
+    //         { name: "Healthcare Security", href: "/solutions" },
+    //     ],
+    // },
     resources: {
         title: "Resources",
         links: [
             { name: "Blog", href: "/blog" },
-            { name: "Case Studies", href: "/customers" },
-            { name: "Buyer's Guide", href: "/blog" },
-            { name: "Documentation", href: "/blog" },
+            // { name: "Case Studies", href: "/customers" },
+            // { name: "Buyer's Guide", href: "/blog" },
+            // { name: "Documentation", href: "/blog" },
         ],
     },
     company: {
         title: "Company",
         links: [
             { name: "About Us", href: "/about" },
-            { name: "Customers", href: "/customers" },
-            { name: "Pricing", href: "/pricing" },
+            // { name: "Customers", href: "/customers" },
+            // { name: "Pricing", href: "/pricing" },
             { name: "Contact", href: "/contact" },
         ],
     },

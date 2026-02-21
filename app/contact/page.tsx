@@ -14,7 +14,7 @@ export default function ContactPage() {
 
             <div className="pt-32 pb-20 container px-4 mx-auto">
                 <div className="text-center mb-16">
-                    <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">Get in Touch</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold text-red mb-6">Get in Touch</h1>
                     <p className="text-xl text-slate-600">Have a security concern? Let's talk.</p>
                 </div>
 
@@ -45,7 +45,7 @@ export default function ContactPage() {
                                 <label className="text-sm font-medium text-slate-700">Message</label>
                                 <Textarea placeholder="Tell us about your project..." className="min-h-[150px]" />
                             </div>
-                            <Button className="w-full bg-primary text-white">Send Message</Button>
+                            <Button className="w-full bg-black text-white">Send Message</Button>
                         </form>
                     </div>
 
@@ -54,7 +54,7 @@ export default function ContactPage() {
                         {/* Info Cards */}
                         <div className="grid gap-6">
                             <div className="flex items-start gap-4 p-6 bg-slate-50 rounded-xl">
-                                <Mail className="text-primary mt-1" />
+                                <Mail className="text-   mt-1" />
                                 <div>
                                     <h3 className="font-bold text-slate-900">Email Us</h3>
                                     <p className="text-slate-600">security@rootrecon.com</p>

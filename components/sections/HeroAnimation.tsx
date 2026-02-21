@@ -20,7 +20,7 @@ const services = [
   { icon: Shield, label: "Penetration Testing", x: 220, y: -100 },
   { icon: Server, label: "API Security", x: -220, y: 100 },
   { icon: Cloud, label: "Cloud Security", x: 220, y: 100 },
-  { icon: Smartphone, label: "Mobile Security", x: 0, y: -180 },
+  { icon: Smartphone, label: "IOS & Android security", x: 0, y: -180 },
   { icon: FileSearch, label: "Code Review", x: -120, y: 180 },
   { icon: Code, label: "Code Review", x: -300, y: 0 },
 ];
