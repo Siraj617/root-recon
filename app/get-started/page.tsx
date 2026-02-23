@@ -17,7 +17,7 @@ export default function GetStartedPage() {
                     <div className="grid lg:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
                         {/* Left */}
                         <div>
-                            <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-4 inline-block">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-4 inline-block">
                                 Get Started
                             </span>
                             <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4 tracking-tight">
@@ -35,7 +35,7 @@ export default function GetStartedPage() {
                                     { icon: Clock, text: "Fast turnaround" },
                                 ].map((item, i) => (
                                     <div key={i} className="flex items-center gap-3">
-                                        <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+                                        <div className="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center text-red-600">
                                             <item.icon size={20} />
                                         </div>
                                         <span className="font-medium text-slate-700">{item.text}</span>
@@ -72,7 +72,7 @@ export default function GetStartedPage() {
                                     <label className="text-xs font-medium text-slate-700 block mb-1">Message</label>
                                     <Textarea placeholder="Tell us about your security needs..." className="min-h-[80px]" />
                                 </div>
-                                <Button className="w-full h-11 bg-blue-600 hover:bg-blue-700 text-white">
+                                <Button className="w-full h-11 bg-red-600 hover:bg-red-700 text-white">
                                     Schedule Consultation
                                 </Button>
                                 <p className="text-xs text-center text-slate-400">
