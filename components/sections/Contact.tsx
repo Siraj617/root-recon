@@ -58,7 +58,7 @@ export function Contact() {
                         <Link href="/" className="flex items-center gap-2 mb-6">
                             <div className="relative w-48 h-12 brightness-0 invert">
                                 <Image
-                                    src="/logo.png"
+                                    src="/logo-whiteblue.png"
                                     alt="RootRecon Logo"
                                     fill
                                     className="object-contain object-left"
