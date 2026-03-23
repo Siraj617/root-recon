@@ -116,7 +116,7 @@ export function About() {
                                                 orient="auto"
                                                 markerUnits="strokeWidth"
                                             >
-                                                <path d="M0,0 L0,8 L8,4 z" fill="black" />
+                                                <path d="M0,0 L0,8 L8,4 z" fill="#94a3b8" />
                                             </marker>
                                         ))}
                                     </defs>
@@ -135,7 +135,7 @@ export function About() {
                                                 y1={centerY + Math.sin(angleRad) * innerRadius}
                                                 x2={centerX + Math.cos(angleRad) * outerRadius}
                                                 y2={centerY + Math.sin(angleRad) * outerRadius}
-                                                stroke="black"
+                                                stroke="#94a3b8"
                                                 strokeWidth="2.5"
                                                 opacity="0.6"
                                                 markerEnd={`url(#arrow-hub-${index})`}
@@ -153,10 +153,10 @@ export function About() {
                                         transform: 'translate(-50%, -50%)',
                                     }}
                                 >
-                                    <h3 className="text-lg md:text-xl font-bold text-black tracking-tight text-center">
+                                    <h3 className="text-lg md:text-xl font-bold text-slate-700 tracking-tight text-center">
                                         RootRecon
                                     </h3>
-                                    <p className="text-[9px] md:text-[10px] text-black text-center mt-0.5">
+                                    <p className="text-[9px] md:text-[10px] text-slate-700 text-center mt-0.5">
                                         Offensive Security
                                     </p>
                                 </div>
@@ -219,7 +219,7 @@ export function About() {
                                                         refY="4"
                                                         orient="auto"
                                                     >
-                                                        <path d="M0,0 L0,8 L8,4 z" fill="black" />
+                                                        <path d="M0,0 L0,8 L8,4 z" fill="#94a3b8" />
                                                     </marker>
                                                 </defs>
                                                 <line
@@ -227,7 +227,7 @@ export function About() {
                                                     y1="10"
                                                     x2="30"
                                                     y2="10"
-                                                    stroke="black"
+                                                    stroke="#94a3b8"
                                                     strokeWidth="2"
                                                     markerEnd={`url(#card-arrow-${index})`}
                                                 />
@@ -260,7 +260,7 @@ export function About() {
                 </div>
 
                 {/* Features Section */}
-                <div className="bg-black border border-zinc-800 rounded-2xl shadow-lg p-8 md:p-10">
+                <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-lg p-8 md:p-10">
                     <div className="grid md:grid-cols-3 gap-8">
                         <div className="flex items-start space-x-4">
                             <div className="flex-shrink-0">
@@ -347,7 +347,7 @@ export function About() {
                         </div>
                     </div>
 
-                    <div className="mt-10 pt-8 border-t border-zinc-800 text-center">
+                    <div className="mt-10 pt-8 border-t border-slate-700 text-center">
                         <p className="text-slate-600 text-base">
                             Need a custom security assessment?{" "}
                             <a href="#contact" className="text-blue-600 hover:text-blue-700 font-semibold underline decoration-2 underline-offset-4 hover:underline-offset-2 transition-all">

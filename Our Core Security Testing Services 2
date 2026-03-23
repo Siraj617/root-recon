@@ -1,0 +1,131 @@
+Our Core Security Testing Services
+
+	Built by Hackers. Trusted by Businesses.
+
+	At Root Recon, our penetration testing is manual, in-depth, and impact-focused.
+	We don’t just find vulnerabilities we exploit them like real attackers and show you exactly what’s at risk.
+
+
+1.Web Application Penetration Testing 
+
+	Expose what attackers can really do to your web app
+
+		Modern web applications are complex and that complexity creates hidden attack paths.
+		Root Recon performs deep manual Web Application Penetration Testing to uncover vulnerabilities that automated tools completely miss.	
+		
+	What We Test
+	  - Authentication & session management flaws
+	  - Authorization & privilege escalation issues
+	  - Business logic abuse & workflow bypass
+	  - Input validation, injection & XSS attacks
+	  - File upload & deserialization vulnerabilities
+	  - Account takeover scenarios
+	  - Chained attacks leading to full compromise	
+
+	How We Do It
+
+	We analyze your application end-to-end, including:
+	  - User roles & permission boundaries
+	  - Application workflows & edge cases
+	  - Critical data paths & sensitive functions
+
+	Every finding is validated with real exploitation, not assumptions.  
+
+	What You Get
+	  - High-impact, real-world vulnerabilities
+	  - Clear proof-of-concept (PoC)
+	  - Developer-friendly remediation steps
+	  - Business risk explained in simple terms
+	  - Result: A hardened web application attackers can’t easily break.
+
+2.Android Application Penetration Testing
+
+	Secure your mobile app against reverse engineering & runtime attacks
+
+	Mobile apps are prime targets for attackers looking to steal data, abuse APIs, or bypass security controls.
+	Root Recon delivers deep Android application security testing beyond surface-level checks.	  
+
+
+	What We Test
+	  - Insecure local data storage
+	  - Weak encryption & key management
+	  - Insecure permissions & exported components
+	  - SSL pinning & certificate bypass
+	  - Reverse engineering & code tampering
+	  - Root / emulator detection bypass
+	  - Mobile-to-API attack chaining
+
+	Advanced Testing Techniques
+	  - Static & dynamic analysis
+	  - Runtime manipulation & hooking
+	  - Traffic interception & replay attacks
+	  - Exploiting app logic flaws 
+
+	What You Get
+	  - Realistic mobile attack scenarios
+	  - Exploitable findings with impact
+	  - Secure coding recommendations
+	  - Protection against cloned or tampered apps
+
+
+3.API Penetration Testing
+
+	Stop attackers from abusing your APIs silently
+
+	APIs power modern applications and attackers love them because they’re often over-trusted and under-tested.
+	Root Recon specializes in deep API security testing aligned with real attacker behavior.
+
+	What We Test
+
+	  - Broken Object Level Authorization (BOLA)
+	  - Broken Function Level Authorization (BFLA)
+	  - Authentication & token misuse
+	  - Excessive data exposure
+	  - Mass assignment vulnerabilities
+	  - Rate limiting & abuse scenarios
+	  - Business logic flaws in API workflows
+
+	Our Approach
+
+	We test APIs:
+	 - Independently
+	 - Through web & mobile clients
+	 - As part of chained attack paths
+
+	We focus on what an attacker can access, modify, or destroy.  
+
+	What You Get
+
+	  - Critical API flaws proven with exploitation
+	  - Clear risk prioritization
+	  - Secure API design guidance
+	  - Protection against data leaks & fraud
+
+4.Network Penetration Testing	 
+
+	Know how far an attacker can go inside your network
+
+	Network security failures often lead to full infrastructure compromise.
+	Root Recon simulates real attackers to identify how your network can be breached and abused. 
+
+	What We Test
+		External network exposure
+		Firewall & segmentation weaknesses
+		Misconfigurations & weak services
+		Credential harvesting & reuse
+		Privilege escalation paths
+		Lateral movement inside the network
+		Internal threat scenarios
+
+	Real-World Attack Simulation
+
+	We emulate:
+	 - External attackers breaching perimeter defenses
+	 - Internal attackers abusing access
+	 - Post-exploitation movement & data access	
+
+	What You Get
+	  - Real attack paths mapped end-to-end
+	  - High-risk weaknesses prioritized
+	  - Practical remediation steps
+	  - Clear understanding of blast radius

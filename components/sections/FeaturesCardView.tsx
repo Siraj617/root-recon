@@ -120,7 +120,7 @@ export function FeaturesCardEffect() {
         {careItems.map((item, index) => (
           <div
             key={index}
-            className="absolute w-[265px] h-[380px] bg-black rounded-2xl p-8 shadow-2xl border border-white/10 transition-all duration-700 ease-out will-change-transform flex flex-col hover:scale-105 hover:border-slate-500/50 hover:shadow-orange-500/10"
+            className="absolute w-[265px] h-[380px] bg-slate-900 rounded-2xl p-8 shadow-2xl border border-white/10 transition-all duration-700 ease-out will-change-transform flex flex-col hover:scale-105 hover:border-slate-500/50 hover:shadow-orange-500/10"
             style={{
               transform: getFanTransform(index, careItems.length, isFanned),
               zIndex: 20 + index,

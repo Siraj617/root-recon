@@ -81,7 +81,7 @@ export default function SolutionsPage() {
             {/* Hero */}
             <section className="pt-32 pb-20 bg-gradient-to-b from-slate-50 to-white">
                 <div className="container px-4 mx-auto text-center">
-                    <span className="px-4 py-1.5 rounded-full bg-primary text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                    <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         Our Solutions
                     </span>
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
@@ -102,8 +102,8 @@ export default function SolutionsPage() {
                     <SectionHeading title="Security Services" subtitle="Tailored testing for every layer of your technology stack." />
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
                         {services.map((service, index) => (
-                            <div key={index} className="group bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-xl hover:border-blue-200 transition-all flex flex-col">
-                                <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:bg-blue-50 group-hover:text-primary transition-colors">
+                            <div key={index} className="group bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-xl hover:border-red-200 transition-all flex flex-col">
+                                <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:bg-red-50 group-hover:text-red-600 transition-colors">
                                     <service.icon size={24} />
                                 </div>
                                 <h3 className="font-bold text-slate-900 mb-2">{service.title}</h3>
@@ -111,12 +111,12 @@ export default function SolutionsPage() {
                                 <div className="space-y-1 mb-4">
                                     {service.features.map((feature, i) => (
                                         <div key={i} className="flex items-center gap-2 text-xs text-slate-500">
-                                            <CheckCircle2 size={12} className="text-green-600" />
+                                            <CheckCircle2 size={12} className="text-red-600" />
                                             <span>{feature}</span>
                                         </div>
                                     ))}
                                 </div>
-                                <Link href={`/solutions/${service.slug}`} className="text-primary text-sm font-semibold flex items-center hover:gap-1 transition-all">
+                                <Link href={`/solutions/${service.slug}`} className="text-red-600 text-sm font-semibold flex items-center hover:gap-1 transition-all">
                                     Learn More <ArrowRight size={14} className="ml-1" />
                                 </Link>
                             </div>
@@ -132,7 +132,7 @@ export default function SolutionsPage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
                         {industries.map((item, index) => (
                             <div key={index} className="bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-lg transition-shadow">
-                                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 mb-4">
+                                <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-red-600 mb-4">
                                     <item.icon size={24} />
                                 </div>
                                 <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>

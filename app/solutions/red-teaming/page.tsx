@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -12,7 +12,6 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const trustedCompanies = ["Groww", "Swiggy", "SBI Life", "IATA", "Zaggle", "MyGate", "Wati", "PolicyBazaar", "Jupiter", "Razorpay", "CRED", "PhonePe"];
 
 const caseStudies = [
     {
@@ -64,10 +63,10 @@ const whyChooseFeatures = [
 ];
 
 const processSteps = [
-    { icon: Search, title: "Reconnaissance", desc: "OSINT & footprinting", color: "#8b5cf6" },
-    { icon: Target, title: "Initial Access", desc: "Phishing & exploitation", color: "#3b82f6" },
-    { icon: Lock, title: "Persistence", desc: "Maintain access", color: "#06b6d4" },
-    { icon: Network, title: "Lateral Movement", desc: "Expand control", color: "#10b981" },
+    { icon: Search, title: "Reconnaissance", desc: "OSINT & footprinting", color: "#dc2626" },
+    { icon: Target, title: "Initial Access", desc: "Phishing & exploitation", color: "#dc2626" },
+    { icon: Lock, title: "Persistence", desc: "Maintain access", color: "#dc2626" },
+    { icon: Network, title: "Lateral Movement", desc: "Expand control", color: "#dc2626" },
     { icon: Shield, title: "Action on Objectives", desc: "Data exfiltration", color: "#ef4444" },
 ];
 
@@ -185,21 +184,7 @@ export default function RedTeamingPage() {
                 </div>
             </section>
 
-            {/* Trusted By */}
-            <section className="py-10 bg-white border-b border-slate-100">
-                <div className="container px-4 mx-auto">
-                    <p className="text-center text-slate-500 text-sm font-medium mb-6">
-                        Trusted by leading security-conscious companies across the world
-                    </p>
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                        {trustedCompanies.map((company, index) => (
-                            <span key={index} className="text-lg font-bold text-slate-300 hover:text-slate-500 transition-colors">
-                                {company}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <Research />
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">
@@ -274,9 +259,6 @@ export default function RedTeamingPage() {
                                     >
                                         <div className="w-16 h-16 rounded-full bg-white border-4 border-red-500 flex items-center justify-center shadow-lg">
                                             <feature.icon className="w-7 h-7 text-red-600" />
-                                        </div>
-                                        <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
-                                            {index + 1}
                                         </div>
                                     </motion.div>
 
@@ -354,7 +336,7 @@ export default function RedTeamingPage() {
                             <div className="relative flex-shrink-0">
                                 {/* Background Circle */}
                                 <div
-                                    className="absolute rounded-full bg-gradient-to-br from-red-50 via-orange-50 to-red-50 opacity-50"
+                                    className="absolute rounded-full bg-gradient-to-br from-red-50 via-red-50 to-red-50 opacity-50"
                                     style={{
                                         width: `${radius * 1.6}px`,
                                         height: `${radius * 1.6}px`,
@@ -518,7 +500,6 @@ export default function RedTeamingPage() {
                                                     </div>
                                                     <div>
                                                         <div className="flex items-center gap-2 mb-1">
-                                                            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">Step {index + 1}</span>
                                                             <p className="font-bold text-sm text-slate-900">{step.title}</p>
                                                         </div>
                                                         <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
@@ -536,12 +517,12 @@ export default function RedTeamingPage() {
                     <div className="bg-white border border-slate-200 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
-                                { icon: Crosshair, title: "Precision Targeting", desc: "We identify and exploit your most critical assets without collateral damage.", color: "text-violet-600", bg: "bg-violet-100" },
-                                { icon: Eye, title: "Stealth Operations", desc: "Our red teamers operate 'low and slow' to evade detection by your SOC.", color: "text-blue-600", bg: "bg-blue-100" },
+                                { icon: Crosshair, title: "Precision Targeting", desc: "We identify and exploit your most critical assets without collateral damage.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Eye, title: "Stealth Operations", desc: "Our red teamers operate 'low and slow' to evade detection by your SOC.", color: "text-red-600", bg: "bg-red-100" },
                                 { icon: AlertTriangle, title: "Realistic Scenarios", desc: "We simulate ransomware, data theft, and insider threats to test your readiness.", color: "text-red-600", bg: "bg-red-100" },
-                                { icon: Shield, title: "Defense Improvement", desc: "Every attack is a learning opportunity. We help you tune your SIEM and EDR.", color: "text-green-600", bg: "bg-green-100" },
-                                { icon: FileText, title: "Executive Reporting", desc: "We translate technical findings into business risk for your leadership team.", color: "text-amber-600", bg: "bg-amber-100" },
-                                { icon: Lock, title: "Full Kill Chain", desc: "We test every stage of an attack, from initial access to data exfiltration.", color: "text-cyan-600", bg: "bg-cyan-100" },
+                                { icon: Shield, title: "Defense Improvement", desc: "Every attack is a learning opportunity. We help you tune your SIEM and EDR.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: FileText, title: "Executive Reporting", desc: "We translate technical findings into business risk for your leadership team.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Lock, title: "Full Kill Chain", desc: "We test every stage of an attack, from initial access to data exfiltration.", color: "text-red-600", bg: "bg-red-100" },
                             ].map((feature, index) => (
                                 <div key={index} className="flex items-start space-x-4">
                                     <div className="flex-shrink-0">
@@ -566,7 +547,7 @@ export default function RedTeamingPage() {
                     <div className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 rounded-3xl p-12 relative overflow-hidden">
                         <div className="absolute inset-0 opacity-20">
                             <div className="absolute top-0 right-0 w-80 h-80 bg-red-500 rounded-full blur-3xl" />
-                            <div className="absolute bottom-0 left-0 w-60 h-60 bg-orange-500 rounded-full blur-3xl" />
+                            <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-500 rounded-full blur-3xl" />
                         </div>
 
                         <div className="relative z-10 text-center max-w-3xl mx-auto">

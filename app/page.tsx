@@ -14,7 +14,7 @@ import { Contact } from "@/components/sections/Contact";
 export default function Home() {
   return (
     <main
-      className="min-h-screen bg-black text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground font-sans"
+      className="min-h-screen bg-slate-900 text-foreground overflow-x-hidden selection:bg-primary selection:text-primary-foreground font-sans"
     >
       <Header />
       <Hero />

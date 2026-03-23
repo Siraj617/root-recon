@@ -38,10 +38,10 @@ const steps = [
 ];
 
 const compliance = [
-    { name: "PCI DSS", desc: "Secure payment card processing and protect cardholder data from breaches and fraud.", icon: Shield, color: "#8b5cf6", colorEnd: "#a78bfa" },
-    { name: "ISO 27001", desc: "Establish and maintain a robust information security management system (ISMS).", icon: Lock, color: "#3b82f6", colorEnd: "#60a5fa" },
-    { name: "SOC 2", desc: "Demonstrate trust through security, availability, and confidentiality controls.", icon: CheckCircle2, color: "#06b6d4", colorEnd: "#22d3ee" },
-    { name: "GDPR", desc: "Ensure EU data privacy rights and lawful processing of personal information.", icon: FileText, color: "#10b981", colorEnd: "#34d399" },
+    { name: "PCI DSS", desc: "Secure payment card processing and protect cardholder data from breaches and fraud.", icon: Shield, color: "#dc2626", colorEnd: "#ef4444" },
+    { name: "ISO 27001", desc: "Establish and maintain a robust information security management system (ISMS).", icon: Lock, color: "#dc2626", colorEnd: "#ef4444" },
+    { name: "SOC 2", desc: "Demonstrate trust through security, availability, and confidentiality controls.", icon: CheckCircle2, color: "#dc2626", colorEnd: "#ef4444" },
+    { name: "GDPR", desc: "Ensure EU data privacy rights and lawful processing of personal information.", icon: FileText, color: "#dc2626", colorEnd: "#ef4444" },
 ];
 
 export function Methodology() {
@@ -59,7 +59,7 @@ export function Methodology() {
                     <div className="absolute top-16 left-[8%] right-[8%] h-1 z-0">
                         <div className="absolute inset-0 bg-slate-200 rounded-full" />
                         <motion.div
-                            className="absolute inset-y-0 left-0 bg-black rounded-full"
+                            className="absolute inset-y-0 left-0 bg-slate-400 rounded-full"
                             initial={{ width: "0%" }}
                             whileInView={{ width: "100%" }}
                             viewport={{ once: true }}
@@ -82,10 +82,10 @@ export function Methodology() {
                                         delay: index * 0.2
                                     }}
                                 >
-                                    <div className="w-14 h-14 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-lg">
+                                    <div className="w-14 h-14 rounded-full bg-white border-4 border-slate-300 flex items-center justify-center shadow-lg">
                                         <step.icon className="w-6 h-6 text-red-600" />
                                     </div>
-                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-600 text-white text-[10px] font-bold flex items-center justify-center shadow-md">
                                         {index + 1}
                                     </div>
                                 </motion.div>
@@ -110,7 +110,7 @@ export function Methodology() {
                     {/* Vertical Line */}
                     <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
                         <motion.div
-                            className="absolute top-0 left-0 right-0 bg-black"
+                            className="absolute top-0 left-0 right-0 bg-slate-400"
                             initial={{ height: "0%" }}
                             whileInView={{ height: "100%" }}
                             viewport={{ once: true }}
@@ -129,9 +129,9 @@ export function Methodology() {
                                 transition={{ duration: 0.4, delay: index * 0.1 }}
                             >
                                 {/* Circle with Icon */}
-                                <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-lg">
+                                <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-slate-300 flex items-center justify-center shadow-lg">
                                     <step.icon className="w-5 h-5 text-red-600" />
-                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-black text-white text-[10px] font-bold flex items-center justify-center shadow-md">
+                                    <div className="absolute -top-1 -right-1 w-5 h-5 rounded-full bg-red-600 text-white text-[10px] font-bold flex items-center justify-center shadow-md">
                                         {index + 1}
                                     </div>
                                 </div>
@@ -157,7 +157,7 @@ export function Methodology() {
                     <div className="overflow-hidden relative">
                         {/* Background Decorations */}
                         <div className="absolute top-0 right-0 w-64 h-64 bg-red-500/5 rounded-full blur-3xl" />
-                        <div className="absolute bottom-0 left-0 w-48 h-48 bg-blue-500/5 rounded-full blur-3xl" />
+                        <div className="absolute bottom-0 left-0 w-48 h-48 bg-red-500/5 rounded-full blur-3xl" />
 
                         <div className="relative z-10">
                             <motion.div
@@ -177,7 +177,7 @@ export function Methodology() {
                                 {compliance.map((item, index) => (
                                     <motion.div
                                         key={index}
-                                        className="group relative bg-black rounded-2xl p-6 shadow-lg border border-zinc-800 overflow-hidden cursor-pointer"
+                                        className="group relative bg-white rounded-2xl p-6 shadow-lg border border-slate-200 overflow-hidden cursor-pointer"
                                         initial={{ opacity: 0, y: 30 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
@@ -202,8 +202,8 @@ export function Methodology() {
                                         </div>
 
                                         {/* Content */}
-                                        <h4 className="font-bold text-lg text-white mb-2">{item.name}</h4>
-                                        <p className="text-sm text-slate-400 leading-relaxed">{item.desc}</p>
+                                        <h4 className="font-bold text-lg text-slate-900 mb-2">{item.name}</h4>
+                                        <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
 
                                         {/* Checkmark badge */}
                                         <div className="absolute top-4 right-4">

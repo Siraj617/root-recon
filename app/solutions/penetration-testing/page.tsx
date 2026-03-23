@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -12,7 +12,6 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const trustedCompanies = ["Groww", "Swiggy", "SBI Life", "IATA", "Zaggle", "MyGate", "Wati", "PolicyBazaar", "Jupiter", "Razorpay", "CRED", "PhonePe"];
 
 const caseStudies = [
     {
@@ -66,11 +65,11 @@ const whyChooseFeatures = [
 ];
 
 const processSteps = [
-    { icon: Search, title: "Reconnaissance", desc: "OSINT & Discovery", color: "#3b82f6" },
-    { icon: Target, title: "Mapping", desc: "Attack surface map", color: "#2563eb" },
-    { icon: Zap, title: "Discovery", desc: "Find vulnerabilities", color: "#1d4ed8" },
-    { icon: Lock, title: "Exploitation", desc: "Verify impact", color: "#1e40af" },
-    { icon: FileText, title: "Reporting", desc: "Detailed findings", color: "#1e3a8a" },
+    { icon: Search, title: "Reconnaissance", desc: "OSINT & Discovery", color: "#dc2626" },
+    { icon: Target, title: "Mapping", desc: "Attack surface map", color: "#ef4444" },
+    { icon: Zap, title: "Discovery", desc: "Find vulnerabilities", color: "#b91c1c" },
+    { icon: Lock, title: "Exploitation", desc: "Verify impact", color: "#991b1b" },
+    { icon: FileText, title: "Reporting", desc: "Detailed findings", color: "#7f1d1d" },
 ];
 
 const servicesOffered = [
@@ -157,21 +156,21 @@ export default function PenetrationTestingPage() {
             <Header />
 
             {/* Hero Section */}
-            <section className="pt-32 pb-20 bg-gradient-to-b from-blue-50 to-white">
+            <section className="pt-32 pb-20 bg-gradient-to-b from-red-50 to-white">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Comprehensive Security Testing
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                            Expert-Led <span className="text-blue-600">Penetration Testing</span>
+                            Know How Far An Attacker Can Go <span className="text-red-600">Inside Your Network</span>
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-                            We simulate real-world attacks to find vulnerabilities in your web, mobile, cloud, and network infrastructure before hackers do.
+                            Network security failures often lead to full infrastructure compromise. Root Recon simulates real attackers to identify how your network can be breached and abused — testing external network exposure, firewall & segmentation weaknesses, misconfigurations, credential harvesting, privilege escalation paths, and lateral movement.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link href="/get-started">
-                                <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg shadow-blue-600/20">
+                                <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg shadow-red-600/20">
                                     Get a Quote <ArrowRight size={18} className="ml-2" />
                                 </Button>
                             </Link>
@@ -185,27 +184,13 @@ export default function PenetrationTestingPage() {
                 </div>
             </section>
 
-            {/* Trusted By */}
-            <section className="py-10 bg-white border-b border-slate-100">
-                <div className="container px-4 mx-auto">
-                    <p className="text-center text-slate-500 text-sm font-medium mb-6">
-                        Trusted by leading security-conscious companies across the world
-                    </p>
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                        {trustedCompanies.map((company, index) => (
-                            <span key={index} className="text-lg font-bold text-slate-300 hover:text-slate-500 transition-colors">
-                                {company}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <Research />
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Proven Expertise
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
@@ -216,10 +201,10 @@ export default function PenetrationTestingPage() {
                     <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                         {caseStudies.map((study, index) => (
                             <div key={index} className="bg-gradient-to-br from-slate-50 to-slate-100 rounded-2xl p-8 border border-slate-200 hover:shadow-xl transition-all">
-                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white mb-6">
+                                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white mb-6">
                                     <study.icon size={28} />
                                 </div>
-                                <div className="text-4xl font-extrabold text-blue-600 mb-2">{study.stat}</div>
+                                <div className="text-4xl font-extrabold text-red-600 mb-2">{study.stat}</div>
                                 <div className="text-lg font-bold text-slate-900 mb-3">{study.label}</div>
                                 <p className="text-slate-600 text-sm leading-relaxed">{study.desc}</p>
                             </div>
@@ -232,11 +217,11 @@ export default function PenetrationTestingPage() {
             <section className="py-24 bg-slate-50 overflow-hidden">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Why RootRecon
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Choose <span className="text-blue-600">RootRecon</span>?
+                            Why Choose <span className="text-red-600">RootRecon</span>?
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                             We deliver more than just a report. We deliver peace of mind.
@@ -249,7 +234,7 @@ export default function PenetrationTestingPage() {
                         <div className="absolute top-16 left-[10%] right-[10%] h-1 z-0">
                             <div className="absolute inset-0 bg-slate-200 rounded-full" />
                             <motion.div
-                                className="absolute inset-y-0 left-0 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full"
+                                className="absolute inset-y-0 left-0 bg-gradient-to-r from-red-500 to-red-700 rounded-full"
                                 initial={{ width: "0%" }}
                                 whileInView={{ width: "100%" }}
                                 viewport={{ once: true }}
@@ -272,11 +257,8 @@ export default function PenetrationTestingPage() {
                                             delay: index * 0.2
                                         }}
                                     >
-                                        <div className="w-16 h-16 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
-                                            <feature.icon className="w-7 h-7 text-blue-600" />
-                                        </div>
-                                        <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-blue-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
-                                            {index + 1}
+                                        <div className="w-16 h-16 rounded-full bg-white border-4 border-red-500 flex items-center justify-center shadow-lg">
+                                            <feature.icon className="w-7 h-7 text-red-600" />
                                         </div>
                                     </motion.div>
 
@@ -299,7 +281,7 @@ export default function PenetrationTestingPage() {
                     <div className="lg:hidden relative max-w-md mx-auto">
                         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
                             <motion.div
-                                className="absolute top-0 left-0 right-0 bg-gradient-to-b from-blue-500 to-indigo-600"
+                                className="absolute top-0 left-0 right-0 bg-gradient-to-b from-red-500 to-red-700"
                                 initial={{ height: "0%" }}
                                 whileInView={{ height: "100%" }}
                                 viewport={{ once: true }}
@@ -317,8 +299,8 @@ export default function PenetrationTestingPage() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.15 }}
                                 >
-                                    <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
-                                        <feature.icon className="w-5 h-5 text-blue-600" />
+                                    <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center shadow-lg">
+                                        <feature.icon className="w-5 h-5 text-red-600" />
                                     </div>
                                     <div className="bg-white rounded-xl p-4 flex-1 shadow-sm border border-slate-100">
                                         <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
@@ -335,11 +317,11 @@ export default function PenetrationTestingPage() {
             <section className="py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Our Methodology
                         </span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">
-                            How We <span className="text-blue-600">Test</span> Your Security
+                            How We <span className="text-red-600">Test</span> Your Security
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                             A rigorous, multi-stage process to ensure nothing is missed.
@@ -354,7 +336,7 @@ export default function PenetrationTestingPage() {
                             <div className="relative flex-shrink-0">
                                 {/* Background Circle */}
                                 <div
-                                    className="absolute rounded-full bg-gradient-to-br from-blue-50 via-indigo-50 to-blue-50 opacity-50"
+                                    className="absolute rounded-full bg-gradient-to-br from-red-50 via-red-50 to-red-50 opacity-50"
                                     style={{
                                         width: `${radius * 1.6}px`,
                                         height: `${radius * 1.6}px`,
@@ -416,14 +398,14 @@ export default function PenetrationTestingPage() {
 
                                     {/* Center Hub */}
                                     <div
-                                        className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-blue-100"
+                                        className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-red-100"
                                         style={{
                                             top: '50%',
                                             left: '50%',
                                             transform: 'translate(-50%, -50%)',
                                         }}
                                     >
-                                        <h3 className="text-lg md:text-xl font-bold text-blue-600 tracking-tight text-center">
+                                        <h3 className="text-lg md:text-xl font-bold text-red-600 tracking-tight text-center">
                                             RootRecon
                                         </h3>
                                         <p className="text-[9px] md:text-[10px] text-slate-600 text-center mt-0.5">
@@ -518,7 +500,6 @@ export default function PenetrationTestingPage() {
                                                     </div>
                                                     <div>
                                                         <div className="flex items-center gap-2 mb-1">
-                                                            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">Step {index + 1}</span>
                                                             <p className="font-bold text-sm text-slate-900">{step.title}</p>
                                                         </div>
                                                         <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
@@ -536,12 +517,12 @@ export default function PenetrationTestingPage() {
                     <div className="bg-white border border-slate-200 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
-                                { icon: Globe, title: "Web Apps", desc: "Testing for OWASP Top 10 and business logic flaws.", color: "text-blue-600", bg: "bg-blue-100" },
-                                { icon: Smartphone, title: "Mobile Apps", desc: "iOS and Android security assessments.", color: "text-violet-600", bg: "bg-violet-100" },
-                                { icon: Server, title: "APIs", desc: "REST, GraphQL, and gRPC security testing.", color: "text-green-600", bg: "bg-green-100" },
-                                { icon: Cloud, title: "Cloud", desc: "AWS, Azure, and GCP configuration reviews.", color: "text-orange-600", bg: "bg-orange-100" },
-                                { icon: Wifi, title: "Network", desc: "Internal and external infrastructure testing.", color: "text-indigo-600", bg: "bg-indigo-100" },
-                                { icon: Code, title: "Source Code", desc: "Manual code review for security vulnerabilities.", color: "text-cyan-600", bg: "bg-cyan-100" },
+                                { icon: Globe, title: "Web Apps", desc: "Testing for OWASP Top 10 and business logic flaws.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Smartphone, title: "Mobile Apps", desc: "iOS and Android security assessments.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Server, title: "APIs", desc: "REST, GraphQL, and gRPC security testing.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Cloud, title: "Cloud", desc: "AWS, Azure, and GCP configuration reviews.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Wifi, title: "Network", desc: "Internal and external infrastructure testing.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Code, title: "Source Code", desc: "Manual code review for security vulnerabilities.", color: "text-red-600", bg: "bg-red-100" },
                             ].map((feature, index) => (
                                 <div key={index} className="flex items-start space-x-4">
                                     <div className="flex-shrink-0">
@@ -565,20 +546,20 @@ export default function PenetrationTestingPage() {
                 <div className="container px-4 mx-auto">
                     <div className="bg-gradient-to-br from-slate-800 via-slate-900 to-slate-800 rounded-3xl p-12 relative overflow-hidden">
                         <div className="absolute inset-0 opacity-20">
-                            <div className="absolute top-0 right-0 w-80 h-80 bg-blue-500 rounded-full blur-3xl" />
-                            <div className="absolute bottom-0 left-0 w-60 h-60 bg-indigo-500 rounded-full blur-3xl" />
+                            <div className="absolute top-0 right-0 w-80 h-80 bg-red-500 rounded-full blur-3xl" />
+                            <div className="absolute bottom-0 left-0 w-60 h-60 bg-red-500 rounded-full blur-3xl" />
                         </div>
 
                         <div className="relative z-10 text-center max-w-3xl mx-auto">
                             <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-                                Ready to Secure Your <span className="text-blue-400">Business</span>?
+                                Ready to Secure Your <span className="text-red-400">Business</span>?
                             </h2>
                             <p className="text-slate-300 text-lg mb-8">
                                 Don't wait for a breach. Get a comprehensive penetration test today.
                             </p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/get-started">
-                                    <Button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 font-bold rounded-xl">
+                                    <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 font-bold rounded-xl">
                                         Get Started <ArrowRight size={16} className="ml-2" />
                                     </Button>
                                 </Link>
@@ -600,7 +581,7 @@ export default function PenetrationTestingPage() {
                         Coverage
                     </span>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                        We Cover Every <span className="text-blue-600">Attack Surface</span>
+                        We Cover Every <span className="text-red-600">Attack Surface</span>
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
                         From your code to your cloud, we have the expertise to test it all.
@@ -608,8 +589,8 @@ export default function PenetrationTestingPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {servicesOffered.map((service, index) => (
-                            <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:bg-blue-50 hover:shadow-lg transition-all text-left group cursor-pointer">
-                                <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center text-blue-600 mb-5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                            <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:bg-red-50 hover:shadow-lg transition-all text-left group cursor-pointer">
+                                <div className="w-14 h-14 rounded-xl bg-red-100 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-colors">
                                     <service.icon size={28} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
@@ -624,7 +605,7 @@ export default function PenetrationTestingPage() {
             <section className="py-24 bg-slate-50">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Testimonials
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
@@ -641,13 +622,13 @@ export default function PenetrationTestingPage() {
                                     ))}
                                 </div>
                                 <div className="mb-4">
-                                    <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded">
+                                    <span className="text-xs font-bold text-red-600 bg-red-50 px-2 py-1 rounded">
                                         Service: {testimonial.service}
                                     </span>
                                 </div>
                                 <p className="text-slate-700 mb-6 leading-relaxed">"{testimonial.quote}"</p>
                                 <div className="flex items-center gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 flex items-center justify-center text-white font-bold">
+                                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white font-bold">
                                         {testimonial.name.charAt(0)}
                                     </div>
                                     <div>
@@ -665,7 +646,7 @@ export default function PenetrationTestingPage() {
             <section className="py-24 bg-white">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             FAQs
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">

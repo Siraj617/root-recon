@@ -130,12 +130,6 @@ const menuData = {
         icon: Info,
         desc: "Our story & mission",
       },
-      {
-        name: "Customers",
-        href: "/customers",
-        icon: Users,
-        desc: "Who trusts us",
-      },
 
       {
         name: "Contact",
@@ -262,8 +256,8 @@ export function Header() {
         {/* CTAs */}
         <div className="hidden lg:flex items-center gap-3">
           <Link href="/get-started">
-            <Button className="bg-black hover:bg-zinc-800 text-white shadow-lg shadow-zinc-900/20 px-6">
-              Get Quote
+            <Button className="bg-slate-900 hover:bg-slate-800 text-white shadow-lg shadow-zinc-900/20 px-6">
+              Request a Quote
             </Button>
           </Link>
         </div>
@@ -307,7 +301,7 @@ export function Header() {
               <div className="pt-4 border-t border-slate-100 flex flex-col gap-3">
                 <Link href="/get-started">
                   <Button className="w-full bg-primary text-white">
-                    Get Quote
+                    Request a Quote
                   </Button>
                 </Link>
               </div>

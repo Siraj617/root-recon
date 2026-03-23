@@ -33,7 +33,7 @@ export function CaseStudies() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {cases.map((item, index) => (
-                        <Card key={index} className="group hover:shadow-md transition-all bg-black border-zinc-800">
+                        <Card key={index} className="group hover:shadow-md transition-all bg-slate-900 border-slate-700">
                             <CardContent className="p-8 flex flex-col h-full">
                                 <div className="mb-4">
                                     <span className="px-3 py-1 rounded-full bg-zinc-800 text-white text-xs font-bold uppercase tracking-wide">

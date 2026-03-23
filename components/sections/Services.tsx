@@ -1,64 +1,48 @@
 "use client";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { CheckCircle2, ArrowRight, Globe, Server, Smartphone, ShieldCheck, Crosshair, Code } from "lucide-react";
+import { CheckCircle2, ArrowRight, Globe, Server, Smartphone, Cloud } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const services = [
     {
-        title: "Pentest as a Service",
-        icon: ShieldCheck,
-        href: "/solutions/ptaas",
-        desc: "Comprehensive manual security assessments to uncover critical vulnerabilities in your applications.",
-        features: ["Web Apps", "Mobile Apps", "APIs", "Networks"],
-        image: "https://certera.com/blog/wp-content/uploads/2023/04/web-application-penetration-testing-jpg.webp",
-    },
-    {
-        title: "Cloud & infrastructure security",
-        icon: Crosshair,
-        href: "/solutions/cloud-security",
-        desc: "Cloud security issues grow fast when left unseen. We identify IAM risks, exposed services, and lateral movement paths to reduce blast radius and prevent serious breaches.",
-        features: ["IAM Risks", "Exposed Services", "Lateral Movement", "Defense Evasion"],
-        image: "https://artificesecurity.com/wp-content/uploads/2023/03/RED-TEAM-main-SM.jpg",
-    },
-    {
-        title: "Code Review",
-        icon: Code,
-        href: "/solutions/code-review",
-        desc: "Continuous security program with code review, DevSecOps, and vulnerability management.",
-        features: ["Code Review", "DevSecOps", "Vuln Management", "Continuous Testing"],
-        image: "https://www.adtran.com/-/media/adtran/about-us/meta-images/82-productsecurity.jpg?rev=db10a52509db4a74aea1d6553bfb7167&hash=C6DE32BAE925B10AE03EE5643EDEAA89",
-    },
-    {
         title: "Web App Security",
         icon: Globe,
         href: "/solutions/web-security",
-        desc: "OWASP Top 10 coverage with business logic and authentication testing.",
-        features: ["OWASP Top 10", "Business Logic", "Auth Bypass", "Session Mgmt"],
-        image: "https://3852769.fs1.hubspotusercontent-na1.net/hubfs/3852769/Way%20to%20Improve%20Web%20Application%20Security.jpg",
+        desc: "OWASP Top 10 & beyond",
+        features: ["OWASP Top 10", "Business Logic", "Auth Testing", "Session Mgmt"],
+        image: "/web-security-card.png",
     },
     {
-        title: "API Security Testing",
+        title: "API Security",
         icon: Server,
         href: "/solutions/api-security",
-        desc: "Deep assessments for REST, GraphQL, and SOAP APIs.",
+        desc: "REST, GraphQL & gRPC",
         features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
-        image: "https://cdn.prod.website-files.com/5ff66329429d880392f6cba2/6455e369e4efcfed355a9152_655%20Preview.jpg",
+        image: "/api-security-card.png",
     },
     {
-        title: "Mobile App Security",
+        title: "Mobile Security",
         icon: Smartphone,
         href: "/solutions/mobile-security",
-        desc: "Android and iOS testing with static analysis and reverse engineering.",
-        features: ["Static Analysis", "Dynamic Testing", "Reverse Engineering", "API Security"],
-        image: "https://nix-united.com/wp-content/uploads/2020/12/MobAppSecur_graphics_02.jpg",
+        desc: "iOS & Android testing",
+        features: ["Static Analysis", "Dynamic Testing", "Reverse Eng", "API Sec"],
+        image: "/mobile-security-card.png",
+    },
+    {
+        title: "Cloud Security",
+        icon: Cloud,
+        href: "/solutions/cloud-security",
+        desc: "AWS, Azure & GCP",
+        features: ["IAM Risks", "Exposed Services", "Misconfigurations", "Compliance"],
+        image: "/cloud-security-card.png",
     },
 ];
 
 export function Services() {
     return (
-        <section id="services" className="py-24 bg-black">
+        <section id="services" className="py-24 bg-slate-900">
             <div className="container px-4 mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4">
@@ -67,12 +51,12 @@ export function Services() {
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {services.map((service, index) => (
                         <Link
                             href={service.href}
                             key={index}
-                            className="bg-black rounded-2xl p-5 border border-zinc-800 shadow-sm hover:shadow-lg transition-all group flex flex-col h-full"
+                            className="bg-slate-900 rounded-2xl p-5 border border-slate-700 shadow-sm hover:shadow-lg transition-all group flex flex-col h-full"
                         >
                             {/* Image */}
                             <div className="relative w-full h-40 rounded-xl overflow-hidden bg-zinc-900 mb-4">
@@ -81,7 +65,6 @@ export function Services() {
                                     alt={service.title}
                                     fill
                                     className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                    unoptimized
                                 />
                             </div>
 

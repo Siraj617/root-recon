@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -12,7 +12,6 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const trustedCompanies = ["Groww", "Swiggy", "SBI Life", "IATA", "Zaggle", "MyGate", "Wati", "PolicyBazaar", "Jupiter", "Razorpay", "CRED", "PhonePe"];
 
 const caseStudies = [
     {
@@ -178,11 +177,10 @@ export default function WebSecurityPage() {
                             Web Application Security
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                            Secure Your Web Apps <span className="text-red-600">Before Deployment</span>
+                            Expose What Attackers Can <span className="text-red-600">Really Do</span> To Your Web App
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
-                            Go beyond automated scanning with deep-dive manual penetration testing. We uncover complex logic flaws, chain critical vulnerabilities, and provide actionable remediation to secure your application against sophisticated real-world attacks.
-                            Our certified experts simulate advanced cyber threats to identify weak points in your defense, ensuring robust protection for customer data and compliance with global security standards.
+                            Modern web applications are complex — and that complexity creates hidden attack paths. Root Recon performs deep manual Web Application Penetration Testing to uncover vulnerabilities that automated tools completely miss. Every finding is validated with real exploitation, not assumptions.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link href="/contact">
@@ -216,7 +214,7 @@ export default function WebSecurityPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                         {caseStudies.map((study, index) => (
-                            <div key={index} className="bg-black rounded-2xl p-8 border border-zinc-800 hover:shadow-xl transition-all group">
+                            <div key={index} className="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:shadow-xl transition-all group">
                                 <div className="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 mb-6 group-hover:scale-105 transition-transform">
                                     <study.icon size={28} />
                                 </div>
@@ -250,7 +248,7 @@ export default function WebSecurityPage() {
                         <div className="absolute top-16 left-[5%] right-[5%] h-1 z-0">
                             <div className="absolute inset-0 bg-slate-200 rounded-full" />
                             <motion.div
-                                className="absolute inset-y-0 left-0 bg-black rounded-full"
+                                className="absolute inset-y-0 left-0 bg-slate-400 rounded-full"
                                 initial={{ width: "0%" }}
                                 whileInView={{ width: "100%" }}
                                 viewport={{ once: true }}
@@ -273,11 +271,8 @@ export default function WebSecurityPage() {
                                             delay: index * 0.2
                                         }}
                                     >
-                                        <div className="w-16 h-16 rounded-full bg-white border-4 border-black flex items-center justify-center shadow-lg">
+                                        <div className="w-16 h-16 rounded-full bg-white border-4 border-slate-300 flex items-center justify-center shadow-lg">
                                             <feature.icon className="w-7 h-7 text-red-600" />
-                                        </div>
-                                        <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-red-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
-                                            {index + 1}
                                         </div>
                                     </motion.div>
 
@@ -300,7 +295,7 @@ export default function WebSecurityPage() {
                     <div className="lg:hidden relative max-w-md mx-auto">
                         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
                             <motion.div
-                                className="absolute top-0 left-0 right-0 bg-black"
+                                className="absolute top-0 left-0 right-0 bg-slate-900"
                                 initial={{ height: "0%" }}
                                 whileInView={{ height: "100%" }}
                                 viewport={{ once: true }}
@@ -318,8 +313,8 @@ export default function WebSecurityPage() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.15 }}
                                 >
-                                    <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-blue-500 flex items-center justify-center shadow-lg">
-                                        <feature.icon className="w-5 h-5 text-blue-600" />
+                                    <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-red-500 flex items-center justify-center shadow-lg">
+                                        <feature.icon className="w-5 h-5 text-red-600" />
                                     </div>
                                     <div className="bg-white rounded-xl p-4 flex-1 shadow-sm border border-slate-100">
                                         <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
@@ -377,7 +372,7 @@ export default function WebSecurityPage() {
                                                     orient="auto"
                                                     markerUnits="strokeWidth"
                                                 >
-                                                    <path d="M0,0 L0,8 L8,4 z" fill="black" />
+                                                    <path d="M0,0 L0,8 L8,4 z" fill="#94a3b8" />
                                                 </marker>
                                             ))}
                                         </defs>
@@ -396,7 +391,7 @@ export default function WebSecurityPage() {
                                                     y1={centerY + Math.sin(angleRad) * innerRadius}
                                                     x2={centerX + Math.cos(angleRad) * outerRadius}
                                                     y2={centerY + Math.sin(angleRad) * outerRadius}
-                                                    stroke="black"
+                                                    stroke="#94a3b8"
                                                     strokeWidth="2.5"
                                                     opacity="0.6"
                                                     markerEnd={`url(#arrow-hub-${index})`}
@@ -414,10 +409,10 @@ export default function WebSecurityPage() {
                                             transform: 'translate(-50%, -50%)',
                                         }}
                                     >
-                                        <h3 className="text-lg md:text-xl font-bold text-black tracking-tight text-center">
+                                        <h3 className="text-lg md:text-xl font-bold text-slate-700 tracking-tight text-center">
                                             RootRecon
                                         </h3>
-                                        <p className="text-[9px] md:text-[10px] text-black text-center mt-0.5">
+                                        <p className="text-[9px] md:text-[10px] text-slate-700 text-center mt-0.5">
                                             Process
                                         </p>
                                     </div>
@@ -480,7 +475,7 @@ export default function WebSecurityPage() {
                                                             refY="4"
                                                             orient="auto"
                                                         >
-                                                            <path d="M0,0 L0,8 L8,4 z" fill="black" />
+                                                            <path d="M0,0 L0,8 L8,4 z" fill="#94a3b8" />
                                                         </marker>
                                                     </defs>
                                                     <line
@@ -488,7 +483,7 @@ export default function WebSecurityPage() {
                                                         y1="10"
                                                         x2="30"
                                                         y2="10"
-                                                        stroke="black"
+                                                        stroke="#94a3b8"
                                                         strokeWidth="2"
                                                         markerEnd={`url(#card-arrow-${index})`}
                                                     />
@@ -523,7 +518,7 @@ export default function WebSecurityPage() {
                     </div>
 
                     {/* Features Grid */}
-                    <div className="bg-black border border-zinc-800 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
+                    <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
                                 { icon: Database, title: "SQL Injection", desc: "We test for all types of SQLi: Error-based, Blind, Time-based, and Boolean." },
@@ -567,7 +562,7 @@ export default function WebSecurityPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                         {servicesOffered.map((service, index) => (
-                            <div key={index} className="bg-black rounded-2xl p-8 border border-zinc-800 hover:border-red-600 transition-all text-left group cursor-pointer">
+                            <div key={index} className="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-red-600 transition-all text-left group cursor-pointer">
                                 <div className="w-14 h-14 rounded-xl bg-red-900/20 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-colors">
                                     <service.icon size={28} />
                                 </div>
@@ -593,7 +588,7 @@ export default function WebSecurityPage() {
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} className="bg-black rounded-2xl p-8 border border-zinc-800">
+                            <div key={index} className="bg-slate-900 rounded-2xl p-8 border border-slate-700">
                                 <div className="flex items-center gap-1 mb-4">
                                     {[...Array(5)].map((_, i) => (
                                         <Star key={i} size={16} className="text-red-600 fill-red-600" />

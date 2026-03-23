@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -12,7 +12,6 @@ import {
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-const trustedCompanies = ["Groww", "Swiggy", "SBI Life", "IATA", "Zaggle", "MyGate", "Wati", "PolicyBazaar", "Jupiter", "Razorpay", "CRED", "PhonePe"];
 
 const caseStudies = [
     {
@@ -64,11 +63,11 @@ const whyChooseFeatures = [
 ];
 
 const processSteps = [
-    { icon: Search, title: "Threat Model", desc: "Analyze architecture", color: "#06b6d4" },
-    { icon: Zap, title: "Auto Scan", desc: "SAST baseline", color: "#0891b2" },
-    { icon: Code, title: "Manual Review", desc: "Deep code analysis", color: "#0e7490" },
-    { icon: Bug, title: "Verification", desc: "PoC development", color: "#155e75" },
-    { icon: FileText, title: "Reporting", desc: "Fix guidance", color: "#164e63" },
+    { icon: Search, title: "Threat Model", desc: "Analyze architecture", color: "#dc2626" },
+    { icon: Zap, title: "Auto Scan", desc: "SAST baseline", color: "#dc2626" },
+    { icon: Code, title: "Manual Review", desc: "Deep code analysis", color: "#dc2626" },
+    { icon: Bug, title: "Verification", desc: "PoC development", color: "#dc2626" },
+    { icon: FileText, title: "Reporting", desc: "Fix guidance", color: "#dc2626" },
 ];
 
 const servicesOffered = [
@@ -158,18 +157,18 @@ export default function CodeReviewPage() {
             <section className="pt-32 pb-20 bg-gradient-to-b from-cyan-50 to-white">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
-                        <span className="px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Secure Code Review
                         </span>
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
-                            Secure Your Code <span className="text-cyan-600">At The Source</span>
+                            Secure Your Code <span className="text-red-600">At The Source</span>
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
                             We find logic flaws, hardcoded secrets, and architectural weaknesses that automated scanners miss.
                         </p>
                         <div className="flex flex-wrap justify-center gap-4">
                             <Link href="/get-started">
-                                <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg shadow-cyan-600/20">
+                                <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 text-lg font-bold rounded-xl shadow-lg shadow-red-600/20">
                                     Start Code Review <ArrowRight size={18} className="ml-2" />
                                 </Button>
                             </Link>
@@ -183,27 +182,13 @@ export default function CodeReviewPage() {
                 </div>
             </section>
 
-            {/* Trusted By */}
-            <section className="py-10 bg-white border-b border-slate-100">
-                <div className="container px-4 mx-auto">
-                    <p className="text-center text-slate-500 text-sm font-medium mb-6">
-                        Trusted by leading security-conscious companies across the world
-                    </p>
-                    <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                        {trustedCompanies.map((company, index) => (
-                            <span key={index} className="text-lg font-bold text-slate-300 hover:text-slate-500 transition-colors">
-                                {company}
-                            </span>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <Research />
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Proven Expertise
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
@@ -217,7 +202,7 @@ export default function CodeReviewPage() {
                                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-cyan-500 to-teal-600 flex items-center justify-center text-white mb-6">
                                     <study.icon size={28} />
                                 </div>
-                                <div className="text-4xl font-extrabold text-cyan-600 mb-2">{study.stat}</div>
+                                <div className="text-4xl font-extrabold text-red-600 mb-2">{study.stat}</div>
                                 <div className="text-lg font-bold text-slate-900 mb-3">{study.label}</div>
                                 <p className="text-slate-600 text-sm leading-relaxed">{study.desc}</p>
                             </div>
@@ -230,11 +215,11 @@ export default function CodeReviewPage() {
             <section className="py-24 bg-slate-50 overflow-hidden">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Why RootRecon
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                            Why Choose Us for <span className="text-cyan-600">Code Review</span>?
+                            Why Choose Us for <span className="text-red-600">Code Review</span>?
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                             We combine the speed of automation with the depth of human intelligence.
@@ -271,10 +256,7 @@ export default function CodeReviewPage() {
                                         }}
                                     >
                                         <div className="w-16 h-16 rounded-full bg-white border-4 border-cyan-500 flex items-center justify-center shadow-lg">
-                                            <feature.icon className="w-7 h-7 text-cyan-600" />
-                                        </div>
-                                        <div className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-cyan-600 text-white text-xs font-bold flex items-center justify-center shadow-md">
-                                            {index + 1}
+                                            <feature.icon className="w-7 h-7 text-red-600" />
                                         </div>
                                     </motion.div>
 
@@ -316,7 +298,7 @@ export default function CodeReviewPage() {
                                     transition={{ duration: 0.4, delay: index * 0.15 }}
                                 >
                                     <div className="absolute left-0 w-12 h-12 rounded-full bg-white border-4 border-cyan-500 flex items-center justify-center shadow-lg">
-                                        <feature.icon className="w-5 h-5 text-cyan-600" />
+                                        <feature.icon className="w-5 h-5 text-red-600" />
                                     </div>
                                     <div className="bg-white rounded-xl p-4 flex-1 shadow-sm border border-slate-100">
                                         <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
@@ -333,11 +315,11 @@ export default function CodeReviewPage() {
             <section className="py-24 bg-gradient-to-b from-slate-50 to-white overflow-hidden">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Our Methodology
                         </span>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">
-                            How We <span className="text-cyan-600">Review</span> Your Code
+                            How We <span className="text-red-600">Review</span> Your Code
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
                             A systematic approach to finding vulnerabilities in source code.
@@ -421,7 +403,7 @@ export default function CodeReviewPage() {
                                             transform: 'translate(-50%, -50%)',
                                         }}
                                     >
-                                        <h3 className="text-lg md:text-xl font-bold text-cyan-600 tracking-tight text-center">
+                                        <h3 className="text-lg md:text-xl font-bold text-red-600 tracking-tight text-center">
                                             RootRecon
                                         </h3>
                                         <p className="text-[9px] md:text-[10px] text-slate-600 text-center mt-0.5">
@@ -516,7 +498,6 @@ export default function CodeReviewPage() {
                                                     </div>
                                                     <div>
                                                         <div className="flex items-center gap-2 mb-1">
-                                                            <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-slate-100 text-slate-500">Step {index + 1}</span>
                                                             <p className="font-bold text-sm text-slate-900">{step.title}</p>
                                                         </div>
                                                         <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
@@ -534,12 +515,12 @@ export default function CodeReviewPage() {
                     <div className="bg-white border border-slate-200 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
-                                { icon: Key, title: "Hardcoded Secrets", desc: "Finding API keys, passwords, and tokens buried in code.", color: "text-violet-600", bg: "bg-violet-100" },
-                                { icon: Database, title: "SQL Injection", desc: "Identifying unsafe queries and ORM misuse patterns.", color: "text-blue-600", bg: "bg-blue-100" },
+                                { icon: Key, title: "Hardcoded Secrets", desc: "Finding API keys, passwords, and tokens buried in code.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Database, title: "SQL Injection", desc: "Identifying unsafe queries and ORM misuse patterns.", color: "text-red-600", bg: "bg-red-100" },
                                 { icon: Bug, title: "Race Conditions", desc: "Detecting concurrency issues in multi-threaded code.", color: "text-red-600", bg: "bg-red-100" },
-                                { icon: Lock, title: "Weak Crypto", desc: "Spotting weak algorithms and improper key management.", color: "text-green-600", bg: "bg-green-100" },
-                                { icon: AlertTriangle, title: "Input Validation", desc: "Missing sanitization leading to XSS and injection.", color: "text-amber-600", bg: "bg-amber-100" },
-                                { icon: Eye, title: "Data Leaks", desc: "Insecure logging of sensitive user data and PII.", color: "text-cyan-600", bg: "bg-cyan-100" },
+                                { icon: Lock, title: "Weak Crypto", desc: "Spotting weak algorithms and improper key management.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: AlertTriangle, title: "Input Validation", desc: "Missing sanitization leading to XSS and injection.", color: "text-red-600", bg: "bg-red-100" },
+                                { icon: Eye, title: "Data Leaks", desc: "Insecure logging of sensitive user data and PII.", color: "text-red-600", bg: "bg-red-100" },
                             ].map((feature, index) => (
                                 <div key={index} className="flex items-start space-x-4">
                                     <div className="flex-shrink-0">
@@ -576,7 +557,7 @@ export default function CodeReviewPage() {
                             </p>
                             <div className="flex flex-wrap justify-center gap-4">
                                 <Link href="/get-started">
-                                    <Button className="bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 font-bold rounded-xl">
+                                    <Button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 font-bold rounded-xl">
                                         Get Code Review <ArrowRight size={16} className="ml-2" />
                                     </Button>
                                 </Link>
@@ -598,7 +579,7 @@ export default function CodeReviewPage() {
                         Coverage
                     </span>
                     <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
-                        We Review All <span className="text-cyan-600">Major Languages</span>
+                        We Review All <span className="text-red-600">Major Languages</span>
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
                         From web to mobile to embedded systems.
@@ -607,7 +588,7 @@ export default function CodeReviewPage() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
                         {servicesOffered.map((service, index) => (
                             <div key={index} className="bg-slate-50 rounded-2xl p-8 hover:bg-cyan-50 hover:shadow-lg transition-all text-left group cursor-pointer">
-                                <div className="w-14 h-14 rounded-xl bg-cyan-100 flex items-center justify-center text-cyan-600 mb-5 group-hover:bg-cyan-600 group-hover:text-white transition-colors">
+                                <div className="w-14 h-14 rounded-xl bg-red-100 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-colors">
                                     <service.icon size={28} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
@@ -622,7 +603,7 @@ export default function CodeReviewPage() {
             <section className="py-24 bg-slate-50">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Testimonials
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
@@ -639,7 +620,7 @@ export default function CodeReviewPage() {
                                     ))}
                                 </div>
                                 <div className="mb-4">
-                                    <span className="text-xs font-bold text-cyan-600 bg-cyan-50 px-2 py-1 rounded">
+                                    <span className="text-xs font-bold text-red-600 bg-cyan-50 px-2 py-1 rounded">
                                         Service: {testimonial.service}
                                     </span>
                                 </div>
@@ -663,7 +644,7 @@ export default function CodeReviewPage() {
             <section className="py-24 bg-white">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <span className="px-4 py-1.5 rounded-full bg-cyan-100 text-cyan-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                        <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             FAQs
                         </span>
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
