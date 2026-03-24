@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research"; import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -185,6 +185,110 @@ export default function PenetrationTestingPage() {
             </section>
 
             <Research />
+
+            {/* Built by Hackers Intro */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                            Built by Hackers. <span className="text-red-600">Trusted by Businesses.</span>
+                        </h2>
+                        <p className="text-xl text-slate-600 leading-relaxed">
+                            At Root Recon, our penetration testing is manual, in-depth, and impact-focused.
+                            We don&apos;t just find vulnerabilities — we exploit them like real attackers and show you exactly what&apos;s at risk.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What We Test */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What We Test
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Comprehensive Network Coverage
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "External network exposure",
+                                "Firewall & segmentation weaknesses",
+                                "Misconfigurations & weak services",
+                                "Credential harvesting & reuse",
+                                "Privilege escalation paths",
+                                "Lateral movement inside the network",
+                                "Internal threat scenarios",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Real-World Attack Simulation */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                Real-World Attack Simulation
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                                We Emulate Real Attackers
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6">
+                            {[
+                                { title: "External Attackers", desc: "Breaching perimeter defenses from the outside" },
+                                { title: "Internal Attackers", desc: "Abusing internal access and trust relationships" },
+                                { title: "Post-Exploitation", desc: "Lateral movement & sensitive data access" },
+                            ].map((item, i) => (
+                                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+                                    <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                    <p className="text-sm text-slate-600">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* What You Get */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What You Get
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Actionable Network Security Results
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Real attack paths mapped end-to-end",
+                                "High-risk weaknesses prioritized",
+                                "Practical remediation steps",
+                                "Clear understanding of blast radius",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">

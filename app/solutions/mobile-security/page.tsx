@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research"; import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -185,6 +185,111 @@ export default function MobileSecurityPage() {
             </section>
 
             <Research />
+
+            {/* Built by Hackers Intro */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                            Built by Hackers. <span className="text-red-600">Trusted by Businesses.</span>
+                        </h2>
+                        <p className="text-xl text-slate-600 leading-relaxed">
+                            At Root Recon, our penetration testing is manual, in-depth, and impact-focused.
+                            We don&apos;t just find vulnerabilities — we exploit them like real attackers and show you exactly what&apos;s at risk.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What We Test */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What We Test
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Deep Android Security Coverage
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Insecure local data storage",
+                                "Weak encryption & key management",
+                                "Insecure permissions & exported components",
+                                "SSL pinning & certificate bypass",
+                                "Reverse engineering & code tampering",
+                                "Root / emulator detection bypass",
+                                "Mobile-to-API attack chaining",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Advanced Testing Techniques */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                Advanced Testing Techniques
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                How We Go Deeper
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-6">
+                            {[
+                                { title: "Static & Dynamic Analysis", desc: "Comprehensive code review combined with runtime testing" },
+                                { title: "Runtime Manipulation & Hooking", desc: "Using Frida/Objection to manipulate app behavior in real-time" },
+                                { title: "Traffic Interception & Replay", desc: "Intercepting and replaying API calls to find hidden flaws" },
+                                { title: "App Logic Exploitation", desc: "Exploiting business logic flaws specific to your mobile app" },
+                            ].map((item, i) => (
+                                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-200">
+                                    <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                    <p className="text-sm text-slate-600">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* What You Get */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What You Get
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Actionable Mobile Security Results
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Realistic mobile attack scenarios",
+                                "Exploitable findings with impact",
+                                "Secure coding recommendations",
+                                "Protection against cloned or tampered apps",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">

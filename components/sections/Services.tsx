@@ -1,41 +1,41 @@
 "use client";
 
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { CheckCircle2, ArrowRight, Globe, Server, Smartphone, Cloud } from "lucide-react";
+import { CheckCircle2, ArrowRight, Globe, Server, Smartphone, Shield } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
 const services = [
     {
-        title: "Web App Security",
+        title: "Web Application Penetration Testing",
         icon: Globe,
         href: "/solutions/web-security",
-        desc: "OWASP Top 10 & beyond",
-        features: ["OWASP Top 10", "Business Logic", "Auth Testing", "Session Mgmt"],
+        desc: "Expose what attackers can really do to your web app",
+        features: ["Auth & Session Flaws", "Business Logic Abuse", "Injection & XSS", "Account Takeover"],
         image: "/web-security-card.png",
     },
     {
-        title: "API Security",
-        icon: Server,
-        href: "/solutions/api-security",
-        desc: "REST, GraphQL & gRPC",
-        features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
-        image: "/api-security-card.png",
-    },
-    {
-        title: "Mobile Security",
+        title: "Android Application Penetration Testing",
         icon: Smartphone,
         href: "/solutions/mobile-security",
-        desc: "iOS & Android testing",
-        features: ["Static Analysis", "Dynamic Testing", "Reverse Eng", "API Sec"],
+        desc: "Secure your mobile app against reverse engineering & runtime attacks",
+        features: ["Static & Dynamic Analysis", "SSL Pinning Bypass", "Reverse Engineering", "API Chaining"],
         image: "/mobile-security-card.png",
     },
     {
-        title: "Cloud Security",
-        icon: Cloud,
-        href: "/solutions/cloud-security",
-        desc: "AWS, Azure & GCP",
-        features: ["IAM Risks", "Exposed Services", "Misconfigurations", "Compliance"],
+        title: "API Penetration Testing",
+        icon: Server,
+        href: "/solutions/api-security",
+        desc: "Stop attackers from abusing your APIs silently",
+        features: ["BOLA/BFLA", "Token Misuse", "Data Exposure", "Rate Limit Abuse"],
+        image: "/api-security-card.png",
+    },
+    {
+        title: "Network Penetration Testing",
+        icon: Shield,
+        href: "/solutions/penetration-testing",
+        desc: "Know how far an attacker can go inside your network",
+        features: ["External Exposure", "Lateral Movement", "Privilege Escalation", "Credential Harvesting"],
         image: "/cloud-security-card.png",
     },
 ];

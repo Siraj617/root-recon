@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research"; import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -198,7 +198,120 @@ export default function WebSecurityPage() {
                 </div>
             </section>
 
+            <Research />
 
+            {/* Built by Hackers Intro */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                            Built by Hackers. <span className="text-red-600">Trusted by Businesses.</span>
+                        </h2>
+                        <p className="text-xl text-slate-600 leading-relaxed">
+                            At Root Recon, our penetration testing is manual, in-depth, and impact-focused.
+                            We don&apos;t just find vulnerabilities — we exploit them like real attackers and show you exactly what&apos;s at risk.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What We Test */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What We Test
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Comprehensive Web App Coverage
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Authentication & session management flaws",
+                                "Authorization & privilege escalation issues",
+                                "Business logic abuse & workflow bypass",
+                                "Input validation, injection & XSS attacks",
+                                "File upload & deserialization vulnerabilities",
+                                "Account takeover scenarios",
+                                "Chained attacks leading to full compromise",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* How We Do It */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                How We Do It
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                                End-to-End Application Analysis
+                            </h2>
+                            <p className="text-lg text-slate-600">We analyze your application end-to-end, including:</p>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6 mb-8">
+                            {[
+                                { title: "User Roles", desc: "User roles & permission boundaries" },
+                                { title: "Workflows", desc: "Application workflows & edge cases" },
+                                { title: "Data Paths", desc: "Critical data paths & sensitive functions" },
+                            ].map((item, i) => (
+                                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+                                    <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                    <p className="text-sm text-slate-600">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-center text-lg text-slate-700 font-semibold">
+                            Every finding is validated with <span className="text-red-600">real exploitation</span>, not assumptions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What You Get */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What You Get
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Actionable Results
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "High-impact, real-world vulnerabilities",
+                                "Clear proof-of-concept (PoC)",
+                                "Developer-friendly remediation steps",
+                                "Business risk explained in simple terms",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="mt-8 bg-red-50 border border-red-200 rounded-xl p-6 text-center">
+                            <p className="text-lg font-bold text-slate-900">
+                                Result: A hardened web application attackers can&apos;t easily break.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">

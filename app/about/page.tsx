@@ -171,17 +171,17 @@ export default function AboutPage() {
                                 ))}
                             </div>
                         </div>
-                        <div className="bg-gradient-to-br from-red-600 to-red-800 rounded-3xl p-12 text-white">
-                            <h3 className="text-2xl font-bold mb-6">Our Mission</h3>
-                            <p className="text-xl text-white/90 leading-relaxed mb-8">
+                        <div className="bg-red-50 border border-red-100 rounded-3xl p-12">
+                            <h3 className="text-2xl font-bold mb-6 text-slate-900">Our Mission</h3>
+                            <p className="text-xl text-slate-700 leading-relaxed mb-8">
                                 "To make the internet safer by helping organizations identify and fix security vulnerabilities before malicious actors can exploit them." We believe strong security should be accessible to everyone, not just large enterprises.
                             </p>
-                            <h4 className="text-lg font-bold mb-4">Team Certifications</h4>
+                            <h4 className="text-lg font-bold mb-4 text-slate-900">Team Certifications</h4>
                             <div className="grid grid-cols-2 gap-3">
                                 {certifications.map((cert, i) => (
                                     <div key={i} className="flex items-center gap-2">
-                                        <CheckCircle2 size={18} className="text-red-200" />
-                                        <span className="text-sm font-medium">{cert}</span>
+                                        <CheckCircle2 size={18} className="text-red-500" />
+                                        <span className="text-sm font-medium text-slate-700">{cert}</span>
                                     </div>
                                 ))}
                             </div>

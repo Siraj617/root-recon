@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Header } from "@/components/layout/Header";
-import { Research } from "@/components/sections/Research";import { Contact } from "@/components/sections/Contact";
+import { Research } from "@/components/sections/Research"; import { Contact } from "@/components/sections/Contact";
 import { Button } from "@/components/ui/Button";
 import {
     Layers, ArrowRight, Shield, Target, Users, Settings, Zap, Headphones,
@@ -183,6 +183,114 @@ export default function APISecurityPage() {
             </section>
 
             <Research />
+
+            {/* Built by Hackers Intro */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto text-center">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                            Built by Hackers. <span className="text-red-600">Trusted by Businesses.</span>
+                        </h2>
+                        <p className="text-xl text-slate-600 leading-relaxed">
+                            At Root Recon, our penetration testing is manual, in-depth, and impact-focused.
+                            We don&apos;t just find vulnerabilities — we exploit them like real attackers and show you exactly what&apos;s at risk.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What We Test */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What We Test
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Deep API Security Coverage
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Broken Object Level Authorization (BOLA)",
+                                "Broken Function Level Authorization (BFLA)",
+                                "Authentication & token misuse",
+                                "Excessive data exposure",
+                                "Mass assignment vulnerabilities",
+                                "Rate limiting & abuse scenarios",
+                                "Business logic flaws in API workflows",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Our Approach */}
+            <section className="py-16 bg-white">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                Our Approach
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                                How We Test Your APIs
+                            </h2>
+                            <p className="text-lg text-slate-600">We test APIs:</p>
+                        </div>
+                        <div className="grid md:grid-cols-3 gap-6 mb-8">
+                            {[
+                                { title: "Independently", desc: "Testing API endpoints in isolation to find individual flaws" },
+                                { title: "Through Clients", desc: "Through web & mobile clients to find integration issues" },
+                                { title: "Chained Attacks", desc: "As part of chained attack paths for maximum impact" },
+                            ].map((item, i) => (
+                                <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
+                                    <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                    <p className="text-sm text-slate-600">{item.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                        <p className="text-center text-lg text-slate-700 font-semibold">
+                            We focus on what an attacker can <span className="text-red-600">access, modify, or destroy</span>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* What You Get */}
+            <section className="py-16 bg-slate-50">
+                <div className="container px-4 mx-auto">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-12">
+                            <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
+                                What You Get
+                            </span>
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                                Actionable API Security Results
+                            </h2>
+                        </div>
+                        <div className="grid md:grid-cols-2 gap-4">
+                            {[
+                                "Critical API flaws proven with exploitation",
+                                "Clear risk prioritization",
+                                "Secure API design guidance",
+                                "Protection against data leaks & fraud",
+                            ].map((item, i) => (
+                                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4 border border-slate-200">
+                                    <CheckCircle2 className="w-5 h-5 text-red-600 mt-0.5 flex-shrink-0" />
+                                    <span className="text-slate-700 font-medium">{item}</span>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* Security Research - Stats Cards */}
             <section className="py-24 bg-white">

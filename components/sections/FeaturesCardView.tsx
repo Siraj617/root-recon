@@ -108,9 +108,7 @@ export function FeaturesCardEffect() {
 
             <p className="text-gray-400 mb-4 leading-relaxed">{item.desc}</p>
 
-            <div className="text-orange-500 font-bold inline-flex items-center gap-2 text-sm uppercase tracking-wider">
-              Value {index + 1} <ArrowRight className="h-4 w-4" />
-            </div>
+
           </div>
         ))}
       </div>
@@ -120,7 +118,7 @@ export function FeaturesCardEffect() {
         {careItems.map((item, index) => (
           <div
             key={index}
-            className="absolute w-[265px] h-[380px] bg-slate-900 rounded-2xl p-8 shadow-2xl border border-white/10 transition-all duration-700 ease-out will-change-transform flex flex-col hover:scale-105 hover:border-slate-500/50 hover:shadow-orange-500/10"
+            className="absolute w-[265px] h-[380px] bg-slate-900 rounded-2xl p-8 shadow-2xl border border-white/10 transition-all duration-700 ease-out will-change-transform flex flex-col hover:scale-105 hover:border-slate-500/50 hover:shadow-red-500/10"
             style={{
               transform: getFanTransform(index, careItems.length, isFanned),
               zIndex: 20 + index,

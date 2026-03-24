@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-20 bg-slate-900">
+        <section className="relative min-h-[90vh] flex items-center overflow-hidden pt-32 pb-16 bg-slate-900">
             {/* Premium Background Elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-[-20%] right-[-10%] w-[1000px] h-[1000px] bg-red-900/20 rounded-full blur-[120px] mix-blend-screen" />
@@ -26,7 +26,7 @@ export function Hero() {
                             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/10 text-white text-sm font-bold shadow-sm"
                         >
                             <ShieldCheck size={16} className="text-primary-400" />
-                            <span className="tracking-wide uppercase text-xs">Trusted by Fortune 500 Companies</span>
+                            <span className="tracking-wide uppercase text-xs">Offensive Security Experts</span>
                         </motion.div>
 
                         <motion.h1
@@ -76,7 +76,7 @@ export function Hero() {
                         transition={{ duration: 0.8, delay: 0.2 }}
                         className="hidden lg:block relative"
                     >
-                        <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-transparent rounded-full blur-3xl -z-10" />
+                        <div className="absolute inset-0 bg-gradient-to-tr from-red-500/10 to-transparent rounded-full blur-3xl -z-10" />
                         <HeroAnimation />
                     </motion.div>
                 </div>

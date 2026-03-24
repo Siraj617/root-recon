@@ -1,361 +1,169 @@
 "use client";
 
-import { ArrowRight, CheckCircle2, Shield, Bug, Lock, Eye, Target, Zap, FileSearch, Network } from "lucide-react";
-import { useState, useEffect } from "react";
+import { ArrowRight, Shield, Lock, Target, Network, Globe, Smartphone, Server, Wifi } from "lucide-react";
+import { motion } from "framer-motion";
+import Link from "next/link";
 
 const capabilities = [
     {
-        name: "Web Apps",
-        desc: "Full-stack security testing for modern web applications",
-        icon: Network,
-        color: "#dc2626",
+        name: "Web Application Pentesting",
+        desc: "We dig deep into your web app — testing auth flows, business logic, input handling, and session management. Every finding is validated with real exploitation, not assumptions.",
+        icon: Globe,
+        href: "/solutions/web-security",
+        number: "01",
     },
     {
-        name: "API Security",
-        desc: "REST, GraphQL and microservices vulnerability assessment",
-        icon: Lock,
-        color: "#dc2626",
+        name: "Android Application Pentesting",
+        desc: "From insecure storage to SSL pinning bypass, we reverse-engineer your Android app and test it on real devices. Runtime hooking, API chaining, and root detection bypass included.",
+        icon: Smartphone,
+        href: "/solutions/mobile-security",
+        number: "02",
     },
     {
-        name: "Mobile Apps",
-        desc: "iOS and Android application penetration testing",
-        icon: Target,
-        color: "#dc2626",
+        name: "API Pentesting",
+        desc: "We test your APIs independently and through clients — hunting for BOLA, BFLA, broken auth, and logic flaws. Every endpoint is tested for what attackers can access, modify, or destroy.",
+        icon: Server,
+        href: "/solutions/api-security",
+        number: "03",
     },
     {
-        name: "Cloud Security",
-        desc: "AWS, Azure, GCP infrastructure security review",
-        icon: Shield,
-        color: "#dc2626",
-    },
-    {
-        name: "Red Team",
-        desc: "Adversary simulation and attack path validation",
-        icon: Eye,
-        color: "#dc2626",
-    },
-    {
-        name: "Code Review",
-        desc: "Secure code analysis and vulnerability detection",
-        icon: FileSearch,
-        color: "#dc2626",
+        name: "Network Pentesting",
+        desc: "We simulate real attackers targeting your network — from external perimeter breaches to internal lateral movement. Credential harvesting, privilege escalation, and full attack path mapping.",
+        icon: Wifi,
+        href: "/solutions/penetration-testing",
+        number: "04",
     },
 ];
 
 export function About() {
-    const [radius, setRadius] = useState(320);
-
-    useEffect(() => {
-        const getRadius = () => {
-            if (typeof window === 'undefined') return 320;
-            if (window.innerWidth < 640) return 180;
-            if (window.innerWidth < 1024) return 260;
-            return 320;
-        };
-
-        setRadius(getRadius());
-
-        const handleResize = () => setRadius(getRadius());
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
     return (
-        <section id="about" className="py-20 bg-gradient-to-b from-slate-50 to-white">
-            <div className="container mx-auto px-6">
+        <section id="about" className="py-24 bg-slate-900 relative overflow-hidden">
+            {/* Background Effects */}
+            <div className="absolute inset-0 pointer-events-none">
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-red-600/5 rounded-full blur-[150px]" />
+                <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-red-900/10 rounded-full blur-[100px]" />
+            </div>
+
+            <div className="container mx-auto px-6 relative z-10">
                 {/* Header */}
-                <div className="text-center mb-16">
-                    <span className="inline-block mb-4 px-4 py-1.5 bg-red-600 text-white border border-red-500 rounded-full text-sm font-medium">
+                <div className="text-center mb-20">
+                    <motion.span
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="inline-block mb-5 px-4 py-1.5 bg-red-600/10 text-red-500 border border-red-500/20 rounded-full text-sm font-semibold tracking-wide uppercase"
+                    >
                         Who We Are
-                    </span>
-                    <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
-                        Think Like an Attacker
-                    </h2>
-                    <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-8">
+                    </motion.span>
+                    <motion.h2
+                        initial={{ opacity: 0, y: 15 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6"
+                    >
+                        Think Like an{" "}
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-red-600">
+                            Attacker
+                        </span>
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 15 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.2 }}
+                        className="text-lg text-slate-400 max-w-3xl mx-auto leading-relaxed"
+                    >
                         RootRecon is an offensive security company delivering advanced penetration testing
                         and vulnerability assessment services. We simulate real-world attacks to protect your business.
-                    </p>
-                    <button className="inline-flex items-center px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow-lg group transition-all duration-300">
-                        Explore Our Services
-                        <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </motion.p>
                 </div>
 
-                {/* Hub on Left, Cards on Right Layout */}
-                <div className="relative flex items-center justify-center mb-24 lg:mb-32">
-                    <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12 lg:gap-24 w-full max-w-6xl">
-
-                        {/* Left Side - Circular Hub */}
-                        <div className="relative flex-shrink-0">
-                            {/* Background Circle Removed */}
-
-                            {/* Container for circles and arrows */}
-                            <div
-                                className="relative"
-                                style={{
-                                    width: `${radius * 1.4}px`,
-                                    height: `${radius * 1.4}px`,
-                                }}
+                {/* Service Cards - Premium Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 max-w-[90rem] mx-auto mb-20">
+                    {capabilities.map((capability, index) => {
+                        const IconComponent = capability.icon;
+                        return (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: index * 0.1, duration: 0.5 }}
                             >
-                                {/* Center arrows from hub to icons */}
-                                <svg
-                                    className="absolute inset-0"
-                                    width="100%"
-                                    height="100%"
-                                    style={{ overflow: 'visible' }}
-                                >
-                                    <defs>
-                                        {capabilities.map((capability, index) => (
-                                            <marker
-                                                key={`marker-${index}`}
-                                                id={`arrow-hub-${index}`}
-                                                markerWidth="8"
-                                                markerHeight="8"
-                                                refX="7"
-                                                refY="4"
-                                                orient="auto"
-                                                markerUnits="strokeWidth"
-                                            >
-                                                <path d="M0,0 L0,8 L8,4 z" fill="#94a3b8" />
-                                            </marker>
-                                        ))}
-                                    </defs>
-                                    {capabilities.map((capability, index) => {
-                                        const angle = (index * 360) / capabilities.length - 90;
-                                        const angleRad = (angle * Math.PI) / 180;
-                                        const centerX = (radius * 1.4) / 2;
-                                        const centerY = (radius * 1.4) / 2;
-                                        const innerRadius = 50;
-                                        const outerRadius = (radius * 0.55);
+                                <Link href={capability.href}>
+                                    <div className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/40 transition-all duration-500 cursor-pointer overflow-hidden h-full">
+                                        {/* Hover Glow */}
+                                        <div className="absolute inset-0 bg-gradient-to-br from-red-600/0 to-red-900/0 group-hover:from-red-600/5 group-hover:to-red-900/10 transition-all duration-500 rounded-2xl" />
 
-                                        return (
-                                            <line
-                                                key={`line-${index}`}
-                                                x1={centerX + Math.cos(angleRad) * innerRadius}
-                                                y1={centerY + Math.sin(angleRad) * innerRadius}
-                                                x2={centerX + Math.cos(angleRad) * outerRadius}
-                                                y2={centerY + Math.sin(angleRad) * outerRadius}
-                                                stroke="#94a3b8"
-                                                strokeWidth="2.5"
-                                                opacity="0.6"
-                                                markerEnd={`url(#arrow-hub-${index})`}
-                                            />
-                                        );
-                                    })}
-                                </svg>
+                                        {/* Number */}
+                                        <div className="absolute top-6 right-6 text-5xl font-black text-slate-700/30 group-hover:text-red-500/20 transition-colors duration-500">
+                                            {capability.number}
+                                        </div>
 
-                                {/* Center Hub */}
-                                <div
-                                    className="absolute z-20 bg-white rounded-full px-5 py-4 shadow-2xl border-4 border-white"
-                                    style={{
-                                        top: '50%',
-                                        left: '50%',
-                                        transform: 'translate(-50%, -50%)',
-                                    }}
-                                >
-                                    <h3 className="text-lg md:text-xl font-bold text-slate-700 tracking-tight text-center">
-                                        RootRecon
-                                    </h3>
-                                    <p className="text-[9px] md:text-[10px] text-slate-700 text-center mt-0.5">
-                                        Offensive Security
-                                    </p>
-                                </div>
-
-                                {/* Capability Icons around the hub */}
-                                {capabilities.map((capability, index) => {
-                                    const angle = (index * 360) / capabilities.length - 90;
-                                    const iconRadius = radius * 0.55;
-                                    const centerX = (radius * 1.4) / 2;
-                                    const centerY = (radius * 1.4) / 2;
-                                    const x = Math.cos((angle * Math.PI) / 180) * iconRadius;
-                                    const y = Math.sin((angle * Math.PI) / 180) * iconRadius;
-                                    const IconComponent = capability.icon;
-
-                                    return (
-                                        <div
-                                            key={index}
-                                            className="absolute z-10"
-                                            style={{
-                                                left: centerX + x,
-                                                top: centerY + y,
-                                                transform: 'translate(-50%, -50%)',
-                                            }}
-                                        >
-                                            <div
-                                                className="bg-white rounded-full p-2.5 md:p-3 shadow-lg"
-                                                style={{ border: `3px solid ${capability.color}40` }}
-                                            >
-                                                <div
-                                                    className="w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center"
-                                                    style={{ backgroundColor: capability.color + '15' }}
-                                                >
-                                                    <IconComponent
-                                                        className="w-4 h-4 md:w-5 md:h-5"
-                                                        style={{ color: capability.color }}
-                                                    />
-                                                </div>
+                                        <div className="relative z-10">
+                                            {/* Icon */}
+                                            <div className="w-14 h-14 rounded-xl bg-red-600/10 border border-red-500/20 flex items-center justify-center mb-6 group-hover:bg-red-600/20 group-hover:border-red-500/40 transition-all duration-500">
+                                                <IconComponent className="w-7 h-7 text-red-500" />
                                             </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        </div>
 
-                        {/* Right Side - Cards with arrows */}
-                        <div className="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5">
-                            {capabilities.map((capability, index) => {
-                                const IconComponent = capability.icon;
-                                return (
-                                    <div key={index} className="flex items-center gap-4">
-                                        {/* Arrow pointing to card */}
-                                        <div className="hidden lg:flex items-center">
-                                            <svg width="40" height="20" className="flex-shrink-0">
-                                                <defs>
-                                                    <marker
-                                                        id={`card-arrow-${index}`}
-                                                        markerWidth="8"
-                                                        markerHeight="8"
-                                                        refX="7"
-                                                        refY="4"
-                                                        orient="auto"
-                                                    >
-                                                        <path d="M0,0 L0,8 L8,4 z" fill="#94a3b8" />
-                                                    </marker>
-                                                </defs>
-                                                <line
-                                                    x1="0"
-                                                    y1="10"
-                                                    x2="30"
-                                                    y2="10"
-                                                    stroke="#94a3b8"
-                                                    strokeWidth="2"
-                                                    markerEnd={`url(#card-arrow-${index})`}
-                                                />
-                                            </svg>
-                                        </div>
+                                            {/* Title */}
+                                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-red-50 transition-colors">
+                                                {capability.name}
+                                            </h3>
 
-                                        {/* Card */}
-                                        <div
-                                            className="flex-1 bg-white rounded-xl p-4 shadow-lg border border-slate-100"
-                                            style={{ borderLeft: `4px solid ${capability.color}` }}
-                                        >
-                                            <div className="flex items-start gap-3">
-                                                <div
-                                                    className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                                                    style={{ backgroundColor: capability.color + '15' }}
-                                                >
-                                                    <IconComponent className="w-5 h-5" style={{ color: capability.color }} />
-                                                </div>
-                                                <div>
-                                                    <p className="font-bold text-sm text-slate-900 mb-1">{capability.name}</p>
-                                                    <p className="text-xs text-slate-500 leading-relaxed">{capability.desc}</p>
-                                                </div>
+                                            {/* Description */}
+                                            <p className="text-slate-400 leading-relaxed mb-6 group-hover:text-slate-300 transition-colors">
+                                                {capability.desc}
+                                            </p>
+
+                                            {/* Link */}
+                                            <div className="flex items-center gap-2 text-red-500 font-semibold text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                                Learn More <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                             </div>
                                         </div>
                                     </div>
-                                );
-                            })}
-                        </div>
-                    </div>
+                                </Link>
+                            </motion.div>
+                        );
+                    })}
                 </div>
 
-                {/* Features Section */}
-                <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-lg p-8 md:p-10">
-                    <div className="grid md:grid-cols-3 gap-8">
-                        <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
-                                    <Target className="w-6 h-6 text-red-600" />
+                {/* Bottom Stats Bar */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                    className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 md:p-10 max-w-5xl mx-auto"
+                >
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                        {[
+                            { label: "Deep Insight", desc: "Chain vulnerabilities for real impact", icon: Target },
+                            { label: "Zero Blind Spots", desc: "Find what scanners miss", icon: Shield },
+                            { label: "Real Impact", desc: "Exploitation-focused testing", icon: Network },
+                            { label: "Actionable Reports", desc: "Clear remediation guidance", icon: Lock },
+                        ].map((stat, i) => (
+                            <div key={i} className="text-center">
+                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center mx-auto mb-3">
+                                    <stat.icon className="w-5 h-5 text-red-500" />
                                 </div>
+                                <h4 className="font-bold text-white text-lg mb-1">{stat.label}</h4>
+                                <p className="text-sm text-slate-500">{stat.desc}</p>
                             </div>
-                            <div>
-                                <h3 className="font-bold text-lg text-white mb-2">Deep Insight</h3>
-                                <p className="text-sm text-slate-400 leading-relaxed">
-                                    Modern attackers do not follow checklists. They exploit logic gaps and chain vulnerabilities.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
-                                    <Eye className="w-6 h-6 text-red-600" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg text-white mb-2">Zero Blind Spots</h3>
-                                <p className="text-sm text-slate-400 leading-relaxed">
-                                    We focus on uncovering hidden attack paths missed by automated scanners.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
-                                    <Zap className="w-6 h-6 text-red-600" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg text-white mb-2">Real Impact</h3>
-                                <p className="text-sm text-slate-400 leading-relaxed">
-                                    Our assessments focus on exploitation and business impact, not just theoretical risks.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
-                                    <Shield className="w-6 h-6 text-red-600" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg text-white mb-2">Proactive Defense</h3>
-                                <p className="text-sm text-slate-400 leading-relaxed">
-                                    Identify and fix vulnerabilities before attackers can exploit them in production.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
-                                    <FileSearch className="w-6 h-6 text-red-600" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg text-white mb-2">Actionable Reports</h3>
-                                <p className="text-sm text-slate-400 leading-relaxed">
-                                    Clear remediation guidance with prioritized findings based on actual risk levels.
-                                </p>
-                            </div>
-                        </div>
-
-                        <div className="flex items-start space-x-4">
-                            <div className="flex-shrink-0">
-                                <div className="w-12 h-12 rounded-full bg-red-900/20 flex items-center justify-center">
-                                    <Lock className="w-6 h-6 text-red-600" />
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="font-bold text-lg text-white mb-2">Continuous Security</h3>
-                                <p className="text-sm text-slate-400 leading-relaxed">
-                                    Ongoing testing and monitoring to maintain security as your application evolves.
-                                </p>
-                            </div>
-                        </div>
+                        ))}
                     </div>
 
-                    <div className="mt-10 pt-8 border-t border-slate-700 text-center">
-                        <p className="text-slate-600 text-base">
-                            Need a custom security assessment?{" "}
-                            <a href="#contact" className="text-blue-600 hover:text-blue-700 font-semibold underline decoration-2 underline-offset-4 hover:underline-offset-2 transition-all">
-                                Let&apos;s discuss your requirements
-                            </a>
-                        </p>
+                    <div className="mt-8 pt-6 border-t border-slate-700/50 text-center">
+                        <Link
+                            href="/contact"
+                            className="inline-flex items-center px-8 py-3 bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow-lg shadow-red-600/20 group transition-all duration-300"
+                        >
+                            Explore Our Services
+                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                        </Link>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

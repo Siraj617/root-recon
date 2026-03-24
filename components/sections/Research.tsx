@@ -29,7 +29,7 @@ export function Research() {
                                 <img
                                     src={company.logo}
                                     alt={`${company.name} logo`}
-                                    className="h-12 w-20 object-contain"
+                                    className="h-10 w-28 object-contain"
                                 />
                             </div>
                         ))}

@@ -5,24 +5,15 @@ import {
   Globe,
   Server,
   Smartphone,
-  Cloud,
   Shield,
-  Lock,
-  Code,
-  FileSearch,
-  Target,
-  Layers,
-  Crosshair,
+  Wifi,
 } from "lucide-react";
 
 const services = [
-  { icon: Globe, label: "Web App Security", x: -220, y: -100 },
-  { icon: Shield, label: "Penetration Testing", x: 220, y: -100 },
-  { icon: Server, label: "API Security", x: -220, y: 100 },
-  { icon: Cloud, label: "Cloud Security", x: 220, y: 100 },
-  { icon: Smartphone, label: "Mobile Security", x: 0, y: -180 },
-  { icon: FileSearch, label: "Code Review", x: -120, y: 180 },
-  { icon: Code, label: "Code Review", x: -300, y: 0 },
+  { icon: Globe, label: "Web Pentesting", x: -200, y: -120 },
+  { icon: Smartphone, label: "Android Pentesting", x: 200, y: -120 },
+  { icon: Server, label: "API Pentesting", x: -200, y: 120 },
+  { icon: Wifi, label: "Network Pentesting", x: 200, y: 120 },
 ];
 
 export interface HeroAnimationProps {

@@ -34,33 +34,30 @@ const menuData = {
   services: {
     title: "Services",
     items: [
-      // { name: "Penetration Testing", href: "/solutions/penetration-testing", icon: Shield, desc: "Comprehensive security assessments" },
-
       {
-        name: "Web App Security",
+        name: "Web Application Penetration Testing",
         href: "/solutions/web-security",
         icon: Globe,
-        desc: "OWASP Top 10 & beyond",
+        desc: "Full-stack web app security",
       },
       {
-        name: "API Security",
+        name: "Android Application Penetration Testing",
+        href: "/solutions/mobile-security",
+        icon: Smartphone,
+        desc: "iOS & Android app security",
+      },
+      {
+        name: "API Penetration Testing",
         href: "/solutions/api-security",
         icon: Server,
         desc: "REST, GraphQL & gRPC",
       },
       {
-        name: "Mobile Security",
-        href: "/solutions/mobile-security",
-        icon: Smartphone,
-        desc: "iOS & Android testing",
+        name: "Network Penetration Testing",
+        href: "/solutions/penetration-testing",
+        icon: Shield,
+        desc: "Internal & external network",
       },
-      {
-        name: "Cloud Security",
-        href: "/solutions/cloud-security",
-        icon: Cloud,
-        desc: "AWS, Azure & GCP",
-      },
-      // { name: "Code Review", href: "/solutions/code-review", icon: Code, desc: "Secure code analysis" },
     ],
   },
   //   solutions: {

@@ -9,60 +9,32 @@ import Link from "next/link";
 
 const services = [
     {
-        title: "Penetration Testing",
-        slug: "penetration-testing",
-        icon: ShieldCheck,
-        desc: "Comprehensive manual security assessments covering web applications, mobile apps, and APIs with proof-of-concept exploits.",
-        features: ["Web Applications", "Mobile Apps", "APIs & Microservices", "Proof of Exploits"],
-    },
-    {
-        title: "Red Teaming",
-        slug: "red-teaming",
-        icon: Crosshair,
-        desc: "Simulate real-world attack scenarios to test your organization's detection and response capabilities.",
-        features: ["Adversary Simulation", "Social Engineering", "Physical Security", "Detection Testing"],
-    },
-    {
-        title: "Web App Security",
+        title: "Web Application Penetration Testing",
         slug: "web-security",
         icon: Globe,
-        desc: "Deep testing for OWASP Top 10 vulnerabilities, business logic flaws, and authentication bypass issues.",
-        features: ["OWASP Top 10", "Business Logic", "Auth Bypass", "Session Management"],
+        desc: "Expose what attackers can really do to your web app. We perform deep manual testing to uncover vulnerabilities that automated tools completely miss.",
+        features: ["Auth & Session Flaws", "Business Logic Abuse", "Injection & XSS", "Account Takeover"],
     },
     {
-        title: "API Security",
-        slug: "api-security",
-        icon: Server,
-        desc: "REST, GraphQL, and SOAP API testing for authorization flaws, data exposure, and injection vulnerabilities.",
-        features: ["BOLA/BFLA", "Rate Limiting", "Token Security", "Data Exposure"],
-    },
-    {
-        title: "Mobile Security",
+        title: "Android Application Penetration Testing",
         slug: "mobile-security",
         icon: Smartphone,
-        desc: "Android and iOS application testing including reverse engineering, runtime analysis, and backend API security.",
-        features: ["Static Analysis", "Dynamic Testing", "Reverse Engineering", "API Security"],
+        desc: "Secure your mobile app against reverse engineering & runtime attacks. Deep Android application security testing beyond surface-level checks.",
+        features: ["Static & Dynamic Analysis", "SSL Pinning Bypass", "Reverse Engineering", "Mobile-to-API Chaining"],
     },
     {
-        title: "Cloud Security",
-        slug: "cloud-security",
-        icon: Cloud,
-        desc: "AWS, Azure, and GCP configuration audits to identify misconfigurations, IAM issues, and privilege escalation paths.",
-        features: ["IAM Review", "Storage Security", "Network Config", "Container Security"],
+        title: "API Penetration Testing",
+        slug: "api-security",
+        icon: Server,
+        desc: "Stop attackers from abusing your APIs silently. We specialize in deep API security testing aligned with real attacker behavior.",
+        features: ["BOLA/BFLA", "Token Misuse", "Data Exposure", "Rate Limit Abuse"],
     },
     {
-        title: "Code Review",
-        slug: "code-review",
-        icon: Code,
-        desc: "Manual source code analysis to identify security vulnerabilities, logic flaws, and hardcoded secrets.",
-        features: ["Secret Detection", "Logic Flaws", "Crypto Issues", "Dependency Audit"],
-    },
-    {
-        title: "PTaaS",
-        slug: "ptaas",
-        icon: Building,
-        desc: "Continuous penetration testing as a service with on-demand assessments and real-time vulnerability tracking.",
-        features: ["Continuous Testing", "On-Demand Scans", "Real-Time Reports", "DevSecOps Integration"],
+        title: "Network Penetration Testing",
+        slug: "penetration-testing",
+        icon: ShieldCheck,
+        desc: "Know how far an attacker can go inside your network. We simulate real attackers to identify how your network can be breached and abused.",
+        features: ["External Exposure", "Lateral Movement", "Privilege Escalation", "Credential Harvesting"],
     },
 ];
 
@@ -100,7 +72,7 @@ export default function SolutionsPage() {
             <section className="py-24">
                 <div className="container px-4 mx-auto">
                     <SectionHeading title="Security Services" subtitle="Tailored testing for every layer of your technology stack." />
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
                         {services.map((service, index) => (
                             <div key={index} className="group bg-white p-6 rounded-2xl border border-slate-200 hover:shadow-xl hover:border-red-200 transition-all flex flex-col">
                                 <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:bg-red-50 group-hover:text-red-600 transition-colors">
