@@ -16,18 +16,18 @@ const footerLinks = {
             { name: "Network Penetration Testing", href: "/solutions/penetration-testing" },
         ],
     },
-    resources: {
-        title: "Resources",
-        links: [
-            { name: "Blog", href: "/blog" },
-            { name: "Case Studies", href: "/blog" },
-        ],
-    },
+    //     resources: {
+    //         title: "Resources",
+    //         links: [
+    //             { name: "Blog", href: "/blog" },
+    //             { name: "Case Studies", href: "/blog" },
+    //         ],
+    //     },
     company: {
         title: "Company",
         links: [
             { name: "About Us", href: "/about" },
-            { name: "Pricing", href: "/pricing" },
+            // { name: "Pricing", href: "/pricing" },
             { name: "Contact", href: "/contact" },
         ],
     },
@@ -35,7 +35,7 @@ const footerLinks = {
 
 export function Contact() {
     return (
-        <footer className="bg-slate-900 text-slate-300 pt-20 pb-10">
+        <footer className="bg-black text-slate-300 pt-20 pb-10">
             <div className="container px-4 mx-auto">
                 {/* Main Footer */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 mb-16">
@@ -55,9 +55,9 @@ export function Contact() {
                             Offensive security for modern applications. We help companies identify and fix vulnerabilities before attackers exploit them.
                         </p>
                         <div className="flex gap-4">
-                            <a href="#" className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition-colors"><Twitter size={18} /></a>
-                            <a href="#" className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition-colors"><Linkedin size={18} /></a>
-                            <a href="#" className="w-10 h-10 rounded-lg bg-slate-800 hover:bg-slate-700 flex items-center justify-center transition-colors"><Github size={18} /></a>
+                            <a href="#" className="w-10 h-10 rounded-lg bg-neutral-900 hover:bg-slate-700 flex items-center justify-center transition-colors"><Twitter size={18} /></a>
+                            <a href="#" className="w-10 h-10 rounded-lg bg-neutral-900 hover:bg-slate-700 flex items-center justify-center transition-colors"><Linkedin size={18} /></a>
+                            <a href="#" className="w-10 h-10 rounded-lg bg-neutral-900 hover:bg-slate-700 flex items-center justify-center transition-colors"><Github size={18} /></a>
                         </div>
                     </div>
 
@@ -80,7 +80,7 @@ export function Contact() {
 
 
                 {/* Bottom Bar */}
-                <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
+                <div className="border-t border-neutral-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-slate-500">
                     <p>© {new Date().getFullYear()} RootRecon. All rights reserved.</p>
                     <div className="flex gap-8">
                         <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

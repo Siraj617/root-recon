@@ -97,7 +97,7 @@ export function Methodology() {
                                     viewport={{ once: true }}
                                     transition={{ duration: 0.4, delay: index * 0.2 + 0.2 }}
                                 >
-                                    <h3 className="text-xs font-bold text-slate-900">{step.title}</h3>
+                                    <h3 className="text-xs font-bold text-black">{step.title}</h3>
                                     <p className="text-slate-600 text-[10px] mt-0.5">{step.desc}</p>
                                 </motion.div>
                             </div>
@@ -138,7 +138,7 @@ export function Methodology() {
 
                                 {/* Content Card */}
                                 <div className="flex-1 bg-white rounded-xl p-4 shadow-md border border-slate-100">
-                                    <h3 className="font-bold text-slate-900">{step.title}</h3>
+                                    <h3 className="font-bold text-black">{step.title}</h3>
                                     <p className="text-sm text-slate-600 mt-1">{step.desc}</p>
                                 </div>
                             </motion.div>
@@ -167,7 +167,7 @@ export function Methodology() {
                                 viewport={{ once: true }}
                                 transition={{ delay: 0.2 }}
                             >
-                                <h3 className="text-2xl font-bold mb-3 text-slate-900">Compliance & Audit Support</h3>
+                                <h3 className="text-2xl font-bold mb-3 text-black">Compliance & Audit Support</h3>
                                 <p className="text-slate-600 max-w-2xl mx-auto">
                                     Our assessments help you achieve and maintain compliance with industry standards.
                                 </p>
@@ -202,7 +202,7 @@ export function Methodology() {
                                         </div>
 
                                         {/* Content */}
-                                        <h4 className="font-bold text-lg text-slate-900 mb-2">{item.name}</h4>
+                                        <h4 className="font-bold text-lg text-black mb-2">{item.name}</h4>
                                         <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
 
                                         {/* Checkmark badge */}

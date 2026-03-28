@@ -101,23 +101,23 @@ const menuData = {
   //       },
   //     ],
   //   },
-  resources: {
-    title: "Resources",
-    items: [
-      {
-        name: "Blog",
-        href: "/blog",
-        icon: FileText,
-        desc: "Security insights",
-      },
-      //   {
-      //     name: "Case Studies",
-      //     href: "/customers",
-      //     icon: BookOpen,
-      //     desc: "Success stories",
-      //   },
-    ],
-  },
+  //   resources: {
+  //     title: "Resources",
+  //     items: [
+  //       {
+  //         name: "Blog",
+  //         href: "/blog",
+  //         icon: FileText,
+  //         desc: "Security insights",
+  //       },
+  //       //   {
+  //       //     name: "Case Studies",
+  //       //     href: "/customers",
+  //       //     icon: BookOpen,
+  //       //     desc: "Success stories",
+  //       //   },
+  //     ],
+  //   },
   company: {
     title: "Company",
     items: [
@@ -166,10 +166,9 @@ function MegaMenuDropdown({
                   <item.icon size={20} />
                 </div>
                 <div>
-                  <div className="font-semibold text-slate-900 text-sm">
+                  <div className="font-semibold text-black text-sm">
                     {item.name}
                   </div>
-                  <div className="text-xs text-slate-500">{item.desc}</div>
                 </div>
               </Link>
             ))}
@@ -253,7 +252,7 @@ export function Header() {
         {/* CTAs */}
         <div className="hidden lg:flex items-center gap-3">
           <Link href="/get-started">
-            <Button className="bg-slate-900 hover:bg-slate-800 text-white shadow-lg shadow-zinc-900/20 px-6">
+            <Button className="bg-black hover:bg-neutral-900 text-white shadow-lg shadow-zinc-900/20 px-6">
               Request a Quote
             </Button>
           </Link>

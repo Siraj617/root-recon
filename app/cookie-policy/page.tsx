@@ -8,7 +8,7 @@ export default function CookiePolicyPage() {
 
             <section className="pt-32 pb-20">
                 <div className="container px-4 mx-auto max-w-4xl">
-                    <h1 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-8 tracking-tight">Cookie Policy</h1>
+                    <h1 className="text-4xl md:text-5xl font-extrabold text-black mb-8 tracking-tight">Cookie Policy</h1>
                     <p className="text-slate-500 mb-12">Last updated: December 21, 2024</p>
 
                     <div className="prose prose-slate prose-lg max-w-none">

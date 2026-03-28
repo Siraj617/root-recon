@@ -37,7 +37,7 @@ const capabilities = [
 
 export function About() {
     return (
-        <section id="about" className="py-24 bg-slate-900 relative overflow-hidden">
+        <section id="about" className="py-24 bg-black relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute inset-0 pointer-events-none">
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-red-600/5 rounded-full blur-[150px]" />
@@ -92,7 +92,7 @@ export function About() {
                                 transition={{ delay: index * 0.1, duration: 0.5 }}
                             >
                                 <Link href={capability.href}>
-                                    <div className="group relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/40 transition-all duration-500 cursor-pointer overflow-hidden h-full">
+                                    <div className="group relative bg-neutral-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700/50 hover:border-red-500/40 transition-all duration-500 cursor-pointer overflow-hidden h-full">
                                         {/* Hover Glow */}
                                         <div className="absolute inset-0 bg-gradient-to-br from-red-600/0 to-red-900/0 group-hover:from-red-600/5 group-hover:to-red-900/10 transition-all duration-500 rounded-2xl" />
 
@@ -135,7 +135,7 @@ export function About() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 }}
-                    className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 md:p-10 max-w-5xl mx-auto"
+                    className="bg-neutral-900/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8 md:p-10 max-w-5xl mx-auto"
                 >
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                         {[

@@ -383,7 +383,7 @@ export default function PricingPage() {
                             </Button>
                         </Link>
                         <Link href="/contact">
-                            <Button variant="outline" className="border-2 border-slate-700 text-white hover:bg-slate-800 px-8 py-4 text-lg font-bold rounded-xl">
+                            <Button variant="outline" className="border-2 border-slate-700 text-white hover:bg-neutral-900 px-8 py-4 text-lg font-bold rounded-xl">
                                 Schedule A Call
                             </Button>
                         </Link>
@@ -397,7 +397,7 @@ export default function PricingPage() {
                                 onClick={() => setActiveTab(service.id)}
                                 className={`flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${activeTab === service.id
                                         ? "bg-blue-600 text-white shadow-lg shadow-blue-600/25 scale-105"
-                                        : "bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white"
+                                        : "bg-neutral-900 text-slate-400 hover:bg-slate-700 hover:text-white"
                                     }`}
                             >
                                 <service.icon size={16} />
@@ -425,7 +425,7 @@ export default function PricingPage() {
                                 <div className="mb-6">
                                     <div className="flex items-center gap-2 mb-4">
                                         <Zap className="text-blue-600" size={24} />
-                                        <h3 className="text-2xl font-bold text-slate-900">Essentials</h3>
+                                        <h3 className="text-2xl font-bold text-black">Essentials</h3>
                                     </div>
                                     <p className="text-slate-500 text-sm min-h-[40px]">{currentData.essentials.desc}</p>
                                 </div>
@@ -437,7 +437,7 @@ export default function PricingPage() {
                                 </Link>
 
                                 <div className="mt-auto pt-6 border-t border-slate-100">
-                                    <p className="text-sm font-semibold text-slate-900 mb-6">Includes:</p>
+                                    <p className="text-sm font-semibold text-black mb-6">Includes:</p>
                                     <ul className="space-y-5">
                                         {currentData.essentials.features.map((feature, i) => (
                                             <li key={i} className="flex items-start gap-3 text-sm text-slate-600">
@@ -458,7 +458,7 @@ export default function PricingPage() {
                                 <div className="mb-6 mt-2">
                                     <div className="flex items-center gap-2 mb-4">
                                         <Shield className="text-blue-600" size={24} />
-                                        <h3 className="text-2xl font-bold text-slate-900">Advanced</h3>
+                                        <h3 className="text-2xl font-bold text-black">Advanced</h3>
                                     </div>
                                     <p className="text-slate-500 text-sm min-h-[40px]">{currentData.advanced.desc}</p>
                                 </div>
@@ -470,7 +470,7 @@ export default function PricingPage() {
                                 </Link>
 
                                 <div className="mt-auto pt-6 border-t border-slate-100">
-                                    <p className="text-sm font-semibold text-slate-900 mb-6">Everything in Essentials +</p>
+                                    <p className="text-sm font-semibold text-black mb-6">Everything in Essentials +</p>
                                     <ul className="space-y-5">
                                         {currentData.advanced.features.map((feature, i) => (
                                             <li key={i} className="flex items-start gap-3 text-sm text-slate-600">
@@ -486,8 +486,8 @@ export default function PricingPage() {
                             <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col">
                                 <div className="mb-6">
                                     <div className="flex items-center gap-2 mb-4">
-                                        <Building className="text-slate-900" size={24} />
-                                        <h3 className="text-2xl font-bold text-slate-900">Enterprise</h3>
+                                        <Building className="text-black" size={24} />
+                                        <h3 className="text-2xl font-bold text-black">Enterprise</h3>
                                     </div>
                                     <p className="text-slate-500 text-sm min-h-[40px]">{currentData.enterprise.desc}</p>
                                 </div>
@@ -499,11 +499,11 @@ export default function PricingPage() {
                                 </Link>
 
                                 <div className="mt-auto pt-6 border-t border-slate-100">
-                                    <p className="text-sm font-semibold text-slate-900 mb-6">Everything in Advanced +</p>
+                                    <p className="text-sm font-semibold text-black mb-6">Everything in Advanced +</p>
                                     <ul className="space-y-5">
                                         {currentData.enterprise.features.map((feature, i) => (
                                             <li key={i} className="flex items-start gap-3 text-sm text-slate-600">
-                                                <Check className="text-slate-900 flex-shrink-0 mt-0.5" size={18} />
+                                                <Check className="text-black flex-shrink-0 mt-0.5" size={18} />
                                                 <span>{feature}</span>
                                             </li>
                                         ))}
@@ -525,7 +525,7 @@ export default function PricingPage() {
                         <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             FAQs
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                             Frequently Asked Questions
                         </h2>
                     </div>
@@ -540,7 +540,7 @@ export default function PricingPage() {
                                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                                     className="w-full flex items-center justify-between p-6 text-left"
                                 >
-                                    <span className="font-semibold text-slate-900">{faq.q}</span>
+                                    <span className="font-semibold text-black">{faq.q}</span>
                                     <ChevronDown
                                         size={20}
                                         className={`text-slate-400 transition-transform flex-shrink-0 ml-4 ${openFaq === index ? "rotate-180" : ""}`}

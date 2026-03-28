@@ -45,7 +45,7 @@ export function FAQ() {
                                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                                 className="w-full flex items-center justify-between p-6 text-left bg-white hover:bg-slate-50 transition-colors"
                             >
-                                <span className="font-semibold text-lg text-slate-900">{faq.question}</span>
+                                <span className="font-semibold text-lg text-black">{faq.question}</span>
                                 {openIndex === index ? (
                                     <Minus className="text-primary flex-shrink-0" />
                                 ) : (

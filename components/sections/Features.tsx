@@ -54,7 +54,7 @@ export function Features() {
           <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
             Why Choose Us
           </span>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-6 tracking-tight">
             Traditional tools miss the exploits that real attackers use.
           </h2>
           <p className="text-lg text-slate-600">
@@ -71,7 +71,7 @@ export function Features() {
                             <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-100 transition-colors">
                                 <item.icon size={24} />
                             </div>
-                            <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
+                            <h3 className="text-lg font-bold text-black mb-2">{item.title}</h3>
                             <p className="text-slate-600 text-sm mb-4 leading-relaxed">{item.desc}</p>
                             <Link href="/solutions" className="inline-flex items-center text-red-600 font-semibold text-sm hover:gap-2 transition-all group-hover:underline">
                                 Learn More <ArrowRight size={14} className="ml-1" />

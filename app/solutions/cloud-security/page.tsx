@@ -160,7 +160,7 @@ export default function CloudSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Cloud Security Assessment
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-6 leading-tight">
                             Secure Your Cloud <span className="text-red-600">Infrastructure</span>
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
@@ -191,7 +191,7 @@ export default function CloudSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Proven Expertise
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                             We Find What Scanners Miss
                         </h2>
                     </div>
@@ -203,7 +203,7 @@ export default function CloudSecurityPage() {
                                     <study.icon size={28} />
                                 </div>
                                 <div className="text-4xl font-extrabold text-red-600 mb-2">{study.stat}</div>
-                                <div className="text-lg font-bold text-slate-900 mb-3">{study.label}</div>
+                                <div className="text-lg font-bold text-black mb-3">{study.label}</div>
                                 <p className="text-slate-600 text-sm leading-relaxed">{study.desc}</p>
                             </div>
                         ))}
@@ -218,7 +218,7 @@ export default function CloudSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Why RootRecon
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                             Why Choose Us for <span className="text-red-600">Cloud Security</span>?
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
@@ -267,7 +267,7 @@ export default function CloudSecurityPage() {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.4, delay: index * 0.2 + 0.2 }}
                                     >
-                                        <h3 className="text-sm font-bold text-slate-900 mb-1">{feature.title}</h3>
+                                        <h3 className="text-sm font-bold text-black mb-1">{feature.title}</h3>
                                         <p className="text-slate-500 text-xs leading-relaxed">{feature.desc}</p>
                                     </motion.div>
                                 </div>
@@ -301,7 +301,7 @@ export default function CloudSecurityPage() {
                                         <feature.icon className="w-5 h-5 text-red-600" />
                                     </div>
                                     <div className="bg-white rounded-xl p-4 flex-1 shadow-sm border border-slate-100">
-                                        <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
+                                        <h3 className="font-bold text-black mb-1">{feature.title}</h3>
                                         <p className="text-sm text-slate-600">{feature.desc}</p>
                                     </div>
                                 </motion.div>
@@ -318,7 +318,7 @@ export default function CloudSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Our Methodology
                         </span>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-black mb-6">
                             How We <span className="text-red-600">Secure</span> Your Cloud
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
@@ -498,7 +498,7 @@ export default function CloudSecurityPage() {
                                                     </div>
                                                     <div>
                                                         <div className="flex items-center gap-2 mb-1">
-                                                            <p className="font-bold text-sm text-slate-900">{step.title}</p>
+                                                            <p className="font-bold text-sm text-black">{step.title}</p>
                                                         </div>
                                                         <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
                                                     </div>
@@ -529,7 +529,7 @@ export default function CloudSecurityPage() {
                                         </div>
                                     </div>
                                     <div>
-                                        <h3 className="font-bold text-lg text-slate-900 mb-2">{feature.title}</h3>
+                                        <h3 className="font-bold text-lg text-black mb-2">{feature.title}</h3>
                                         <p className="text-sm text-slate-600 leading-relaxed">{feature.desc}</p>
                                     </div>
                                 </div>
@@ -562,7 +562,7 @@ export default function CloudSecurityPage() {
                                     </Button>
                                 </Link>
                                 <Link href="/contact">
-                                    <Button variant="outline" className="border-2 border-slate-600 text-white hover:bg-slate-700 px-8 py-4 font-bold rounded-xl">
+                                    <Button variant="outline" className="bg-white border-2 border-slate-200 text-black hover:bg-slate-50 px-8 py-4 font-bold rounded-xl">
                                         Talk to Expert
                                     </Button>
                                 </Link>
@@ -578,7 +578,7 @@ export default function CloudSecurityPage() {
                     <span className="inline-block px-4 py-2 bg-slate-100 text-slate-600 text-sm font-semibold rounded-full mb-6">
                         Coverage
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                         We Secure All <span className="text-red-600">Major Clouds</span>
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
@@ -591,7 +591,7 @@ export default function CloudSecurityPage() {
                                 <div className="w-14 h-14 rounded-xl bg-red-100 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-colors">
                                     <service.icon size={28} />
                                 </div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
+                                <h3 className="text-lg font-bold text-black mb-2">{service.title}</h3>
                                 <p className="text-slate-600">{service.desc}</p>
                             </div>
                         ))}
@@ -606,7 +606,7 @@ export default function CloudSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Testimonials
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black">
                             What Our Clients Say
                         </h2>
                     </div>
@@ -630,7 +630,7 @@ export default function CloudSecurityPage() {
                                         {testimonial.name.charAt(0)}
                                     </div>
                                     <div>
-                                        <div className="font-bold text-slate-900">{testimonial.name}</div>
+                                        <div className="font-bold text-black">{testimonial.name}</div>
                                         <div className="text-sm text-slate-500">{testimonial.role} @{testimonial.company}</div>
                                     </div>
                                 </div>
@@ -647,7 +647,7 @@ export default function CloudSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             FAQs
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black">
                             Questions You May Have
                         </h2>
                     </div>
@@ -662,7 +662,7 @@ export default function CloudSecurityPage() {
                                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                                     className="w-full flex items-center justify-between p-6 text-left"
                                 >
-                                    <span className="font-semibold text-slate-900">{faq.q}</span>
+                                    <span className="font-semibold text-black">{faq.q}</span>
                                     <ChevronDown
                                         size={20}
                                         className={`text-slate-400 transition-transform flex-shrink-0 ml-4 ${openFaq === index ? "rotate-180" : ""}`}

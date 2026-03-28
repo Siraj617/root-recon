@@ -90,7 +90,7 @@ export default function HealthcarePage() {
                                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider mb-6">
                                     <Heart size={12} className="fill-blue-800" /> Healthcare Security
                                 </div>
-                                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-slate-900 mb-6 leading-tight">
+                                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-black mb-6 leading-tight">
                                     Protecting Data. <br />
                                     <span className="text-blue-600">Saving Lives.</span>
                                 </h1>
@@ -123,7 +123,7 @@ export default function HealthcarePage() {
                 <div className="container px-4 mx-auto">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
                                 The Hospital is Now <br />
                                 <span className="text-blue-600">A Digital Network.</span>
                             </h2>
@@ -155,7 +155,7 @@ export default function HealthcarePage() {
                                             <Wifi size={20} />
                                         </div>
                                         <div>
-                                            <div className="font-bold text-slate-900">Infusion Pump #402</div>
+                                            <div className="font-bold text-black">Infusion Pump #402</div>
                                             <div className="text-xs text-slate-500">Firmware v2.1 (Outdated)</div>
                                         </div>
                                     </div>
@@ -190,7 +190,7 @@ export default function HealthcarePage() {
             <section id="solutions" className="py-24 bg-slate-50">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                             Clinical-Grade <span className="text-blue-600">Cybersecurity</span>
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
@@ -207,7 +207,7 @@ export default function HealthcarePage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-slate-900 mb-2">{item.problem}</h3>
+                                    <h3 className="text-lg font-bold text-black mb-2">{item.problem}</h3>
                                     <p className="text-slate-500 text-sm mb-4 leading-relaxed min-h-[60px]">{item.desc}</p>
                                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide">
                                         <CheckCircle2 size={14} className="text-blue-600" />
@@ -224,7 +224,7 @@ export default function HealthcarePage() {
             <section className="py-24 bg-white border-t border-slate-100">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                             The <span className="text-blue-600">Patient-First</span> Methodology
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
@@ -238,7 +238,7 @@ export default function HealthcarePage() {
                                 <Activity size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">1</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Non-Intrusive Testing</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Non-Intrusive Testing</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 We use passive scanning and mirrored traffic analysis for critical IoMT devices to avoid downtime.
                             </p>
@@ -248,7 +248,7 @@ export default function HealthcarePage() {
                                 <Lock size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">2</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Legacy Hardening</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Legacy Hardening</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 We identify compensating controls and segmentation strategies for unpatchable legacy systems.
                             </p>
@@ -258,7 +258,7 @@ export default function HealthcarePage() {
                                 <FileText size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">3</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">HIPAA Mapping</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">HIPAA Mapping</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 Every vulnerability we find is mapped directly to HIPAA Security Rule requirements for your compliance team.
                             </p>
@@ -268,7 +268,7 @@ export default function HealthcarePage() {
             </section>
 
             {/* HIPAA Compliance */}
-            <section className="py-24 bg-slate-900 text-white">
+            <section className="py-24 bg-black text-white">
                 <div className="container px-4 mx-auto">
                     <div className="flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="md:w-1/2">
@@ -286,15 +286,15 @@ export default function HealthcarePage() {
                             </Link>
                         </div>
                         <div className="md:w-1/2 grid grid-cols-2 gap-4">
-                            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                            <div className="bg-neutral-900/50 p-6 rounded-xl border border-slate-700">
                                 <div className="text-3xl font-bold text-white mb-2">100%</div>
                                 <div className="text-blue-300 text-sm">BAA Coverage</div>
                             </div>
-                            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700">
+                            <div className="bg-neutral-900/50 p-6 rounded-xl border border-slate-700">
                                 <div className="text-3xl font-bold text-white mb-2">Zero</div>
                                 <div className="text-blue-300 text-sm">PHI Retention</div>
                             </div>
-                            <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700 col-span-2">
+                            <div className="bg-neutral-900/50 p-6 rounded-xl border border-slate-700 col-span-2">
                                 <div className="flex items-center gap-3 mb-2">
                                     <FileText className="text-blue-400" />
                                     <span className="font-bold">Audit-Ready Documentation</span>

@@ -42,7 +42,7 @@ const services = [
 
 export function Services() {
     return (
-        <section id="services" className="py-24 bg-slate-900">
+        <section id="services" className="py-24 bg-black">
             <div className="container px-4 mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-4">
@@ -56,7 +56,7 @@ export function Services() {
                         <Link
                             href={service.href}
                             key={index}
-                            className="bg-slate-900 rounded-2xl p-5 border border-slate-700 shadow-sm hover:shadow-lg transition-all group flex flex-col h-full"
+                            className="bg-black rounded-2xl p-5 border border-slate-700 shadow-sm hover:shadow-lg transition-all group flex flex-col h-full"
                         >
                             {/* Image */}
                             <div className="relative w-full h-40 rounded-xl overflow-hidden bg-zinc-900 mb-4">

@@ -35,7 +35,7 @@ export function Contributions() {
                         <Award className="w-4 h-4" />
                         Responsible Disclosure
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                         Our Security Contributions
                     </h2>
                     <p className="text-lg text-slate-600 max-w-3xl mx-auto">

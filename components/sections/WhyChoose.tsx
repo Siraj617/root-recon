@@ -58,7 +58,7 @@ export function WhyChoose({ serviceName = "Pentesting" }: WhyChooseProps) {
                     {features.map((item, index) => (
                         <div
                             key={index}
-                            className={`relative bg-slate-800/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-blue-500/50 transition-all group ${index === 0 ? 'lg:col-span-2' : ''}`}
+                            className={`relative bg-neutral-900/50 backdrop-blur-sm rounded-2xl p-8 border border-slate-700 hover:border-blue-500/50 transition-all group ${index === 0 ? 'lg:col-span-2' : ''}`}
                         >
                             {/* Glow Effect on Hover */}
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity" />

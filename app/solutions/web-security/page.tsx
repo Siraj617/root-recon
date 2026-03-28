@@ -176,7 +176,7 @@ export default function WebSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white border border-red-500 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Web Application Security
                         </span>
-                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-6 leading-tight">
                             Expose What Attackers Can <span className="text-red-600">Really Do</span> To Your Web App
                         </h1>
                         <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-3xl mx-auto">
@@ -189,7 +189,7 @@ export default function WebSecurityPage() {
                                 </Button>
                             </Link>
                             <Link href="/get-started">
-                                <Button variant="outline" className="bg-white border-2 border-slate-200 text-slate-900 hover:bg-slate-50 px-8 py-4 text-lg font-bold rounded-xl">
+                                <Button variant="outline" className="bg-white border-2 border-slate-200 text-black hover:bg-slate-50 px-8 py-4 text-lg font-bold rounded-xl">
                                     Free Consultation
                                 </Button>
                             </Link>
@@ -204,7 +204,7 @@ export default function WebSecurityPage() {
             <section className="py-16 bg-white">
                 <div className="container px-4 mx-auto">
                     <div className="max-w-4xl mx-auto text-center">
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                             Built by Hackers. <span className="text-red-600">Trusted by Businesses.</span>
                         </h2>
                         <p className="text-xl text-slate-600 leading-relaxed">
@@ -223,7 +223,7 @@ export default function WebSecurityPage() {
                             <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                                 What We Test
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-black">
                                 Comprehensive Web App Coverage
                             </h2>
                         </div>
@@ -255,7 +255,7 @@ export default function WebSecurityPage() {
                             <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                                 How We Do It
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                                 End-to-End Application Analysis
                             </h2>
                             <p className="text-lg text-slate-600">We analyze your application end-to-end, including:</p>
@@ -267,7 +267,7 @@ export default function WebSecurityPage() {
                                 { title: "Data Paths", desc: "Critical data paths & sensitive functions" },
                             ].map((item, i) => (
                                 <div key={i} className="bg-slate-50 rounded-xl p-6 border border-slate-200 text-center">
-                                    <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                    <h3 className="font-bold text-black mb-2">{item.title}</h3>
                                     <p className="text-sm text-slate-600">{item.desc}</p>
                                 </div>
                             ))}
@@ -287,7 +287,7 @@ export default function WebSecurityPage() {
                             <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                                 What You Get
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-black">
                                 Actionable Results
                             </h2>
                         </div>
@@ -305,7 +305,7 @@ export default function WebSecurityPage() {
                             ))}
                         </div>
                         <div className="mt-8 bg-red-50 border border-red-200 rounded-xl p-6 text-center">
-                            <p className="text-lg font-bold text-slate-900">
+                            <p className="text-lg font-bold text-black">
                                 Result: A hardened web application attackers can&apos;t easily break.
                             </p>
                         </div>
@@ -320,14 +320,14 @@ export default function WebSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Proven Expertise
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                             We Find What Others Miss
                         </h2>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                         {caseStudies.map((study, index) => (
-                            <div key={index} className="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:shadow-xl transition-all group">
+                            <div key={index} className="bg-black rounded-2xl p-8 border border-slate-700 hover:shadow-xl transition-all group">
                                 <div className="w-14 h-14 rounded-2xl bg-red-900/20 flex items-center justify-center text-red-600 mb-6 group-hover:scale-105 transition-transform">
                                     <study.icon size={28} />
                                 </div>
@@ -347,7 +347,7 @@ export default function WebSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Why RootRecon
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                             Why Choose Us for <span className="text-red-600">Web Security</span>?
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
@@ -396,7 +396,7 @@ export default function WebSecurityPage() {
                                         viewport={{ once: true }}
                                         transition={{ duration: 0.4, delay: index * 0.2 + 0.2 }}
                                     >
-                                        <h3 className="text-sm font-bold text-slate-900 mb-1">{feature.title}</h3>
+                                        <h3 className="text-sm font-bold text-black mb-1">{feature.title}</h3>
                                         <p className="text-slate-500 text-xs leading-relaxed">{feature.desc}</p>
                                     </motion.div>
                                 </div>
@@ -408,7 +408,7 @@ export default function WebSecurityPage() {
                     <div className="lg:hidden relative max-w-md mx-auto">
                         <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-slate-200">
                             <motion.div
-                                className="absolute top-0 left-0 right-0 bg-slate-900"
+                                className="absolute top-0 left-0 right-0 bg-black"
                                 initial={{ height: "0%" }}
                                 whileInView={{ height: "100%" }}
                                 viewport={{ once: true }}
@@ -430,7 +430,7 @@ export default function WebSecurityPage() {
                                         <feature.icon className="w-5 h-5 text-red-600" />
                                     </div>
                                     <div className="bg-white rounded-xl p-4 flex-1 shadow-sm border border-slate-100">
-                                        <h3 className="font-bold text-slate-900 mb-1">{feature.title}</h3>
+                                        <h3 className="font-bold text-black mb-1">{feature.title}</h3>
                                         <p className="text-sm text-slate-600">{feature.desc}</p>
                                     </div>
                                 </motion.div>
@@ -447,7 +447,7 @@ export default function WebSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Our Methodology
                         </span>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-black mb-6">
                             How We <span className="text-red-600">Secure</span> Your App
                         </h2>
                         <p className="text-xl text-slate-600 max-w-2xl mx-auto">
@@ -617,7 +617,7 @@ export default function WebSecurityPage() {
                                                     </div>
                                                     <div>
                                                         <div className="flex items-center gap-2 mb-1">
-                                                            <p className="font-bold text-sm text-slate-900">{step.title}</p>
+                                                            <p className="font-bold text-sm text-black">{step.title}</p>
                                                         </div>
                                                         <p className="text-xs text-slate-500 leading-relaxed">{step.desc}</p>
                                                     </div>
@@ -631,7 +631,7 @@ export default function WebSecurityPage() {
                     </div>
 
                     {/* Features Grid */}
-                    <div className="bg-slate-900 border border-slate-700 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
+                    <div className="bg-black border border-slate-700 rounded-2xl shadow-lg p-8 md:p-10 max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-3 gap-8">
                             {[
                                 { icon: Database, title: "SQL Injection", desc: "We test for all types of SQLi: Error-based, Blind, Time-based, and Boolean." },
@@ -666,7 +666,7 @@ export default function WebSecurityPage() {
                     <span className="inline-block px-4 py-2 bg-slate-100 text-slate-600 text-sm font-semibold rounded-full mb-6">
                         Coverage
                     </span>
-                    <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
                         We Secure All Types of <span className="text-red-600">Web Apps</span>
                     </h2>
                     <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-12">
@@ -675,7 +675,7 @@ export default function WebSecurityPage() {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
                         {servicesOffered.map((service, index) => (
-                            <div key={index} className="bg-slate-900 rounded-2xl p-8 border border-slate-700 hover:border-red-600 transition-all text-left group cursor-pointer">
+                            <div key={index} className="bg-black rounded-2xl p-8 border border-slate-700 hover:border-red-600 transition-all text-left group cursor-pointer">
                                 <div className="w-14 h-14 rounded-xl bg-red-900/20 flex items-center justify-center text-red-600 mb-5 group-hover:bg-red-600 group-hover:text-white transition-colors">
                                     <service.icon size={28} />
                                 </div>
@@ -694,14 +694,14 @@ export default function WebSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             Testimonials
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black">
                             What Our Clients Say
                         </h2>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} className="bg-slate-900 rounded-2xl p-8 border border-slate-700">
+                            <div key={index} className="bg-black rounded-2xl p-8 border border-slate-700">
                                 <div className="flex items-center gap-1 mb-4">
                                     {[...Array(5)].map((_, i) => (
                                         <Star key={i} size={16} className="text-red-600 fill-red-600" />
@@ -735,7 +735,7 @@ export default function WebSecurityPage() {
                         <span className="px-4 py-1.5 rounded-full bg-red-600 text-white text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                             FAQs
                         </span>
-                        <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+                        <h2 className="text-3xl md:text-4xl font-extrabold text-black">
                             Questions You May Have
                         </h2>
                     </div>
@@ -750,7 +750,7 @@ export default function WebSecurityPage() {
                                     onClick={() => setOpenFaq(openFaq === index ? null : index)}
                                     className="w-full flex items-center justify-between p-6 text-left"
                                 >
-                                    <span className="font-semibold text-slate-900">{faq.q}</span>
+                                    <span className="font-semibold text-black">{faq.q}</span>
                                     <ChevronDown
                                         size={20}
                                         className={`text-slate-400 transition-transform flex-shrink-0 ml-4 ${openFaq === index ? "rotate-180" : ""}`}

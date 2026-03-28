@@ -78,7 +78,7 @@ export default function SaaSPage() {
                             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-700 text-xs font-bold uppercase tracking-wider mb-6">
                                 <Cloud size={12} /> SaaS Security
                             </div>
-                            <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                            <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 leading-tight">
                                 Enterprise Trust <br />
                                 <span className="text-blue-600">At Scale.</span>
                             </h1>
@@ -110,7 +110,7 @@ export default function SaaSPage() {
                 <div className="container px-4 mx-auto">
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
                                 Security is the New <br />
                                 <span className="text-blue-600">Sales Blocker.</span>
                             </h2>
@@ -132,7 +132,7 @@ export default function SaaSPage() {
                             </ul>
                         </div>
                         <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200">
-                            <h3 className="text-xl font-bold text-slate-900 mb-6">Common Deal Blockers</h3>
+                            <h3 className="text-xl font-bold text-black mb-6">Common Deal Blockers</h3>
                             <div className="space-y-4">
                                 <div className="flex items-center justify-between p-4 bg-white rounded-lg border border-slate-100 shadow-sm">
                                     <span className="font-medium text-slate-700">Lack of SOC 2 Type II</span>
@@ -160,7 +160,7 @@ export default function SaaSPage() {
             <section id="solutions" className="py-24 bg-slate-50">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                             Security That <span className="text-blue-600">Scales With You</span>
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
@@ -177,7 +177,7 @@ export default function SaaSPage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-slate-900 mb-2">{item.problem}</h3>
+                                    <h3 className="text-lg font-bold text-black mb-2">{item.problem}</h3>
                                     <p className="text-slate-500 text-sm mb-4 leading-relaxed min-h-[60px]">{item.desc}</p>
                                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide">
                                         <CheckCircle2 size={14} className="text-blue-600" />
@@ -194,7 +194,7 @@ export default function SaaSPage() {
             <section className="py-24 bg-white border-t border-slate-100">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                             The <span className="text-blue-600">Continuous Compliance</span> Engine
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
@@ -208,7 +208,7 @@ export default function SaaSPage() {
                                 <Layers size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">1</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Asset Discovery</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Asset Discovery</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 We map your entire attack surface, including forgotten subdomains and shadow IT assets.
                             </p>
@@ -218,7 +218,7 @@ export default function SaaSPage() {
                                 <FileCheck size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">2</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Automated Testing</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Automated Testing</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 Our PTaaS platform runs daily scans to catch new vulnerabilities as soon as code is deployed.
                             </p>
@@ -228,7 +228,7 @@ export default function SaaSPage() {
                                 <BarChart size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">3</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Audit Reporting</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Audit Reporting</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 We generate auditor-ready reports that map findings directly to SOC 2 and ISO 27001 controls.
                             </p>

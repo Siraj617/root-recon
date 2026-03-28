@@ -31,14 +31,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #0f172a;
+  --foreground: #050505;
   /* Slate 900 */
 
   --card: #ffffff;
-  --card-foreground: #0f172a;
+  --card-foreground: #050505;
 
   --popover: #ffffff;
-  --popover-foreground: #0f172a;
+  --popover-foreground: #050505;
 
   --primary: #FF5C5C;
   /* Royal Blue */
@@ -46,7 +46,7 @@
 
   --secondary: #f1f5f9;
   /* Slate 100 */
-  --secondary-foreground: #0f172a;
+  --secondary-foreground: #050505;
 
   --muted: #f8fafc;
   /* Slate 50 */
@@ -54,7 +54,7 @@
   /* Slate 500 */
 
   --accent: #f1f5f9;
-  --accent-foreground: #0f172a;
+  --accent-foreground: #050505;
 
   --destructive: #ef4444;
   --destructive-foreground: #f8fafc;
@@ -81,7 +81,7 @@ body {
   }
 
   .text-gradient-premium {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-blue-800 to-slate-900;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900;
   }
 
   .noise-bg {

@@ -62,7 +62,7 @@ export default function BlogPage() {
                     <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         Security Research
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-6 tracking-tight">
                         Insights from the <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                             Security Frontlines
@@ -90,7 +90,7 @@ export default function BlogPage() {
                                         <span className="flex items-center gap-1"><Calendar size={12} /> {post.date}</span>
                                         <span className="flex items-center gap-1"><Clock size={12} /> {post.readTime}</span>
                                     </div>
-                                    <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                                    <h2 className="text-xl font-bold text-black mb-3 group-hover:text-blue-600 transition-colors">
                                         {post.title}
                                     </h2>
                                     <p className="text-slate-600 mb-4 line-clamp-2">{post.excerpt}</p>

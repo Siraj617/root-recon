@@ -55,7 +55,7 @@ export default function AboutPage() {
                     <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         About RootRecon
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-6 tracking-tight">
                         Securing the Digital World <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-red-700">
                             One Vulnerability at a Time
@@ -71,7 +71,7 @@ export default function AboutPage() {
                         <Link href="/get-started" className="px-8 py-4 bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl transition-colors inline-flex items-center gap-2">
                             Get Started <ArrowRight size={18} />
                         </Link>
-                        <Link href="/solutions" className="px-8 py-4 bg-white border-2 border-slate-200 hover:border-red-300 text-slate-800 font-bold rounded-xl transition-colors">
+                        <Link href="/solutions" className="px-8 py-4 bg-white border-2 border-slate-200 hover:border-red-300 text-neutral-900 font-bold rounded-xl transition-colors">
                             Our Services
                         </Link>
                     </div>
@@ -108,7 +108,7 @@ export default function AboutPage() {
                                 <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white mb-5">
                                     <item.icon size={28} />
                                 </div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
+                                <h3 className="text-lg font-bold text-black mb-3">{item.title}</h3>
                                 <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
@@ -117,7 +117,7 @@ export default function AboutPage() {
             </section>
 
             {/* Our Approach */}
-            <section className="py-24 bg-slate-50 text-slate-900">
+            <section className="py-24 bg-slate-50 text-black">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
                         <span className="px-4 py-1.5 rounded-full bg-red-500/20 text-red-600 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
@@ -150,7 +150,7 @@ export default function AboutPage() {
                             <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                                 Our Story
                             </span>
-                            <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-6">
                                 Founded by Hackers, <br />Built for Defenders
                             </h2>
                             <p className="text-lg text-slate-600 mb-6 leading-relaxed">
@@ -172,11 +172,11 @@ export default function AboutPage() {
                             </div>
                         </div>
                         <div className="bg-red-50 border border-red-100 rounded-3xl p-12">
-                            <h3 className="text-2xl font-bold mb-6 text-slate-900">Our Mission</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-black">Our Mission</h3>
                             <p className="text-xl text-slate-700 leading-relaxed mb-8">
                                 "To make the internet safer by helping organizations identify and fix security vulnerabilities before malicious actors can exploit them." We believe strong security should be accessible to everyone, not just large enterprises.
                             </p>
-                            <h4 className="text-lg font-bold mb-4 text-slate-900">Team Certifications</h4>
+                            <h4 className="text-lg font-bold mb-4 text-black">Team Certifications</h4>
                             <div className="grid grid-cols-2 gap-3">
                                 {certifications.map((cert, i) => (
                                     <div key={i} className="flex items-center gap-2">
@@ -200,7 +200,7 @@ export default function AboutPage() {
                                 <div className="w-16 h-16 mx-auto rounded-2xl bg-gradient-to-br from-red-500 to-red-700 flex items-center justify-center text-white mb-6">
                                     <item.icon size={32} />
                                 </div>
-                                <h3 className="text-lg font-bold text-slate-900 mb-3">{item.title}</h3>
+                                <h3 className="text-lg font-bold text-black mb-3">{item.title}</h3>
                                 <p className="text-slate-600 text-sm leading-relaxed">{item.desc}</p>
                             </div>
                         ))}

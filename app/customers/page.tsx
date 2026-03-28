@@ -78,7 +78,7 @@ export default function CustomersPage() {
                     <span className="px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         Customer Stories
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-6 tracking-tight">
                         Trusted by Security-Conscious <br />
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
                             Companies Worldwide
@@ -103,7 +103,7 @@ export default function CustomersPage() {
                                 <Quote className="w-8 h-8 text-blue-100 mb-4" />
                                 <p className="text-slate-700 mb-6 leading-relaxed">"{item.quote}"</p>
                                 <div className="border-t border-slate-100 pt-4">
-                                    <div className="font-bold text-slate-900">{item.name}</div>
+                                    <div className="font-bold text-black">{item.name}</div>
                                     <div className="text-sm text-slate-500">{item.title}</div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ export default function CustomersPage() {
                         {caseStudies.map((item, index) => (
                             <div key={index} className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
                                 <span className="px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold uppercase">{item.tag}</span>
-                                <h3 className="text-xl font-bold text-slate-900 mt-4 mb-3">{item.title}</h3>
+                                <h3 className="text-xl font-bold text-black mt-4 mb-3">{item.title}</h3>
                                 <p className="text-slate-600 mb-6">{item.description}</p>
                                 <div className="bg-slate-50 rounded-xl p-4 text-center">
                                     <div className="text-3xl font-extrabold text-blue-600">{item.stats.value}</div>

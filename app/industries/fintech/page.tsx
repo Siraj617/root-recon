@@ -80,7 +80,7 @@ export default function FintechPage() {
             <Header />
 
             {/* Hero Section: Trust & Authority */}
-            <section className="relative pt-32 pb-20 overflow-hidden bg-slate-900 text-white">
+            <section className="relative pt-32 pb-20 overflow-hidden bg-black text-white">
                 <div className="absolute inset-0 z-0 opacity-10">
                     <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
                     <svg className="absolute right-0 top-0 h-full w-1/2 text-blue-500/20" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -112,7 +112,7 @@ export default function FintechPage() {
                                         </Button>
                                     </Link>
                                     <Link href="#solutions">
-                                        <Button variant="outline" className="border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white px-8 py-6 text-lg font-bold rounded-lg">
+                                        <Button variant="outline" className="border-slate-700 text-slate-300 hover:bg-neutral-900 hover:text-white px-8 py-6 text-lg font-bold rounded-lg">
                                             View Solutions
                                         </Button>
                                     </Link>
@@ -131,7 +131,7 @@ export default function FintechPage() {
                 <div className="container px-4 mx-auto">
                     <div className="grid md:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
                                 When Milliseconds Matter, <br />
                                 <span className="text-blue-600">Security Can't Blink.</span>
                             </h2>
@@ -154,14 +154,14 @@ export default function FintechPage() {
                         </div>
                         <div className="grid grid-cols-2 gap-6">
                             <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center">
-                                <div className="text-4xl font-extrabold text-slate-900 mb-2">$4.2M</div>
+                                <div className="text-4xl font-extrabold text-black mb-2">$4.2M</div>
                                 <div className="text-sm text-slate-500 font-medium">Avg. Cost of a Breach</div>
                             </div>
                             <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100 text-center">
-                                <div className="text-4xl font-extrabold text-slate-900 mb-2">24/7</div>
+                                <div className="text-4xl font-extrabold text-black mb-2">24/7</div>
                                 <div className="text-sm text-slate-500 font-medium">Attack Frequency</div>
                             </div>
-                            <div className="bg-slate-900 p-8 rounded-2xl border border-slate-800 text-center col-span-2 text-white">
+                            <div className="bg-black p-8 rounded-2xl border border-neutral-900 text-center col-span-2 text-white">
                                 <div className="text-4xl font-extrabold text-blue-500 mb-2">Zero</div>
                                 <div className="text-sm text-slate-400 font-medium">Tolerance for Error</div>
                             </div>
@@ -174,7 +174,7 @@ export default function FintechPage() {
             <section id="solutions" className="py-24 bg-slate-50">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                             Tailored Security for <span className="text-blue-600">Financial Systems</span>
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
@@ -191,7 +191,7 @@ export default function FintechPage() {
                                     </div>
                                 </div>
                                 <div>
-                                    <h3 className="text-lg font-bold text-slate-900 mb-2">{item.problem}</h3>
+                                    <h3 className="text-lg font-bold text-black mb-2">{item.problem}</h3>
                                     <p className="text-slate-500 text-sm mb-4 leading-relaxed min-h-[60px]">{item.desc}</p>
                                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold uppercase tracking-wide">
                                         <CheckCircle2 size={14} className="text-blue-600" />
@@ -208,7 +208,7 @@ export default function FintechPage() {
             <section className="py-24 bg-white border-t border-slate-100">
                 <div className="container px-4 mx-auto">
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                        <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
                             The <span className="text-blue-600">Fintech Shield</span> Methodology
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto">
@@ -222,7 +222,7 @@ export default function FintechPage() {
                                 <Code size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">1</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Design Review</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Design Review</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 We analyze your architecture diagrams and threat model your payment flows to identify logic flaws early.
                             </p>
@@ -232,7 +232,7 @@ export default function FintechPage() {
                                 <Terminal size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">2</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Deep-Dive Pentest</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Deep-Dive Pentest</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 Our experts manually test for race conditions, parameter tampering, and IDOR vulnerabilities that scanners miss.
                             </p>
@@ -242,7 +242,7 @@ export default function FintechPage() {
                                 <Shield size={80} className="text-blue-600" />
                             </div>
                             <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center text-white mb-6 font-bold text-xl">3</div>
-                            <h3 className="text-xl font-bold text-slate-900 mb-3">Continuous Monitoring</h3>
+                            <h3 className="text-xl font-bold text-black mb-3">Continuous Monitoring</h3>
                             <p className="text-slate-600 leading-relaxed">
                                 We provide ongoing surveillance of your external attack surface to detect new threats as they emerge.
                             </p>
@@ -257,7 +257,7 @@ export default function FintechPage() {
                     <div className="flex flex-col lg:flex-row gap-16 items-center">
                         <div className="lg:w-1/2">
                             <span className="text-blue-600 font-bold tracking-wider uppercase text-sm mb-2 block">Regulatory Compliance</span>
-                            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">
+                            <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
                                 Audit-Ready, <br />Every Time.
                             </h2>
                             <p className="text-lg text-slate-600 mb-8 leading-relaxed">
@@ -266,14 +266,14 @@ export default function FintechPage() {
                             <div className="flex gap-4">
                                 <CheckCircle2 className="text-blue-500 flex-shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-slate-900">Executive Attestations</h4>
+                                    <h4 className="font-bold text-black">Executive Attestations</h4>
                                     <p className="text-sm text-slate-500">Formal letters for your partners and auditors.</p>
                                 </div>
                             </div>
                             <div className="flex gap-4 mt-6">
                                 <Layers className="text-slate-500 flex-shrink-0" />
                                 <div>
-                                    <h4 className="font-bold text-slate-900">Detailed Technical Maps</h4>
+                                    <h4 className="font-bold text-black">Detailed Technical Maps</h4>
                                     <p className="text-sm text-slate-500">Vulnerabilities mapped to specific PCI/SOC2 controls.</p>
                                 </div>
                             </div>
@@ -286,7 +286,7 @@ export default function FintechPage() {
                                             <std.icon size={20} />
                                         </div>
                                         <div>
-                                            <div className="font-bold text-slate-900">{std.name}</div>
+                                            <div className="font-bold text-black">{std.name}</div>
                                             <div className="text-xs text-slate-500 mt-1">{std.desc}</div>
                                         </div>
                                     </div>
@@ -298,7 +298,7 @@ export default function FintechPage() {
             </section>
 
             {/* CTA */}
-            <section className="py-24 bg-slate-900 text-white">
+            <section className="py-24 bg-black text-white">
                 <div className="container px-4 mx-auto text-center">
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -314,7 +314,7 @@ export default function FintechPage() {
                                 </Button>
                             </Link>
                             <Link href="/pricing">
-                                <Button variant="outline" className="border-slate-700 text-white hover:bg-slate-800 px-8 py-4 text-lg font-bold rounded-lg w-full sm:w-auto">
+                                <Button variant="outline" className="border-slate-700 text-white hover:bg-neutral-900 px-8 py-4 text-lg font-bold rounded-lg w-full sm:w-auto">
                                     View Pricing
                                 </Button>
                             </Link>

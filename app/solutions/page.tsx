@@ -56,7 +56,7 @@ export default function SolutionsPage() {
                     <span className="px-4 py-1.5 rounded-full bg-red-100 text-red-700 text-sm font-bold tracking-wide uppercase mb-6 inline-block">
                         Our Solutions
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black mb-6 tracking-tight">
                         Offensive Security Services <br />
                         <span className="text-transparent bg-clip-text">
                             Designed to Fortify Your Security
@@ -78,7 +78,7 @@ export default function SolutionsPage() {
                                 <div className="w-12 h-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-700 mb-4 group-hover:bg-red-50 group-hover:text-red-600 transition-colors">
                                     <service.icon size={24} />
                                 </div>
-                                <h3 className="font-bold text-slate-900 mb-2">{service.title}</h3>
+                                <h3 className="font-bold text-black mb-2">{service.title}</h3>
                                 <p className="text-sm text-slate-600 mb-4 flex-1">{service.desc}</p>
                                 <div className="space-y-1 mb-4">
                                     {service.features.map((feature, i) => (
@@ -107,7 +107,7 @@ export default function SolutionsPage() {
                                 <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center text-red-600 mb-4">
                                     <item.icon size={24} />
                                 </div>
-                                <h3 className="font-bold text-slate-900 mb-2">{item.title}</h3>
+                                <h3 className="font-bold text-black mb-2">{item.title}</h3>
                                 <p className="text-sm text-slate-600">{item.desc}</p>
                             </div>
                         ))}

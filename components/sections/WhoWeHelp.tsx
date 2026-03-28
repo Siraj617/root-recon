@@ -46,7 +46,7 @@ export function WhoWeHelp() {
                             <div className="w-12 h-12 mx-auto bg-blue-50 rounded-full flex items-center justify-center text-blue-600 mb-4 group-hover:bg-blue-100 transition-colors">
                                 <client.icon size={24} />
                             </div>
-                            <h3 className="font-bold text-slate-900 mb-2">{client.title}</h3>
+                            <h3 className="font-bold text-black mb-2">{client.title}</h3>
                             <p className="text-sm text-slate-600">{client.desc}</p>
                         </div>
                     ))}
